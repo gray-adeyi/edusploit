@@ -1,0 +1,2385 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="active" style="height: auto; min-height: 100%;" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		.swal-icon--error {
+			border-color: #f27474;
+			-webkit-animation: animateErrorIcon .5s;
+			animation: animateErrorIcon .5s
+		}
+
+		.swal-icon--error__x-mark {
+			position: relative;
+			display: block;
+			-webkit-animation: animateXMark .5s;
+			animation: animateXMark .5s
+		}
+
+		.swal-icon--error__line {
+			position: absolute;
+			height: 5px;
+			width: 47px;
+			background-color: #f27474;
+			display: block;
+			top: 37px;
+			border-radius: 2px
+		}
+
+		.swal-icon--error__line--left {
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			left: 17px
+		}
+
+		.swal-icon--error__line--right {
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			right: 16px
+		}
+
+		@-webkit-keyframes animateErrorIcon {
+			0% {
+				-webkit-transform: rotateX(100deg);
+				transform: rotateX(100deg);
+				opacity: 0
+			}
+
+			to {
+				-webkit-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+				opacity: 1
+			}
+		}
+
+		@keyframes animateErrorIcon {
+			0% {
+				-webkit-transform: rotateX(100deg);
+				transform: rotateX(100deg);
+				opacity: 0
+			}
+
+			to {
+				-webkit-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+				opacity: 1
+			}
+		}
+
+		@-webkit-keyframes animateXMark {
+			0% {
+				-webkit-transform: scale(.4);
+				transform: scale(.4);
+				margin-top: 26px;
+				opacity: 0
+			}
+
+			50% {
+				-webkit-transform: scale(.4);
+				transform: scale(.4);
+				margin-top: 26px;
+				opacity: 0
+			}
+
+			80% {
+				-webkit-transform: scale(1.15);
+				transform: scale(1.15);
+				margin-top: -6px
+			}
+
+			to {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				margin-top: 0;
+				opacity: 1
+			}
+		}
+
+		@keyframes animateXMark {
+			0% {
+				-webkit-transform: scale(.4);
+				transform: scale(.4);
+				margin-top: 26px;
+				opacity: 0
+			}
+
+			50% {
+				-webkit-transform: scale(.4);
+				transform: scale(.4);
+				margin-top: 26px;
+				opacity: 0
+			}
+
+			80% {
+				-webkit-transform: scale(1.15);
+				transform: scale(1.15);
+				margin-top: -6px
+			}
+
+			to {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				margin-top: 0;
+				opacity: 1
+			}
+		}
+
+		.swal-icon--warning {
+			border-color: #f8bb86;
+			-webkit-animation: pulseWarning .75s infinite alternate;
+			animation: pulseWarning .75s infinite alternate
+		}
+
+		.swal-icon--warning__body {
+			width: 5px;
+			height: 47px;
+			top: 10px;
+			border-radius: 2px;
+			margin-left: -2px
+		}
+
+		.swal-icon--warning__body,
+		.swal-icon--warning__dot {
+			position: absolute;
+			left: 50%;
+			background-color: #f8bb86
+		}
+
+		.swal-icon--warning__dot {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			margin-left: -4px;
+			bottom: -11px
+		}
+
+		@-webkit-keyframes pulseWarning {
+			0% {
+				border-color: #f8d486
+			}
+
+			to {
+				border-color: #f8bb86
+			}
+		}
+
+		@keyframes pulseWarning {
+			0% {
+				border-color: #f8d486
+			}
+
+			to {
+				border-color: #f8bb86
+			}
+		}
+
+		.swal-icon--success {
+			border-color: #a5dc86
+		}
+
+		.swal-icon--success:after,
+		.swal-icon--success:before {
+			content: "";
+			border-radius: 50%;
+			position: absolute;
+			width: 60px;
+			height: 120px;
+			background: #fff;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg)
+		}
+
+		.swal-icon--success:before {
+			border-radius: 120px 0 0 120px;
+			top: -7px;
+			left: -33px;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-transform-origin: 60px 60px;
+			transform-origin: 60px 60px
+		}
+
+		.swal-icon--success:after {
+			border-radius: 0 120px 120px 0;
+			top: -11px;
+			left: 30px;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-transform-origin: 0 60px;
+			transform-origin: 0 60px;
+			-webkit-animation: rotatePlaceholder 4.25s ease-in;
+			animation: rotatePlaceholder 4.25s ease-in
+		}
+
+		.swal-icon--success__ring {
+			width: 80px;
+			height: 80px;
+			border: 4px solid hsla(98, 55%, 69%, .2);
+			border-radius: 50%;
+			box-sizing: content-box;
+			position: absolute;
+			left: -4px;
+			top: -4px;
+			z-index: 2
+		}
+
+		.swal-icon--success__hide-corners {
+			width: 5px;
+			height: 90px;
+			background-color: #fff;
+			padding: 1px;
+			position: absolute;
+			left: 28px;
+			top: 8px;
+			z-index: 1;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg)
+		}
+
+		.swal-icon--success__line {
+			height: 5px;
+			background-color: #a5dc86;
+			display: block;
+			border-radius: 2px;
+			position: absolute;
+			z-index: 2
+		}
+
+		.swal-icon--success__line--tip {
+			width: 25px;
+			left: 14px;
+			top: 46px;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-webkit-animation: animateSuccessTip .75s;
+			animation: animateSuccessTip .75s
+		}
+
+		.swal-icon--success__line--long {
+			width: 47px;
+			right: 8px;
+			top: 38px;
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+			-webkit-animation: animateSuccessLong .75s;
+			animation: animateSuccessLong .75s
+		}
+
+		@-webkit-keyframes rotatePlaceholder {
+			0% {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg)
+			}
+
+			5% {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg)
+			}
+
+			12% {
+				-webkit-transform: rotate(-405deg);
+				transform: rotate(-405deg)
+			}
+
+			to {
+				-webkit-transform: rotate(-405deg);
+				transform: rotate(-405deg)
+			}
+		}
+
+		@keyframes rotatePlaceholder {
+			0% {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg)
+			}
+
+			5% {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg)
+			}
+
+			12% {
+				-webkit-transform: rotate(-405deg);
+				transform: rotate(-405deg)
+			}
+
+			to {
+				-webkit-transform: rotate(-405deg);
+				transform: rotate(-405deg)
+			}
+		}
+
+		@-webkit-keyframes animateSuccessTip {
+			0% {
+				width: 0;
+				left: 1px;
+				top: 19px
+			}
+
+			54% {
+				width: 0;
+				left: 1px;
+				top: 19px
+			}
+
+			70% {
+				width: 50px;
+				left: -8px;
+				top: 37px
+			}
+
+			84% {
+				width: 17px;
+				left: 21px;
+				top: 48px
+			}
+
+			to {
+				width: 25px;
+				left: 14px;
+				top: 45px
+			}
+		}
+
+		@keyframes animateSuccessTip {
+			0% {
+				width: 0;
+				left: 1px;
+				top: 19px
+			}
+
+			54% {
+				width: 0;
+				left: 1px;
+				top: 19px
+			}
+
+			70% {
+				width: 50px;
+				left: -8px;
+				top: 37px
+			}
+
+			84% {
+				width: 17px;
+				left: 21px;
+				top: 48px
+			}
+
+			to {
+				width: 25px;
+				left: 14px;
+				top: 45px
+			}
+		}
+
+		@-webkit-keyframes animateSuccessLong {
+			0% {
+				width: 0;
+				right: 46px;
+				top: 54px
+			}
+
+			65% {
+				width: 0;
+				right: 46px;
+				top: 54px
+			}
+
+			84% {
+				width: 55px;
+				right: 0;
+				top: 35px
+			}
+
+			to {
+				width: 47px;
+				right: 8px;
+				top: 38px
+			}
+		}
+
+		@keyframes animateSuccessLong {
+			0% {
+				width: 0;
+				right: 46px;
+				top: 54px
+			}
+
+			65% {
+				width: 0;
+				right: 46px;
+				top: 54px
+			}
+
+			84% {
+				width: 55px;
+				right: 0;
+				top: 35px
+			}
+
+			to {
+				width: 47px;
+				right: 8px;
+				top: 38px
+			}
+		}
+
+		.swal-icon--info {
+			border-color: #c9dae1
+		}
+
+		.swal-icon--info:before {
+			width: 5px;
+			height: 29px;
+			bottom: 17px;
+			border-radius: 2px;
+			margin-left: -2px
+		}
+
+		.swal-icon--info:after,
+		.swal-icon--info:before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			background-color: #c9dae1
+		}
+
+		.swal-icon--info:after {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			margin-left: -3px;
+			top: 19px
+		}
+
+		.swal-icon {
+			width: 80px;
+			height: 80px;
+			border-width: 4px;
+			border-style: solid;
+			border-radius: 50%;
+			padding: 0;
+			position: relative;
+			box-sizing: content-box;
+			margin: 20px auto
+		}
+
+		.swal-icon:first-child {
+			margin-top: 32px
+		}
+
+		.swal-icon--custom {
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			border: none;
+			border-radius: 0
+		}
+
+		.swal-icon img {
+			max-width: 100%;
+			max-height: 100%
+		}
+
+		.swal-title {
+			color: rgba(0, 0, 0, .65);
+			font-weight: 600;
+			text-transform: none;
+			position: relative;
+			display: block;
+			padding: 13px 16px;
+			font-size: 27px;
+			line-height: normal;
+			text-align: center;
+			margin-bottom: 0
+		}
+
+		.swal-title:first-child {
+			margin-top: 26px
+		}
+
+		.swal-title:not(:first-child) {
+			padding-bottom: 0
+		}
+
+		.swal-title:not(:last-child) {
+			margin-bottom: 13px
+		}
+
+		.swal-text {
+			font-size: 16px;
+			position: relative;
+			float: none;
+			line-height: normal;
+			vertical-align: top;
+			text-align: left;
+			display: inline-block;
+			margin: 0;
+			padding: 0 10px;
+			font-weight: 400;
+			color: rgba(0, 0, 0, .64);
+			max-width: calc(100% - 20px);
+			overflow-wrap: break-word;
+			box-sizing: border-box
+		}
+
+		.swal-text:first-child {
+			margin-top: 45px
+		}
+
+		.swal-text:last-child {
+			margin-bottom: 45px
+		}
+
+		.swal-footer {
+			text-align: right;
+			padding-top: 13px;
+			margin-top: 13px;
+			padding: 13px 16px;
+			border-radius: inherit;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0
+		}
+
+		.swal-button-container {
+			margin: 5px;
+			display: inline-block;
+			position: relative
+		}
+
+		.swal-button {
+			background-color: #7cd1f9;
+			color: #fff;
+			border: none;
+			box-shadow: none;
+			border-radius: 5px;
+			font-weight: 600;
+			font-size: 14px;
+			padding: 10px 24px;
+			margin: 0;
+			cursor: pointer
+		}
+
+		.swal-button:not([disabled]):hover {
+			background-color: #78cbf2
+		}
+
+		.swal-button:active {
+			background-color: #70bce0
+		}
+
+		.swal-button:focus {
+			outline: none;
+			box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+		}
+
+		.swal-button[disabled] {
+			opacity: .5;
+			cursor: default
+		}
+
+		.swal-button::-moz-focus-inner {
+			border: 0
+		}
+
+		.swal-button--cancel {
+			color: #555;
+			background-color: #efefef
+		}
+
+		.swal-button--cancel:not([disabled]):hover {
+			background-color: #e8e8e8
+		}
+
+		.swal-button--cancel:active {
+			background-color: #d7d7d7
+		}
+
+		.swal-button--cancel:focus {
+			box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+		}
+
+		.swal-button--danger {
+			background-color: #e64942
+		}
+
+		.swal-button--danger:not([disabled]):hover {
+			background-color: #df4740
+		}
+
+		.swal-button--danger:active {
+			background-color: #cf423b
+		}
+
+		.swal-button--danger:focus {
+			box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+		}
+
+		.swal-content {
+			padding: 0 20px;
+			margin-top: 20px;
+			font-size: medium
+		}
+
+		.swal-content:last-child {
+			margin-bottom: 20px
+		}
+
+		.swal-content__input,
+		.swal-content__textarea {
+			-webkit-appearance: none;
+			background-color: #fff;
+			border: none;
+			font-size: 14px;
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			border: 1px solid rgba(0, 0, 0, .14);
+			padding: 10px 13px;
+			border-radius: 2px;
+			transition: border-color .2s
+		}
+
+		.swal-content__input:focus,
+		.swal-content__textarea:focus {
+			outline: none;
+			border-color: #6db8ff
+		}
+
+		.swal-content__textarea {
+			resize: vertical
+		}
+
+		.swal-button--loading {
+			color: transparent
+		}
+
+		.swal-button--loading~.swal-button__loader {
+			opacity: 1
+		}
+
+		.swal-button__loader {
+			position: absolute;
+			height: auto;
+			width: 43px;
+			z-index: 2;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			text-align: center;
+			pointer-events: none;
+			opacity: 0
+		}
+
+		.swal-button__loader div {
+			display: inline-block;
+			float: none;
+			vertical-align: baseline;
+			width: 9px;
+			height: 9px;
+			padding: 0;
+			border: none;
+			margin: 2px;
+			opacity: .4;
+			border-radius: 7px;
+			background-color: hsla(0, 0%, 100%, .9);
+			transition: background .2s;
+			-webkit-animation: swal-loading-anim 1s infinite;
+			animation: swal-loading-anim 1s infinite
+		}
+
+		.swal-button__loader div:nth-child(3n+2) {
+			-webkit-animation-delay: .15s;
+			animation-delay: .15s
+		}
+
+		.swal-button__loader div:nth-child(3n+3) {
+			-webkit-animation-delay: .3s;
+			animation-delay: .3s
+		}
+
+		@-webkit-keyframes swal-loading-anim {
+			0% {
+				opacity: .4
+			}
+
+			20% {
+				opacity: .4
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			to {
+				opacity: .4
+			}
+		}
+
+		@keyframes swal-loading-anim {
+			0% {
+				opacity: .4
+			}
+
+			20% {
+				opacity: .4
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			to {
+				opacity: .4
+			}
+		}
+
+		.swal-overlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			font-size: 0;
+			overflow-y: auto;
+			background-color: rgba(0, 0, 0, .4);
+			z-index: 10000;
+			pointer-events: none;
+			opacity: 0;
+			transition: opacity .3s
+		}
+
+		.swal-overlay:before {
+			content: " ";
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%
+		}
+
+		.swal-overlay--show-modal {
+			opacity: 1;
+			pointer-events: auto
+		}
+
+		.swal-overlay--show-modal .swal-modal {
+			opacity: 1;
+			pointer-events: auto;
+			box-sizing: border-box;
+			-webkit-animation: showSweetAlert .3s;
+			animation: showSweetAlert .3s;
+			will-change: transform
+		}
+
+		.swal-modal {
+			width: 478px;
+			opacity: 0;
+			pointer-events: none;
+			background-color: #fff;
+			text-align: center;
+			border-radius: 5px;
+			position: static;
+			margin: 20px auto;
+			display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			-webkit-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			z-index: 10001;
+			transition: opacity .2s, -webkit-transform .3s;
+			transition: transform .3s, opacity .2s;
+			transition: transform .3s, opacity .2s, -webkit-transform .3s
+		}
+
+		@media (max-width:500px) {
+			.swal-modal {
+				width: calc(100% - 20px)
+			}
+		}
+
+		@-webkit-keyframes showSweetAlert {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+
+			1% {
+				-webkit-transform: scale(.5);
+				transform: scale(.5)
+			}
+
+			45% {
+				-webkit-transform: scale(1.05);
+				transform: scale(1.05)
+			}
+
+			80% {
+				-webkit-transform: scale(.95);
+				transform: scale(.95)
+			}
+
+			to {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+		}
+
+		@keyframes showSweetAlert {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+
+			1% {
+				-webkit-transform: scale(.5);
+				transform: scale(.5)
+			}
+
+			45% {
+				-webkit-transform: scale(1.05);
+				transform: scale(1.05)
+			}
+
+			80% {
+				-webkit-transform: scale(.95);
+				transform: scale(.95)
+			}
+
+			to {
+				-webkit-transform: scale(1);
+				transform: scale(1)
+			}
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>Portal | Dashboard</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<meta content="Welcome to Ekiti State University" name="title">
+	<meta content="University Portal" name="description">
+	<meta content="EKITI STATE UNIVERSITY" name="author">
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="{% static 'core/css/css.css' %}" rel="stylesheet">
+	<!-- <link href="../assets_ajax/css/default/app.min.css" rel="stylesheet" /> -->
+
+	<!-- <link href="../assets_ajax/css/transparent/app.min.css" rel="stylesheet" /> -->
+	<link href="{% static 'core/css/app.min.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
+		integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<!-- ================== END BASE CSS STYLE ================== -->
+
+
+	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+	<link href="{% static 'core/css/jquery-jvectormap.css' %}" rel="stylesheet">
+	<!-- <link href="../assets_ajax/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" /> -->
+	<link href="{% static 'core/css/jquery.gritter.css' %}" rel="stylesheet">
+	<link href="{% static 'core/css/yellow.min.css' %}" rel="stylesheet" id="theme-css-link">
+	<link href="{% static 'core/css/flag-icon.min.css' %}" rel="stylesheet">
+	<!-- <link href="../assets_ajax/css/default/app.min.css" rel="stylesheet" /> -->
+	<link href="{% static 'core/css/toastr.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'core/css/tile_box_widgets.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="https://eksuportal.eksu.edu.ng/favicon.ico">
+
+	<!-- ================== END BASE CSS STYLE ================== -->
+	<style>
+		[id*='google_ads_iframe'],
+		.taboolaHeight,
+		#credential_picker_container,
+		#credential_picker_iframe,
+		.google-one-tap-modal-div {
+			display: none !important;
+			min-height: 0 !important;
+			height: 0 !important;
+		}
+	</style>
+	<style type="text/css">
+		.jqstooltip {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			visibility: hidden;
+			background: rgb(0, 0, 0) transparent;
+			background-color: rgba(0, 0, 0, 0.6);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+			color: white;
+			font: 10px arial, san serif;
+			text-align: left;
+			white-space: nowrap;
+			padding: 5px;
+			border: 1px solid white;
+			box-sizing: content-box;
+			z-index: 10000;
+		}
+
+		.jqsfield {
+			color: white;
+			font: 10px arial, san serif;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body class="  active pace-done pace-done" style="height: auto; min-height: 100%;">
+	<div class="pace  pace-inactive pace-inactive">
+		<div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%"
+			data-progress="99">
+			<div class="pace-progress-inner"></div>
+		</div>
+		<div class="pace-activity"></div>
+	</div>
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade show d-none"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+
+	<!-- begin #page-container -->
+	<!-- <div id="page-container" class="page-container fade page-sidebar-fixed page-header-fixed page-with-two-sidebar show gradient-enabled page-right-sidebar-collapsed"> -->
+	<div id="page-container"
+		class="page-container fade page-sidebar-fixed page-header-fixed page-with-two-sidebar show gradient-enabled page-right-sidebar-collapsed active">
+		<!-- begin #header -->
+		<div id="header" class="header navbar-default">
+
+
+			<!-- begin navbar-header -->
+			<div class="navbar-header">
+				<!-- <div class="navbar-header"> -->
+				<div class="navbar-brand" id="navbar-brand"><span class="navbar-logo" hidden=""></span> <img
+						src="{% static 'core/img/newllogo.png' %}" width="200px"></div>
+				<!-- <div class="navbar-brand" style="background: #2d353c;color: #fff"><span class="navbar-logo" hidden></span> <img src="../images/newllogo.png" width="200px"></div> -->
+				<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="top-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="javascript:;" data-click="sidebar-minify"> <i class="fa fa-align-justify"></i> </a>
+						</li>
+						<li><a href="javascript:;"> <i class="fa fa-user"></i> </a></li>
+						<li class="dropdown navbar-language">
+							<a href="#" class="dropdown-toggle pr-1 pl-1 pr-sm-3 pl-sm-3" data-toggle="dropdown">
+								<span class="flag-icon flag-icon-us" title="us"></span>
+								<span class="name d-none d-sm-inline">English</span> <b class="caret"></b>
+							</a>
+							<div class="dropdown-menu">
+								<a href="javascript:;" class="dropdown-item"><span class="flag-icon flag-icon-us"
+										title="us"></span> English</a>
+								<a href="javascript:;" class="dropdown-item"><span class="flag-icon flag-icon-cn"
+										title="cn"></span> Chinese</a>
+								<a href="javascript:;" class="dropdown-item"><span class="flag-icon flag-icon-jp"
+										title="jp"></span> Japanese</a>
+								<a href="javascript:;" class="dropdown-item"><span class="flag-icon flag-icon-be"
+										title="be"></span> Belgium</a>
+								<div class="dropdown-divider"></div>
+								<a href="javascript:;" class="dropdown-item text-center">more options</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- begin header-nav -->
+			<ul class="navbar-nav navbar-right">
+				<li class="navbar-form">
+					<form action="" method="POST" name="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Enter keyword">
+							<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+						</div>
+					</form>
+				</li>
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle f-s-14">
+						<i class="fa fa-bell"></i>
+					</a>
+					<div class="dropdown-menu media-list dropdown-menu-right">
+						<div class="dropdown-header">NOTIFICATION (0)</div>
+
+					</div>
+				</li>
+				<li class="dropdown navbar-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="{% static 'core/img/45727-1_1_1_1_img_20180719_113004_024.jpg' %}" alt="">
+						<span class="d-none d-md-inline">Adeyi Gbenga Michael </span> <b class="caret"></b>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="javascript:;" class="dropdown-item">Edit Profile</a>
+						<a href="javascript:;" class="dropdown-item"><span
+								class="badge badge-danger pull-right">2</span> Inbox</a>
+						<a href="javascript:;" class="dropdown-item">Calendar</a>
+						<a href="javascript:;" class="dropdown-item">Setting</a>
+						<div class="dropdown-divider"></div>
+						<a href="https://eksuportal.eksu.edu.ng/students/index?logout=1" class="dropdown-item">Log
+							Out</a>
+					</div>
+				</li>
+
+				<li class="divider d-none d-md-block"></li>
+				<li class="d-none d-md-block">
+					<a href="javascript:;" data-click="right-sidebar-toggled" class="f-s-14">
+						<i class="fa fa-th"></i>
+					</a>
+				</li>
+
+				<button type="button" class="navbar-toggle" data-click="right-sidebar-toggled">
+					<!-- <i class="fa fa-align-left"></i> -->
+					<i class="fa fa-th"></i>
+				</button>
+			</ul>
+			<!-- end header-nav -->
+		</div>
+		<!-- end #header -->
+
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar active" style="background: rgb(240, 75, 70); height: auto;">
+			<!-- <div id="sidebar" class="sidebar "> -->
+			<!-- <div id="sidebar" class="sidebar" > -->
+			<!-- begin sidebar scrollbar -->
+			<div class="slimScrollDiv active" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+				<div data-scrollbar="true" data-height="100%" style="overflow: hidden; width: auto; height: 100%;"
+					data-init="true" class="active">
+
+					<div class="navbar-brand" id="navbar-brand2" style=""><span class="navbar-logo" hidden=""></span>
+						<img src="{% static 'core/img/newllogo.png' %}" width="200px">
+					</div>
+
+
+					<ul class="nav">
+
+						<li class="nav-header p-t-5" data-toggle="dropdown" href="#" aria-expanded="false">
+
+							<span class="pull-left">Quik Link</span>
+
+							<a href="#" class="pull-right m-l-5" data-toggle="ajax"><i
+									class="fa fa-power-off bg-danger"></i></a>
+							<a href="#profile/change_password" class="pull-right m-l-5" data-toggle="ajax"><i
+									class="fa fa-lock bg-info"></i></a>
+							<a href="#pages/index" class="pull-right m-l-5" data-toggle="ajax"><i
+									class="fa fa-th-large bg-green"></i></a>
+
+
+						</li>
+
+
+						<li class="nav-profile" style="background: #F04B46">
+							<!-- <li class="nav-profile"> -->
+							<a href="javascript:;" data-toggle="nav-profile">
+								<!-- <div class="cover with-shadow"></div> -->
+								<div class="image">
+									<img src="{% static 'core/img/45727-1_1_1_1_img_20180719_113004_024.jpg' %}" alt="">
+								</div>
+								<div class="info">
+									<small>Welcome, Student</small>
+									<b class="caret pull-right"></b>
+									Adeyi Gbenga Michael
+								</div>
+							</a>
+						</li>
+						<li>
+							<ul class="nav nav-profile">
+								<li><a href="javascript:;"><i class="fa fa-cog"></i> Settings</a></li>
+								<li><a href="javascript:;"><i class="fa fa-pencil-alt"></i> Send Feedback</a></li>
+								<li><a href="javascript:;"><i class="fa fa-question-circle"></i> Helps</a></li>
+							</ul>
+						</li>
+
+
+
+					</ul>
+					<!-- end sidebar user -->
+					<!-- begin sidebar nav -->
+					<ul class="nav active">
+						<li class="nav-header">Navigation</li>
+
+						<li class="active"><a href="#dashboard/dashboard-v1" data-toggle="ajax"><i
+									class="fa fa-home bg-yellow text-black"></i> <span>Dashboard <span
+										class="label label-theme m-l-3">Home</span></span></a></li>
+
+
+						<li class="has-sub">
+							<a href="javascript:;">
+								<b class="caret"></b>
+								<i class="fa fa-user bg-yellow text-black"></i>
+								<span>Profile</span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#profile/biodata" data-toggle="ajax">Biodata</a></li>
+								<li><a href="#profile/add_passport" data-toggle="ajax">Upload Passport</a></li>
+								<li><a href="#profile/add_signature" data-toggle="ajax">Signature</a></li>
+								<li><a href="#mail/leave_of_absence" data-toggle="ajax">Leave of Absence</a></li>
+								<li><a href="#mail/transfer_request" data-toggle="ajax">Transfer</a></li>
+								<li><a href="#mail/manage_ticket" data-toggle="ajax">Ticket/Complains</a></li>
+							</ul>
+						</li>
+
+
+						<li><a href="#profile/hc_dashboard" data-toggle="ajax"><i
+									class="fas fa-thermometer-quarter bg-yellow text-black"></i> <span>Health Cetnre
+									<span class="label label-theme m-l-3">Form</span> </span></a></li>
+
+
+
+						<li class="has-sub">
+							<a href="javascript:;">
+								<b class="caret"></b>
+								<i class="ion-ios-gift bg-yellow text-black"></i>
+								<span>Poll Analysis</span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#evote/voting_result" data-toggle="ajax">Poll Result</a></li>
+								<li><a href="#evote/poll_details" data-toggle="ajax">Poll Details</a></li>
+							</ul>
+						</li>
+
+						<li class="has-sub">
+							<a href="javascript:;">
+								<b class="caret"></b>
+								<i class="fa fa-book bg-yellow text-black"></i>
+								<span>E-Learning</span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#ebooks/syllabus" data-toggle="ajax">My Syllabus</a></li>
+								<li><a href="#ebooks/ebooks" data-toggle="ajax">Course Materials</a></li>
+								<li><a href="#exam/exam" data-toggle="ajax">E- Exam <span
+											class="label label-theme m-l-3">Online Exam</span></a></li>
+							</ul>
+						</li>
+
+						<!-- <li><a href="#course/course_reg" data-toggle="ajax"><i class="ion-ios-cellular bg-yellow text-black"></i> <span>My Course  <span class="label label-theme  m-l-3">+ Curriculum</span></span></a></li> -->
+						<!-- <li><a href="#course/course_reg" data-toggle="ajax"><i class="ion-ios-cellular bg-yellow text-black"></i> <span>My Course  <span class="label label-theme  m-l-3">+ Curriculum</span></span></a></li> -->
+						<li><a href="#course/course_reg" data-toggle="ajax"><i
+									class="ion-ios-cellular bg-yellow text-black"></i> <span>Course
+									Registration</span></a></li>
+
+
+						<!-- 
+			<li class="has-sub">
+				<a href="javascript:;">
+					<b class="caret"></b>
+					<i class="ion-ios-cellular bg-info"></i>
+					<span>My Course</span>
+				</a>
+				<ul class="sub-menu">
+					<li><a href="#course/course_reg" data-toggle="ajax">Course Registration</a></li>
+					<li><a href="#" data-toggle="ajax">View Curriculum</a></li>
+				</ul>
+			</li> -->
+
+						<li class="has-sub">
+							<a href="javascript:;">
+								<b class="caret"></b>
+								<i class="ion-ios-document bg-yellow text-black"></i>
+								<span>Check Result</span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#result/view_raw_score" data-toggle="ajax">Raw Score</a></li>
+								<li><a href="#result/results" data-toggle="ajax">Approved Result</a></li>
+
+							</ul>
+						</li>
+						<li><a href="#virtual/manage_virtual" data-toggle="ajax"><i
+									class="fa fa-laptop bg-yellow text-black"></i> <span>Virtual Learning </span></a>
+						</li>
+
+
+
+						<li><a href="#course/late_reg" data-toggle="ajax"><i
+									class="fa fa-registered bg-yellow text-black"></i> <span>Late Registration <span
+										class="label label-theme  m-l-3">Action</span></span></a></li>
+
+						<li class="has-sub">
+							<a href="javascript:;">
+								<b class="caret"></b>
+								<i class="ion-ios-cash bg-yellow text-black"></i>
+								<span>Fees Payment</span>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="{% url 'fees-payment' %}" data-toggle="ajax">Fees Payment</a></li>
+								<!-- <li><a href="#fees/fees_transaction" data-toggle="ajax">Card Transaction</a></li> -->
+								<li><a href="#fees/fees_breakdown" data-toggle="ajax">Fees Breakdown</a></li>
+							</ul>
+						</li>
+
+
+
+
+						<li><a href="#hostel/dashboard" data-toggle="ajax"><i
+									class="fa fa-sign-in-alt bg-yellow text-black"></i> <span>Hostel <span
+										class="label label-theme m-l-3">Accomodation</span> </span></a></li>
+
+
+
+
+
+						<!-- <li><a href="#hostel/dashboard" data-toggle="ajax"><i class="ion-ios-home bg-yellow text-black"></i> <span>Hostel and Accomodation  </a></li> -->
+						<li><a href="#profile/change_password" data-toggle="ajax"><i
+									class="fa fa-lock bg-yellow text-black"></i> <span>Password <span
+										class="label label-theme m-l-3">Security</span></span></a></li>
+
+
+
+						<!-- 
+
+			<li class="has-sub">
+				<a href="javascript:;">
+					<span class="badge pull-right">10</span>
+					<i class="fa fa-hdd"></i> 
+					<span>Mail</span>
+				</a>
+				<ul class="sub-menu">
+					<li><a href="#pages/email_inbox.html" data-toggle="ajax">Inbox</a></li>
+					<li><a href="#pages/email_compose.html" data-toggle="ajax">Compose</a></li>
+					<li><a href="#pages/email_detail.html" data-toggle="ajax">Detail</a></li>
+				</ul>
+			</li>
+ -->
+
+
+
+						<li><a href="https://eksuportal.eksu.edu.ng/students/index?logout=1"><i
+									class="fa fa-power-off bg-danger"></i> <span>Sign Out</span></a></li>
+
+
+						<!--Menu list item-->
+						<!-- <li class="nav-status ">
+      <a class="text-small pr-5 text-white" style="color: #fff"> 
+        <span> <i class="ion-ios-pulse"></i> CPU Usage <span class="label label-primary pull-right">45%</span></span> 
+      </a>
+      <div class="progress progressbar-xs m-l-5 m-r-5">
+        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> 
+           <span class="sr-only">45% Complete</span> 
+        </div>
+      </div>
+    </li>
+
+    <li class="nav-status">
+      <a class="text-small pr-5 text-white" style="color: #fff"> 
+        <span> <i class="fa fa-database"></i> Bandwidth <span class="label label-primary pull-right">45%</span></span> 
+      </a>
+      <div class="progress progressbar-xs m-l-5 m-r-5">
+        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 65%"> 
+           <span class="sr-only">45% Complete</span> 
+        </div>
+      </div>
+    </li> -->
+
+
+
+
+						<!-- <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i> <span>Collapse</span></a></li> -->
+
+
+
+
+					</ul>
+
+
+
+
+				</div>
+				<div class="slimScrollBar"
+					style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 931px;">
+				</div>
+				<div class="slimScrollRail"
+					style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+				</div>
+			</div>
+
+		</div>
+		<div class="sidebar-bg"></div> <!-- begin #sidebar-right -->
+		<div id="sidebar-right" class="sidebar sidebar-right" style="height: auto;">
+			<!-- begin sidebar scrollbar -->
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+				<div data-scrollbar="true" data-height="100%" style="overflow: hidden; width: auto; height: 100%;"
+					data-init="true">
+					<!-- begin sidebar user -->
+					<ul class="nav m-t-10 text-white">
+						<li class="nav-widget">
+							<p class="m-b-5">Server Status</p>
+							<div class="pull-left m-b-10 m-t-5">
+								<div class="pull-left p-r-15">
+									<input class="knob" data-width="80" data-height="80" data-thickness=".2"
+										data-readonly="true" data-min="10" data-displayprevious="true" value="44"
+										data-fgcolor="#00acac" data-bgcolor="#242a30">
+								</div>
+								<div class="pull-left">
+									<input class="knob" data-width="80" data-height="80" data-thickness=".2"
+										data-readonly="true" data-min="10" data-displayprevious="true" value="67"
+										data-fgcolor="#348fe2" data-bgcolor="#242a30">
+								</div>
+							</div>
+							<div class="pull-left">
+								<div class="pull-left p-r-15">
+									<input class="knob" data-width="80" data-height="80" data-thickness=".2"
+										data-readonly="true" data-min="10" data-displayprevious="true" value="70"
+										data-fgcolor="#ff5b57" data-bgcolor="#242a30">
+								</div>
+								<div class="pull-left">
+									<input class="knob" data-width="80" data-height="80" data-thickness=".2"
+										data-readonly="true" data-min="10" data-displayprevious="true" value="52"
+										data-fgcolor="#727cb6" data-bgcolor="#242a30">
+								</div>
+							</div>
+						</li>
+						<li class="nav-widget">
+							<p class="m-b-5">Total Visitors</p>
+							<div id="sidebar-sparkline-1" class="m-b-20"></div>
+							<p class="m-b-5">Total Page Views</p>
+							<div id="sidebar-sparkline-2" class="m-b-20"></div>
+							<p class="m-b-5">Total Unique Visitors</p>
+							<div id="sidebar-sparkline-3" class="m-b-20"></div>
+							<p class="m-b-5">Bounce Rate</p>
+							<div id="sidebar-sparkline-4"></div>
+						</li>
+						<li class="nav-widget">
+							<div class="panel-group m-b-0" id="accordion">
+								<div class="panel panel-inverse">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											<a class="accordion-toggle accordion-toggle-styled collapsed"
+												data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+												<i class="fa fa-plus-circle pull-right text-success"></i>
+												Accordion #1
+											</a>
+										</h3>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse">
+										<div class="panel-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+											richardson ad squid.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-inverse">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											<a class="accordion-toggle accordion-toggle-styled collapsed"
+												data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+												<i class="fa fa-plus-circle pull-right text-success"></i>
+												Accordion #2
+											</a>
+										</h3>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse">
+										<div class="panel-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+											richardson ad squid.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-inverse">
+									<div class="panel-heading">
+										<h3 class="panel-title">
+											<a class="accordion-toggle accordion-toggle-styled collapsed"
+												data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+												<i class="fa fa-plus-circle pull-right text-success"></i>
+												Accordion #3
+											</a>
+										</h3>
+									</div>
+									<div id="collapseThree" class="panel-collapse collapse">
+										<div class="panel-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+											richardson ad squid.
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- end sidebar user -->
+				</div>
+				<div class="slimScrollBar"
+					style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 931px;">
+				</div>
+				<div class="slimScrollRail"
+					style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+				</div>
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg sidebar-right"></div>
+		<!-- end #sidebar-right --> <!-- end #sidebar -->
+
+		<!-- begin #content -->
+		<div id="content" class="content"><!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+			<link href="{% static 'core/css/jquery-jvectormap.css' %}" rel="stylesheet">
+			<link href="{% static 'core/css/ionicons.min.css' %}" rel="stylesheet">
+			<link href="{% static 'core/css/jquery-jvectormap.css' %" rel="stylesheet">
+			<link href="{% static 'core/css/bootstrap_calendar.css' %}" rel="stylesheet">
+			<link href="{% static 'core/css/jquery.gritter.css' %}" rel="stylesheet">
+			<link href="{% static 'core/css/nv.d3.css' %}" rel="stylesheet">
+			<link href="{% static 'core/css/tile_box_widgets.css' %}" rel="stylesheet">
+			<!-- ================== END PAGE LEVEL STYLE ================== -->
+
+
+			<link href="{% static 'core/css/chat.css' %}" rel="stylesheet">
+
+			<!-- begin breadcrumb -->
+			<ol class="breadcrumb float-xl-right">
+				<li class="breadcrumb-item"><span class="fa fa-home"></span><a href="javascript:;"> Home</a></li>
+				<li class="breadcrumb-item active">Dashboard</li>
+			</ol>
+			<!-- end breadcrumb -->
+			<!-- begin page-header -->
+			<h1 class="page-header"><i class="fa fa-home"></i> Dashboard <small class="label label-theme m-l-3"
+					style="font-size: 10px">Welcome Back ADEYI!</small></h1>
+			<!-- end page-header -->
+
+
+
+			<div class="row">
+				<div class="col-xl-3">
+					<div class="about-author">
+						<div class="quote bg-white">
+							<a href="javascript:;" onclick="login_user('1905003026')"
+								class="btn btn-info btn-danger pull-right  m-r-2 tooltip_"><span
+									class="tooltiptext">Login as 1905003026</span> <i class="fa fa-power-off"></i></a>
+							<a href="javascript:;" class="btn btn-info btn-info pull-right  m-r-2"><i
+									class="fa fa-lock"></i></a>
+							<a href="#profile/edit_biodata"
+								class="btn btn-info btn-green pull-right m-r-2 tooltip_"><span
+									class="tooltiptext">Profile</span><i class="fa fa-user"></i> Edit Profile</a>
+							<div class="clearfix">
+							</div>
+						</div>
+						<div class="author bg-white">
+							<div class="image">
+								<img src="{% static 'core/img/45727-1_1_1_1_img_20180719_113004_024.jpg' %}"
+									alt="Sean Ngu" style="height: 90px; width: 90px">
+							</div>
+							<div class="info">
+								<small>1905003026</small>
+								ADEYI GBENGA MICHAEL <small> adeyi.g.1905003026@eksu.edu.ng</small>
+							</div>
+
+							<!-- <p>
+        <a href="javascript:;" class="btn btn-success btn-icon btn-circle btn-lg"><i class="fa fa-phone"></i></a>
+        <a href="javascript:;" class="btn btn-warning btn-icon btn-circle btn-lg"><i class="fa fa-envelope"></i></a>
+        <a href="javascript:;" class="btn btn-primary btn-icon btn-circle btn-lg"><i class="fab fa-facebook-f"></i></a>
+      </p> -->
+						</div>
+
+
+						<table class="table table-bordered table-striped bg-white f-s-10">
+							<tbody>
+
+								<tr>
+									<td colspan="1"><b>MATRIC NO.</b> </td>
+									<td colspan="3"> 1905003026 </td>
+								</tr>
+								<tr>
+									<td colspan="1"><b>REG. NO.</b> </td>
+									<td colspan="3"> 96558550AJ </td>
+								</tr>
+								<tr>
+									<td colspan="1"><b>FACULTY</b> </td>
+									<td colspan="3"> ENGINEERING </td>
+								</tr>
+								<tr>
+									<td colspan="1"><b>DEPARTMENT</b> </td>
+									<td colspan="3"> ELECTRICAL &amp; ELECTRONIC ENGINEERING </td>
+								</tr>
+								<tr>
+									<td colspan="1"><b>PROGRAMME</b> </td>
+									<td colspan="3"> ELECTRICAL &amp; ELECTRONIC ENGINEERING </td>
+								</tr>
+								<tr>
+									<td> <b>LEVEL</b> </td>
+									<td> 300 LEVEL </td>
+									<td> <b>STATUS</b> </td>
+									<td> <span class="label label-success">Active</span> </td>
+								</tr>
+
+								<tr>
+									<td> <b>SESSION</b> </td>
+									<td> 2021/2022 </td>
+									<td colspan="2"> FIRST SEMESTER </td>
+								</tr>
+
+								<tr>
+									<td> <b>ENTRY MODE</b> </td>
+									<td> UTME </td>
+									<td> <b>ENTRY YEAR</b> </td>
+									<td> 2019 </td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+
+
+
+					<!-- begin card -->
+					<!-- <div class="card border-0 text-truncate mb-3 text-inverse">
+								<div class="card-body">
+									<div class="mb-1">
+										<b class="mb-1">2021/2022 SESSION | FIRST SEMESTER</b> 
+										<span class="ml-2"><i class="fa fa-info-circle"></i></span>
+									</div>
+
+									<div class="widget-chart-info-progress">
+										<b>Total Registered Course(s)</b>
+										<span class="pull-right">100%</span>
+									</div>
+									<div class="progress progress-sm m-b-15">
+										<div class="progress-bar progress-bar-striped progress-bar-animated rounded-corner bg-green" style="width: 100%"></div>
+									</div>
+									<div class="mb-2"><i class="fa fa-signal"></i> 300 LEVEL</div>
+									<div class="mb-2"><i class="fa fa-home"></i> Engineering</div>
+									<div class="mb-2"><i class="fa fa-graduation-cap"></i> Electrical & Electronic Engineering</div>
+									<div class="mb-2"><i class="fa fa-edit"></i>  Electrical & Electronic Engineering</div>
+									<div class="d-flex mb-2">
+										<div class="d-flex align-items-center">
+											<span class="label label-success"><i class="fa fa-user"></i> Active</span>
+										</div>
+										<div class="d-flex align-items-center ml-auto">
+											<div class="f-s-11"><i class="fa fa-star text-warning"></i> <span data-animation="number" data-value="0.00">0.00</span> CGPA</div>
+											<div class="width-50 text-right pl-2 f-w-600"><span data-animation="number" data-value="53210">0</span></div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- end card -->
+
+
+
+
+
+				</div>
+
+				<div class="col-xl-6">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6 col-md-12 col-xs-12">
+							<div class="widgetbox widgetbox-default widgetbox-item-icon tile-stats tile-green">
+
+								<div class="widget-chart-info-progress text-white">
+									<b>Maximum Unit</b>
+									<span class="pull-right">27 unit(s)</span>
+								</div>
+								<div class="progress progress-sm m-b-15">
+									<div class="progress-bar progress-bar-striped progress-bar-animated rounded-corner bg-green"
+										style="width: 100%"></div>
+								</div>
+								<div class="widgetbox-icon-success">
+									<div class="counter-icon icon-md btn-success">
+										<i class="fa fa-star"></i>
+									</div>
+								</div>
+								<div class="widgetbox-data">
+									<div class="widgetbox-int">
+										<div class="num" data-start="0" data-end="0" data-postfix="" data-duration="500"
+											data-delay="0" id="comp">0</div>
+									</div>
+									<div class="widgetbox-title text-white">
+										Compulsory
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6 col-md-12 col-xs-12">
+							<div class="widgetbox widgetbox-default widgetbox-item-icon tile-stats tile-aqua">
+
+
+								<div class="widget-chart-info-progress text-white">
+									<b>Registered Unit</b>
+									<span class="pull-right"> 0 unit(s)</span>
+								</div>
+								<div class="progress progress-sm m-b-15">
+									<div class="progress-bar progress-bar-striped progress-bar-animated rounded-corner bg-blue"
+										style="width: 0.00%"></div>
+								</div>
+								<div class="widgetbox-icon-success">
+									<div class="counter-icon icon-md btn-blue">
+										<i class="ion-md-star-half"></i>
+									</div>
+								</div>
+								<div class="widgetbox-data">
+									<div class="widgetbox-int">
+										<div class="num" data-start="0" data-end="0" data-postfix="" data-duration="500"
+											data-delay="0" id="req">0</div>
+									</div>
+									<div class="widgetbox-title text-white">
+										Required
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-4 col-sm-6 col-md-12 col-xs-12">
+							<div class="widgetbox widgetbox-default widgetbox-item-icon tile-stats tile-blue">
+								<div class="widget-chart-info-progress text-white">
+									<b>Un-used Unit</b>
+									<span class="pull-right">27 unit(s)</span>
+								</div>
+								<div class="progress progress-sm m-b-15">
+									<div class="progress-bar progress-bar-striped progress-bar-animated rounded-corner bg-info"
+										style="width: 100.00%"></div>
+								</div>
+
+								<div class="widgetbox-icon-success">
+									<div class="counter-icon icon-md btn-info">
+										<i class="ion-md-rocket"></i>
+									</div>
+								</div>
+								<div class="widgetbox-data">
+									<div class="widgetbox-int">
+										<div class="num" data-start="0" data-end="0" data-postfix="" data-duration="500"
+											data-delay="0" id="elec">0</div>
+									</div>
+									<div class="widgetbox-title text-white">
+										Elective
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div>
+
+						<div class="card border-0 mb-3 overflow-hidden text-inverse">
+							<!-- begin card-body -->
+							<div class="card-body">
+								<!-- begin row -->
+								<div class="row">
+									<!-- begin col-7 -->
+									<div class="col-xl-7 col-lg-8">
+										<!-- begin title -->
+										<div
+											class="widgetbox widgetbox-default widgetbox-item-icon tile-stats tile-green">
+
+
+
+											<div class="widgetbox-icon-success">
+												<div class="counter-icon icon-md btn-success">
+													<i class="fa fa-credit-card"></i>
+												</div>
+											</div>
+											<div class="widgetbox-data">
+												<div class="widgetbox-int">
+													<div class="num" data-start="0" data-end="0" data-postfix=""
+														data-duration="500" data-delay="0" id="elec">N288,000</div>
+												</div>
+												<div class="widgetbox-title text-white">
+													Total Blll
+													<a href="#fees/fees_payment" class="btn btn-success btn-sm m-5"><i
+															class="fa fa-cloud-download-alt"></i> Fees Breakdown</a>
+												</div>
+
+											</div>
+										</div>
+										<hr>
+										<!-- begin row -->
+										<div class="row text-truncate">
+											<!-- begin col-6 -->
+											<div class="col-6">
+												<div class="tile-stats tile-blue">
+													<div class="icon"><i class="entypo-download"></i></div>
+													<div class="num f-s-20" id="total_search">N<span
+															data-animation="number" data-value="144000">144,000</span>
+													</div>
+													<p><b>Total Payment</b></p>
+													<p>Active Session</p>
+												</div>
+											</div>
+											<!-- end col-6 -->
+											<!-- begin col-6 -->
+											<div class="col-6">
+												<div class="tile-stats tile-red">
+													<div class="icon"><i class="entypo-download"></i></div>
+													<div class="num f-s-20" id="total_search">N<span
+															data-animation="number" data-value="144000">144,000</span>
+													</div>
+													<p><b>Total Outstanding</b></p>
+													<p>Active Session</p>
+												</div>
+											</div>
+											<!-- end col-6 -->
+										</div>
+										<!-- end row -->
+									</div>
+									<!-- end col-7 -->
+									<!-- begin col-5 -->
+									<div class="col-xl-5  tile-stats tile-info">
+
+
+
+									</div>
+									<!-- end col-5 -->
+								</div>
+								<!-- end row -->
+							</div>
+							<!-- end card-body -->
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-xl-9 ui-sortable">
+
+					<div class="panel panel-default panel-with-tabs" data-sortable-id="ui-unlimited-tabs-1">
+						<div class="panel-heading p-0 ui-sortable-handle">
+							<div class="tab-overflow overflow-right">
+								<ul class="nav nav-tabs nav-tabs-blue">
+									<li class="nav-item prev-button" style=""><a href="javascript:;"
+											data-click="prev-tab" class="nav-link text-primary"><i
+												class="fa fa-arrow-left"></i></a></li>
+									<li class="nav-item"><a href="#nav-tab-2" data-toggle="tab" class="nav-link "><i
+												class="ico fa fa-gift"></i> Online Election</a></li>
+									<li class="nav-item"><a href="#nav-tab-1" data-toggle="tab"
+											class="nav-link active"><i class="ico ion-ios-cellular"></i> My
+											Registration</a></li>
+									<li class="nav-item"><a href="#nav-tab-5" data-toggle="tab" class="nav-link"><i
+												class="ico fa fa-edit"></i> Lecture Timetable</a></li>
+									<li class="nav-item"><a href="#nav-tab-3" data-toggle="tab" class="nav-link"><i
+												class="ico fa fa-bell"></i> Notifications</a></li>
+									<li class="nav-item"><a href="#nav-tab-4" data-toggle="tab" class="nav-link"><i
+												class="ico fa fa-calendar"></i> Events</a></li>
+
+
+									<!-- <li class="nav-item"><a href="#nav-tab-2" data-toggle="tab" class="nav-link"><i class="ico fa fa-comment"></i>Manage Pickup Request</a></li> -->
+									<li class="nav-item next-button" style=""><a href="javascript:;"
+											data-click="next-tab" class="nav-link text-primary"><i
+												class="fa fa-arrow-right"></i>Next</a></li>
+
+								</ul>
+							</div>
+							<h4 class="panel-title"> </h4>
+							<div class="panel-heading-btn mr-2 ml-2 d-flex">
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default"
+									data-click="panel-expand"><i class="fa fa-expand"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success"
+									data-click="panel-reload"><i class="fa fa-redo"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+									data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+								<a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+									data-click="panel-remove"><i class="fa fa-times"></i></a>
+							</div>
+						</div>
+						<div class="panel-body tab-content">
+							<!-- begin tab-pane -->
+							<div class="tab-pane fade show" id="nav-tab-2">
+								<div class="card border-0 mb-3 text-inverse">
+									<!-- begin card-body -->
+
+
+
+								</div>
+							</div>
+
+							<div class="tab-pane  active fade show" id="nav-tab-1">
+
+								<!-- <a href='javascript:;' onclick="print_doc('courseform')" class='btn btn-green btn-sm m-10'><i class='fa fa-cloud-download-alt'></i> Course Form</b></a> 
+                <a href='javascript:;' onclick="print_doc('clearance')" class='btn btn-blue btn-sm m-10'><i class='fa fa-cloud-download-alt'></i> Clearance</b>
+
+                </a> <a href='javascript:;' onclick="print_doc('permit')" class='btn btn-black btn-sm m-10' name='export_zip'><i class='fa fa-cloud-download-alt'></i> Permit</b></a> -->
+
+								<script type="text/javascript">
+									function print_doc(action) {
+										var form = $("#course-reg")[0];
+										var formData = new FormData(form);
+										formData.append('print_doc', action);
+										$.ajax({
+											url: "dashboard/dashboard-v1",
+											data: formData,
+											type: 'POST',
+											contentType: false,
+											processData: false,
+											success: function (d) {
+												$("#notification").html(d);
+											}, error: function (jqKHR, textStatus, errorThrown) {
+												swal({ text: textStatus + ", Try Again!", type: 'warning', icon: 'warning' });
+												$("[name='uploadSingleQuestion']").html("Save");
+											}
+										});
+
+									}
+								</script>
+								<form id="course-reg" name="course-reg" action="pages/index">
+									<input type="hidden" name="" id="table_id">
+									<input type="hidden" name="" id="cpage" value="1">
+
+									<div class="alert alert-success fade show" id="table_title ">
+										<span class="close" data-dismiss="alert">×</span>
+										<i class="fa fa-search-minus fa-2x pull-left m-r-10"></i>
+										<p class="m-b-0" id="table_title_text_reg"><b>Registered Course(s) <a
+													href="https://eksuportal.eksu.edu.ng/students/course/courseform?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&amp;semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09"
+													class="btn btn-green btn-sm text-nowrap"><i class="fa fa-print"></i>
+													Course Form</a></b> <a
+												href="https://eksuportal.eksu.edu.ng/students/course/clearance_form?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&amp;semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09"
+												class="btn btn-green btn-sm text-nowrap"><i class="fa fa-print"></i>
+												Clearance</a> <a
+												href="https://eksuportal.eksu.edu.ng/students/course/clearance_form_2?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&amp;semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09"
+												class="btn btn-green btn-sm text-nowrap"><i class="fa fa-print"></i>
+												Permit</a></p>
+										<input type="hidden" value="table_title_text_reg" name="table_title_text">
+									</div>
+
+									<div class="title_left m-t-5">
+
+
+										<div class="col-xl-2 form-group pull-left top_search">
+											<div class="input-group">
+												<select type="text" id="session" name="session"
+													onchange="$('#courseRegButton').click();" class="form-control "
+													data-size="10" data-live-search="true" data-style="">&gt;
+													<option value="1998">1998/1999</option>
+													<option value="1999">1999/2000</option>
+													<option value="2000">2000/2001</option>
+													<option value="2001">2001/2002</option>
+													<option value="2002">2002/2003</option>
+													<option value="2003">2003/2004</option>
+													<option value="2004">2004/2005</option>
+													<option value="2005">2005/2006</option>
+													<option value="2006">2006/2007</option>
+													<option value="2007">2007/2008</option>
+													<option value="2008">2008/2009</option>
+													<option value="2009">2009/2010</option>
+													<option value="2010">2010/2011</option>
+													<option value="2011">2011/2012</option>
+													<option value="2012">2012/2013</option>
+													<option value="2013">2013/2014</option>
+													<option value="2014">2014/2015</option>
+													<option value="2015">2015/2016</option>
+													<option value="2016">2016/2017</option>
+													<option value="2017">2017/2018</option>
+													<option value="2018">2018/2019</option>
+													<option value="2019">2019/2020</option>
+													<option value="2020">2020/2021</option>
+													<option value="2021" selected="selected">2021/2022</option>
+													<option value="2022">2022/2023</option>
+												</select>
+
+											</div>
+										</div>
+
+
+										<div class="col-xl-2 form-group pull-left top_search">
+											<div class="input-group">
+												<select type="text" id="semester" name="semester"
+													onchange="$('#courseRegButton').click();" class="form-control "
+													data-size="10" data-live-search="true" data-style="">&gt;
+													<option value="1" selected="selected">FIRST SEMESTER</option>
+													<option value="2">SECOND SEMESTER</option>
+												</select>
+
+											</div>
+										</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									</div>
+									<div class="title_right m-t-5">
+										<div class="col-xl-4 form-group pull-right top_search">
+											<div class="search-box input-group input-group-lg">
+												<input type="text" class="form-control" id="searchBox" name="searchBox"
+													placeholder="Search for...">
+												<div class="input-group-append">
+													<button class="btn btn-yellow" id="courseRegButton"
+														name="courseRegButton" onclick="courseRegButton()" type="submit"
+														value="1">Go!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="clearfix"></div>
+
+									<div id="course-display">
+										<script
+											type="text/javascript">$("#table_title_text_reg").html(`<b>Registered Course(s)  <a href='course/courseform?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09' class='btn btn-green btn-sm text-nowrap'><i class='fa fa-print'></i> Course Form</b></a> <a href='course/clearance_form?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09' class='btn btn-green btn-sm text-nowrap'><i class='fa fa-print'></i> Clearance</b></a> <a href='course/clearance_form_2?session=UmkweUxOUElKRk5tY3dJZXJTaDlxdz09&semester=NU1MakRKU1NvRlg1QVBWS2hiWHQ4Zz09' class='btn btn-green btn-sm text-nowrap'><i class='fa fa-print'></i> Permit</b></a></b>`)</script>
+										<div class="clearfix"></div>
+										<div class="note note-danger m-15">
+											<div class="note-icon"><i class="fa fa-info-circle"></i></div>
+											<div class="note-content">
+												<h4><b>Ooops!</b></h4>
+												<p>
+													Ooop! Sorry No Course Code or Name, Identity Number Matches your
+													entries, Try again or <a href="#course/course_reg"
+														class="btn btn-green text-nowrap">Add New Course</a>! </p>
+											</div>
+										</div>
+
+
+									</div>
+
+
+								</form>
+
+								<div class="clearfix"></div>
+
+								<script type="text/javascript">
+									// $(document).on('submit','form[name="course-reg"]',function(e){
+									//     e.preventDefault();
+									//     $("#course-display").html('<div class="text-center" ><li class="fa fa-spinner fa-spin" style="font-size:40px;margin:20px auto auto auto; display: block;"></li></div>');
+									//      //        var form = $("#course-reg")[0];
+									//        var formData = new FormData(form);
+									//        formData.append ('course-reg', 1);
+									//            $.ajax({
+									//              url: $("#course-reg").attr('action'),
+									//              data: formData,
+									//              type: 'POST',
+									//              contentType: false,
+									//              processData: false,
+									//              success: function(d){
+									//              $("#course-display").html(d);
+									//             },error: function(jqKHR, textStatus, errorThrown) {
+									//             swal({text: textStatus+ ", Try Again!",type: 'warning',icon: 'warning'});
+									//            }
+									//            });
+									//       
+									//       // var currentId = event.target.id;
+
+									//  });
+
+
+
+									$(document).on('submit', 'form[name="course-reg"]', function (e) {
+										e.preventDefault();
+									});
+									$(document).ready(function (e) { $('#courseRegButton').click(); });
+
+
+									$("#courseRegButton").click(function (e) {
+										var uniqueID = e.target.value;
+										courseRegButton(uniqueID);
+										e.preventDefault();
+									});
+
+
+
+									function courseRegButton(uniqueID) {
+										$("#course-display").html('<div class="text-center" ><li class="fa fa-spinner fa-spin" style="font-size:40px;margin:20px auto auto auto; display: block;"></li><br/><b style="font-size:13px;">please wait...</b></div>');
+										var form = $("#course-reg")[0];
+										var formData = new FormData(form);
+										formData.append('course-reg', 1);
+										formData.append('searchButton', 'courseRegButton');
+										formData.append('pagination_type', '');
+										formData.append('t_display', 'course-display');
+										formData.append('uniqueID', uniqueID);
+										$.ajax({
+											url: $("#course-reg").attr('action'),
+											data: formData,
+											type: 'POST',
+											contentType: false,
+											processData: false,
+											success: function (d) {
+												$("#course-display").html(d);
+											}, error: function (jqKHR, textStatus, errorThrown) {
+												swal({ text: textStatus + ", Try Again!", type: 'warning', icon: 'warning' });
+											}
+										});
+									}
+
+
+
+
+								</script>
+
+
+
+
+
+
+
+
+							</div>
+
+
+
+							<div class="tab-pane fade show" id="nav-tab-5">
+								<form id="time-table" name="time-table" action="pages/index">
+									<input type="hidden" name="" id="table_id">
+									<input type="hidden" name="" id="cpage" value="1">
+
+									<div class="alert alert-success fade show" id="table_title ">
+										<span class="close" data-dismiss="alert">×</span>
+										<i class="fa fa-search-minus fa-2x pull-left m-r-10"></i>
+										<p class="m-b-0" id="table_title_text_tt"><b>LECTURE TIME TABLE </b></p>
+										<input type="hidden" value="table_title_text_tt" name="table_title_text">
+									</div>
+
+									<div class="title_left m-t-5">
+
+
+										<div class="col-xl-3 form-group pull-left top_search">
+											<div class="input-group">
+												<select type="text" id="session" name="session"
+													onchange="$('#timetablButton').click();" class="form-control "
+													data-size="10" data-live-search="true" data-style="">&gt;
+													<option value="1998">1998/1999</option>
+													<option value="1999">1999/2000</option>
+													<option value="2000">2000/2001</option>
+													<option value="2001">2001/2002</option>
+													<option value="2002">2002/2003</option>
+													<option value="2003">2003/2004</option>
+													<option value="2004">2004/2005</option>
+													<option value="2005">2005/2006</option>
+													<option value="2006">2006/2007</option>
+													<option value="2007">2007/2008</option>
+													<option value="2008">2008/2009</option>
+													<option value="2009">2009/2010</option>
+													<option value="2010">2010/2011</option>
+													<option value="2011">2011/2012</option>
+													<option value="2012">2012/2013</option>
+													<option value="2013">2013/2014</option>
+													<option value="2014">2014/2015</option>
+													<option value="2015">2015/2016</option>
+													<option value="2016">2016/2017</option>
+													<option value="2017">2017/2018</option>
+													<option value="2018">2018/2019</option>
+													<option value="2019">2019/2020</option>
+													<option value="2020">2020/2021</option>
+													<option value="2021" selected="selected">2021/2022</option>
+													<option value="2022">2022/2023</option>
+												</select>
+
+											</div>
+										</div>
+
+
+										<div class="col-xl-3 form-group pull-left top_search">
+											<div class="input-group">
+												<select type="text" id="semester" name="semester"
+													onchange="$('#timetablButton').click();" class="form-control "
+													data-size="10" data-live-search="true" data-style="">&gt;
+													<option value="1" selected="selected">FIRST SEMESTER</option>
+													<option value="2">SECOND SEMESTER</option>
+												</select>
+
+											</div>
+										</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									</div>
+									<div class="title_right m-t-5">
+										<div class="col-xl-4 form-group pull-right top_search">
+											<div class="search-box input-group input-group-lg">
+												<input type="text" class="form-control" id="searchBox" name="searchBox"
+													placeholder="Search for...">
+												<div class="input-group-append">
+													<button class="btn btn-yellow" id="timetablButton"
+														name="timetablButton" onclick="timetablButton()" type="submit"
+														value="1">Go!</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="clearfix"></div>
+
+									<div id="timetable-display">
+										<script
+											type="text/javascript">$("#table_title_text_tt").html(`<b>LECTURE TIME TABLE  </b>`)</script>
+										<div class="clearfix"></div>
+										<div class="note note-danger m-15">
+											<div class="note-icon"><i class="fa fa-info-circle"></i></div>
+											<div class="note-content">
+												<h4><b>Ooops!</b></h4>
+												<p>
+													Ooop! Sorry No Name, Identity Number Matches your entries, Try
+													again! </p>
+											</div>
+										</div>
+
+
+									</div>
+
+
+								</form>
+
+								<div class="clearfix"></div>
+
+								<script type="text/javascript">
+									// $(document).on('submit','form[name="time-table"]',function(e){
+									//     e.preventDefault();
+									//     $("#timetable-display").html('<div class="text-center" ><li class="fa fa-spinner fa-spin" style="font-size:40px;margin:20px auto auto auto; display: block;"></li></div>');
+									//      //        var form = $("#time-table")[0];
+									//        var formData = new FormData(form);
+									//        formData.append ('time-table', 1);
+									//            $.ajax({
+									//              url: $("#time-table").attr('action'),
+									//              data: formData,
+									//              type: 'POST',
+									//              contentType: false,
+									//              processData: false,
+									//              success: function(d){
+									//              $("#timetable-display").html(d);
+									//             },error: function(jqKHR, textStatus, errorThrown) {
+									//             swal({text: textStatus+ ", Try Again!",type: 'warning',icon: 'warning'});
+									//            }
+									//            });
+									//       
+									//       // var currentId = event.target.id;
+
+									//  });
+
+
+
+									$(document).on('submit', 'form[name="time-table"]', function (e) {
+										e.preventDefault();
+									});
+									$(document).ready(function (e) { $('#timetablButton').click(); });
+
+
+									$("#timetablButton").click(function (e) {
+										var uniqueID = e.target.value;
+										timetablButton(uniqueID);
+										e.preventDefault();
+									});
+
+
+
+									function timetablButton(uniqueID) {
+										$("#timetable-display").html('<div class="text-center" ><li class="fa fa-spinner fa-spin" style="font-size:40px;margin:20px auto auto auto; display: block;"></li><br/><b style="font-size:13px;">please wait...</b></div>');
+										var form = $("#time-table")[0];
+										var formData = new FormData(form);
+										formData.append('time-table', 1);
+										formData.append('searchButton', 'timetablButton');
+										formData.append('pagination_type', '');
+										formData.append('t_display', 'timetable-display');
+										formData.append('uniqueID', uniqueID);
+										$.ajax({
+											url: $("#time-table").attr('action'),
+											data: formData,
+											type: 'POST',
+											contentType: false,
+											processData: false,
+											success: function (d) {
+												$("#timetable-display").html(d);
+											}, error: function (jqKHR, textStatus, errorThrown) {
+												swal({ text: textStatus + ", Try Again!", type: 'warning', icon: 'warning' });
+											}
+										});
+									}
+
+
+
+
+								</script>
+
+
+
+
+
+
+
+
+							</div>
+
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<script type="text/javascript">
+				setTimeout(function () {
+					$.gritter.add({
+						title: 'Welcome back, ADEYI!',
+						text: 'It is really good to have you back, we hope you explore the best Interface with EKITI STATE UNIVERSITY PORTAL',
+						image: '../uploads/45727-1_1_1_1_img_20180719_113004_024.jpg',
+						sticky: true,
+						time: '',
+						class_name: 'my-sticky-class gritter-light',
+
+					});
+				}, 60);
+			</script>
+			<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+			<script>
+
+				var handleVisitorsDonutChart = function () {
+					var visitorDonutChartData = [
+						{ 'label': 'Total Units', 'value': '27', 'color': COLOR_GREEN },
+						{ 'label': 'Used Units ', 'value': '0', 'color': COLOR_INDIGO },
+						{ 'label': 'un-used Units', 'value': '27', 'color': COLOR_ORANGE }
+					];
+					var arcRadius = [
+						{ inner: 0.70, outer: 0.90 },
+						{ inner: 0.65, outer: 0.95 },
+						{ inner: 0.6, outer: 1 }
+					];
+
+					nv.addGraph(function () {
+						var donutChart = nv.models.pieChart()
+							.x(function (d) { return d.label })
+							.y(function (d) { return d.value })
+							.margin({ 'left': 10, 'right': 10, 'top': 10, 'bottom': 10 })
+							.showLegend(false)
+							.donut(true)
+							.growOnHover(false)
+							.arcsRadius(arcRadius)
+							.donutRatio(0.5);
+
+						donutChart.labelFormat(d3.format(',.0f'));
+
+						d3.select('#visitors-donut-chart').append('svg')
+							.datum(visitorDonutChartData)
+							.transition().duration(3000)
+							.call(donutChart);
+
+						return donutChart;
+					});
+				};
+				App.setPageTitle('Portal | Dashboard');
+				App.restartGlobalFunction();
+
+				$.when(
+					$.getScript('../assets_ajax/plugins/d3/d3.min.js'),
+					$.getScript('../assets_ajax/plugins/nvd3/build/nv.d3.min.js'),
+					$.getScript('../assets_ajax/plugins/gritter/js/jquery.gritter.js'),
+					$.getScript('../assets_ajax/plugins/flot/jquery.flot.js'),
+					$.getScript('../assets_ajax/plugins/flot/jquery.flot.time.js'),
+					$.getScript('../assets_ajax/plugins/flot/jquery.flot.resize.js'),
+					$.getScript('../assets_ajax/plugins/flot/jquery.flot.pie.js'),
+					$.getScript('../assets_ajax/plugins/jquery-sparkline/jquery.sparkline.min.js'),
+					$.getScript('../assets_ajax/plugins/jvectormap-next/jquery-jvectormap.min.js'),
+					$.getScript('../assets_ajax/plugins/jvectormap-next/jquery-jvectormap-world-mill.js'),
+					$.getScript('../assets_ajax/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js'),
+
+					$.getScript('../assets_ajax/customise/js/pages/chat-popup.js'),
+					$.getScript('../assets_ajax/customise/js/template.js'),
+
+					$.Deferred(function (deferred) {
+						$(deferred.resolve);
+					})
+				).done(function () {
+					// $.getScript('../assets_ajax/js/demo/dashboard-v2.js'),
+					handleVisitorsDonutChart(),
+						$.Deferred(function (deferred) {
+							$(deferred.resolve);
+						})
+				});
+			</script>
+			<!-- ================== END PAGE LEVEL JS ================== -->
+		</div>
+		<!-- end #content -->
+
+		<!-- begin theme-panel -->
+		<!-- end theme-panel -->
+
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade"
+			data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+
+
+		<div id="notification"></div>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+
+
+
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="{% static 'core/js/app.min.js' %}"></script>
+	<script src="{% static 'core/js/default.min.js' %}"></script>
+
+	<script type="text/javascript" src="{% static 'core/js/sweetalert.min.js' %}"></script>
+	<script src="{% static 'core/js/scripts.js' %}"></script>
+	<script src="{% static 'core/js/toastr.js' %}"></script>
+
+
+	<script src="{% static 'core/js/default.js' %}"></script>
+
+	<!-- <script  src="core/js/toastr.js"></script> -->
+
+	<!-- <script type="text/javascript">
+toastr.options.showEasing=  "swing";
+toastr.options.closeButton = true;
+toastr.options.closeEasing = 'swing';
+toastr.options.positionClass = "toast-bottom-left";
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideLeft';
+toastr.options.progressBar = true;
+</script> -->
+	<!-- ================== END BASE JS ================== -->
+	<script>
+		toastr.options.showEasing = "swing";
+		toastr.options.closeButton = true;
+		toastr.options.closeEasing = 'swing';
+		toastr.options.positionClass = "toast-bottom-right";
+		toastr.options.showMethod = 'slideDown';
+		toastr.options.hideMethod = 'slideUp';
+		toastr.options.closeMethod = 'slideLeft';
+		toastr.options.progressBar = true;
+		toastr.options.timeOut = 3000;
+		App.settings({
+			ajaxMode: true,
+			ajaxDefaultUrl: '#dashboard/dashboard-v1',
+			ajaxType: 'GET',
+			ajaxDataType: 'html'
+		});
+	</script>
+
+
+</body>
+
+</html>

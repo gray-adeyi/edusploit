@@ -1,0 +1,6562 @@
+.note {
+    margin-bottom: 20px;
+    border-left: 3px solid;
+    position: relative;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.note .note-icon {
+    width: 80px;
+    font-size: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.note .note-content {
+    padding: 15px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.note .note-content h1,
+.note .note-content h2,
+.note .note-content h3,
+.note .note-content h4,
+.note .note-content h5,
+.note .note-content h6 {
+    color: inherit
+}
+
+.note.note-with-right-icon {
+    border-left: none;
+    border-right: 3px solid
+}
+
+.note.note-primary {
+    background: #3395ff;
+    color: #003166
+}
+
+.note.note-secondary {
+    border-color: #6c757d;
+    background: #868e96;
+    color: #25282b
+}
+
+.note.note-success {
+    border-color: #4cd964;
+    background: #76e288;
+    color: #197328
+}
+
+.note.note-info {
+    border-color: #5ac8fa;
+    background: #8cd9fc;
+    color: #067fb6
+}
+
+.note.note-warning {
+    border-color: #ff9500;
+    background: #fa3;
+    color: #663c00
+}
+
+.note.note-danger {
+    border-color: #ff3b30;
+    background: #ff6b63;
+    color: #960800
+}
+
+.note.note-light {
+    background: #fff;
+    color: #222
+}
+
+.note.note-dark {
+    border-color: #222;
+    background: #3c3c3c;
+    color: #000
+}
+
+.note.note-inverse {
+    border-color: #222;
+    background: #3c3c3c;
+    color: #000
+}
+
+.note.note-black {
+    border-color: #000;
+    background: #1a1a1a;
+    color: #000
+}
+
+.note.note-white {
+    border-color: #fff;
+    background: #fff;
+    color: #b3b3b3
+}
+
+.note.note-grey {
+    border-color: #eee;
+    background: #fff;
+    color: #a2a2a2
+}
+
+.note.note-muted {
+    border-color: #eee;
+    background: #fff;
+    color: #a2a2a2
+}
+
+.note.note-silver {
+    border-color: #eee;
+    background: #fff;
+    color: #a2a2a2
+}
+
+.note.note-lime {
+    border-color: #bbe244;
+    background: #cbe970;
+    color: #617a13
+}
+
+.note.note-aqua {
+    border-color: #5ac8fa;
+    background: #8cd9fc;
+    color: #067fb6
+}
+
+.note.note-blue {
+    border-color: #007aff;
+    background: #4da2ff
+}
+
+.note.note-indigo {
+    border-color: #5856d6;
+    background: #9594e5
+}
+
+.note.note-purple {
+    border-color: #b503ff;
+    background: #cb50ff
+}
+
+.note.note-pink {
+    border-color: #ff2d55;
+    background: #ff7a93
+}
+
+.note.note-red {
+    border-color: #ff3b30;
+    background: #ff837d
+}
+
+.note.note-orange {
+    border-color: #ff9500;
+    background: #ffb54d
+}
+
+.note.note-yellow {
+    border-color: #fc0;
+    background: #ffdb4d
+}
+
+.note.note-green {
+    border-color: #4cd964;
+    background: #8be69b
+}
+
+.note.note-teal {
+    border-color: #58eaa1;
+    background: #9cf3c7
+}
+
+.note.note-cyan {
+    border-color: #5ac8fa;
+    background: #a4e1fc
+}
+
+.note.note-white {
+    border-color: #fff;
+    background: #fff
+}
+
+.note.note-gray {
+    border-color: #6c757d;
+    background: #939ba2
+}
+
+.note.note-gray-dark {
+    border-color: #343a40;
+    background: #56606a
+}
+
+.note.note-black {
+    border-color: #000;
+    background: #262626
+}
+
+.note.note-dark {
+    border-color: #222;
+    background: #484848
+}
+
+.note.note-dark-darker {
+    border-color: #111;
+    background: #373737
+}
+
+.note.note-lime {
+    border-color: #bbe244;
+    background: #d3ec86
+}
+
+.note.note-light {
+    border-color: #f9f9f9;
+    background: #fff
+}
+
+.note.note-silver {
+    border-color: #eee;
+    background: #fff
+}
+
+.note.note-muted {
+    border-color: #a2a2a2;
+    background: #c8c8c8
+}
+
+.note.note-aqua {
+    border-color: #5ac8fa;
+    background: #a4e1fc
+}
+
+.page-header {
+    font-size: 24px;
+    margin: 0 0 15px;
+    padding: 0;
+    border: none;
+    line-height: 32px;
+    font-weight: 500
+}
+
+
+.m-auto {
+    margin: auto !important
+}
+
+.m-0 {
+    margin: 0 !important
+}
+
+.m-1 {
+    margin: 1px !important
+}
+
+.m-2 {
+    margin: 2px !important
+}
+
+.m-3 {
+    margin: 3px !important
+}
+
+.m-4 {
+    margin: 4px !important
+}
+
+.m-5 {
+    margin: 5px !important
+}
+
+.m-10 {
+    margin: 10px !important
+}
+
+.m-15 {
+    margin: 15px !important
+}
+
+.m-20 {
+    margin: 20px !important
+}
+
+.m-25 {
+    margin: 25px !important
+}
+
+.m-30 {
+    margin: 30px !important
+}
+
+.m-35 {
+    margin: 35px !important
+}
+
+.m-40 {
+    margin: 40px !important
+}
+
+.m-t-auto {
+    margin-top: auto !important
+}
+
+.m-t-0 {
+    margin-top: 0 !important
+}
+
+.m-t-1 {
+    margin-top: 1px !important
+}
+
+.m-t-2 {
+    margin-top: 2px !important
+}
+
+.m-t-3 {
+    margin-top: 3px !important
+}
+
+.m-t-4 {
+    margin-top: 4px !important
+}
+
+.m-t-5 {
+    margin-top: 5px !important
+}
+
+.m-t-10 {
+    margin-top: 10px !important
+}
+
+.m-t-15 {
+    margin-top: 15px !important
+}
+
+.m-t-20 {
+    margin-top: 20px !important
+}
+
+.m-t-25 {
+    margin-top: 25px !important
+}
+
+.m-t-30 {
+    margin-top: 30px !important
+}
+
+.m-t-35 {
+    margin-top: 35px !important
+}
+
+.m-t-40 {
+    margin-top: 40px !important
+}
+
+.m-r-auto {
+    margin-right: auto !important
+}
+
+.m-r-0 {
+    margin-right: 0 !important
+}
+
+.m-r-1 {
+    margin-right: 1px !important
+}
+
+.m-r-2 {
+    margin-right: 2px !important
+}
+
+.m-r-3 {
+    margin-right: 3px !important
+}
+
+.m-r-4 {
+    margin-right: 4px !important
+}
+
+.m-r-5 {
+    margin-right: 5px !important
+}
+
+.m-r-10 {
+    margin-right: 10px !important
+}
+
+.m-r-15 {
+    margin-right: 15px !important
+}
+
+.m-r-20 {
+    margin-right: 20px !important
+}
+
+.m-r-25 {
+    margin-right: 25px !important
+}
+
+.m-r-30 {
+    margin-right: 30px !important
+}
+
+.m-r-35 {
+    margin-right: 35px !important
+}
+
+.m-r-40 {
+    margin-right: 40px !important
+}
+
+.m-b-auto {
+    margin-bottom: auto !important
+}
+
+.m-b-0 {
+    margin-bottom: 0 !important
+}
+
+.m-b-1 {
+    margin-bottom: 1px !important
+}
+
+.m-b-2 {
+    margin-bottom: 2px !important
+}
+
+.m-b-3 {
+    margin-bottom: 3px !important
+}
+
+.m-b-4 {
+    margin-bottom: 4px !important
+}
+
+.m-b-5 {
+    margin-bottom: 5px !important
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important
+}
+
+.m-b-15 {
+    margin-bottom: 15px !important
+}
+
+.m-b-20 {
+    margin-bottom: 20px !important
+}
+
+.m-b-25 {
+    margin-bottom: 25px !important
+}
+
+.m-b-30 {
+    margin-bottom: 30px !important
+}
+
+.m-b-35 {
+    margin-bottom: 35px !important
+}
+
+.m-b-40 {
+    margin-bottom: 40px !important
+}
+
+.m-l-auto {
+    margin-left: auto !important
+}
+
+.m-l-0 {
+    margin-left: 0 !important
+}
+
+.m-l-1 {
+    margin-left: 1px !important
+}
+
+.m-l-2 {
+    margin-left: 2px !important
+}
+
+.m-l-3 {
+    margin-left: 3px !important
+}
+
+.m-l-4 {
+    margin-left: 4px !important
+}
+
+.m-l-5 {
+    margin-left: 5px !important
+}
+
+.m-l-10 {
+    margin-left: 10px !important
+}
+
+.m-l-15 {
+    margin-left: 15px !important
+}
+
+.m-l-20 {
+    margin-left: 20px !important
+}
+
+.m-l-25 {
+    margin-left: 25px !important
+}
+
+.m-l-30 {
+    margin-left: 30px !important
+}
+
+.m-l-35 {
+    margin-left: 35px !important
+}
+
+.m-l-40 {
+    margin-left: 40px !important
+}
+
+.p-auto {
+    padding: auto !important
+}
+
+.p-0 {
+    padding: 0 !important
+}
+
+.p-1 {
+    padding: 1px !important
+}
+
+.p-2 {
+    padding: 2px !important
+}
+
+.p-3 {
+    padding: 3px !important
+}
+
+.p-4 {
+    padding: 4px !important
+}
+
+.p-5 {
+    padding: 5px !important
+}
+
+.p-10 {
+    padding: 10px !important
+}
+
+.p-15 {
+    padding: 15px !important
+}
+
+.p-20 {
+    padding: 20px !important
+}
+
+.p-25 {
+    padding: 25px !important
+}
+
+.p-30 {
+    padding: 30px !important
+}
+
+.p-35 {
+    padding: 35px !important
+}
+
+.p-40 {
+    padding: 40px !important
+}
+
+.p-t-auto {
+    padding-top: auto !important
+}
+
+.p-t-0 {
+    padding-top: 0 !important
+}
+
+.p-t-1 {
+    padding-top: 1px !important
+}
+
+.p-t-2 {
+    padding-top: 2px !important
+}
+
+.p-t-3 {
+    padding-top: 3px !important
+}
+
+.p-t-4 {
+    padding-top: 4px !important
+}
+
+.p-t-5 {
+    padding-top: 5px !important
+}
+
+.p-t-10 {
+    padding-top: 10px !important
+}
+
+.p-t-15 {
+    padding-top: 15px !important
+}
+
+.p-t-20 {
+    padding-top: 20px !important
+}
+
+.p-t-25 {
+    padding-top: 25px !important
+}
+
+.p-t-30 {
+    padding-top: 30px !important
+}
+
+.p-t-35 {
+    padding-top: 35px !important
+}
+
+.p-t-40 {
+    padding-top: 40px !important
+}
+
+
+.p-t-50 {
+    padding-top: 50px !important
+}
+
+.p-t-120 {
+    padding-top: 120px !important
+}
+
+.p-r-auto {
+    padding-right: auto !important
+}
+
+.p-r-0 {
+    padding-right: 0 !important
+}
+
+.p-r-1 {
+    padding-right: 1px !important
+}
+
+.p-r-2 {
+    padding-right: 2px !important
+}
+
+.p-r-3 {
+    padding-right: 3px !important
+}
+
+.p-r-4 {
+    padding-right: 4px !important
+}
+
+.p-r-5 {
+    padding-right: 5px !important
+}
+
+.p-r-10 {
+    padding-right: 10px !important
+}
+
+.p-r-15 {
+    padding-right: 15px !important
+}
+
+.p-r-20 {
+    padding-right: 20px !important
+}
+
+.p-r-25 {
+    padding-right: 25px !important
+}
+
+.p-r-30 {
+    padding-right: 30px !important
+}
+
+.p-r-35 {
+    padding-right: 35px !important
+}
+
+.p-r-40 {
+    padding-right: 40px !important
+}
+
+.p-b-auto {
+    padding-bottom: auto !important
+}
+
+.p-b-0 {
+    padding-bottom: 0 !important
+}
+
+.p-b-1 {
+    padding-bottom: 1px !important
+}
+
+.p-b-2 {
+    padding-bottom: 2px !important
+}
+
+.p-b-3 {
+    padding-bottom: 3px !important
+}
+
+.p-b-4 {
+    padding-bottom: 4px !important
+}
+
+.p-b-5 {
+    padding-bottom: 5px !important
+}
+
+.p-b-10 {
+    padding-bottom: 10px !important
+}
+
+.p-b-15 {
+    padding-bottom: 15px !important
+}
+
+.p-b-20 {
+    padding-bottom: 20px !important
+}
+
+.p-b-25 {
+    padding-bottom: 25px !important
+}
+
+.p-b-30 {
+    padding-bottom: 30px !important
+}
+
+.p-b-35 {
+    padding-bottom: 35px !important
+}
+
+.p-b-40 {
+    padding-bottom: 40px !important
+}
+
+
+.p-b-50 {
+    padding-bottom: 50px !important
+}
+
+.p-b-60 {
+    padding-bottom: 60px !important
+}
+
+.p-l-auto {
+    padding-left: auto !important
+}
+
+.p-l-0 {
+    padding-left: 0 !important
+}
+
+.p-l-1 {
+    padding-left: 1px !important
+}
+
+.p-l-2 {
+    padding-left: 2px !important
+}
+
+.p-l-3 {
+    padding-left: 3px !important
+}
+
+.p-l-4 {
+    padding-left: 4px !important
+}
+
+.p-l-5 {
+    padding-left: 5px !important
+}
+
+.p-l-10 {
+    padding-left: 10px !important
+}
+
+.p-l-15 {
+    padding-left: 15px !important
+}
+
+.p-l-20 {
+    padding-left: 20px !important
+}
+
+.p-l-25 {
+    padding-left: 25px !important
+}
+
+.p-l-30 {
+    padding-left: 30px !important
+}
+
+.p-l-35 {
+    padding-left: 35px !important
+}
+
+.p-l-40 {
+    padding-left: 40px !important
+}
+
+.f-s-8 {
+    font-size: 8px !important
+}
+
+.f-s-9 {
+    font-size: 9px !important
+}
+
+.f-s-10 {
+    font-size: 10px !important
+}
+
+.f-s-11 {
+    font-size: 11px !important
+}
+
+.f-s-12 {
+    font-size: 12px !important
+}
+
+.f-s-13 {
+    font-size: 13px !important
+}
+
+.f-s-14 {
+    font-size: 14px !important
+}
+
+.f-s-15 {
+    font-size: 15px !important
+}
+
+.f-s-16 {
+    font-size: 16px !important
+}
+
+.f-s-17 {
+    font-size: 17px !important
+}
+
+.f-s-18 {
+    font-size: 18px !important
+}
+
+.f-s-19 {
+    font-size: 19px !important
+}
+
+.f-s-20 {
+    font-size: 20px !important
+}
+
+.f-s-21 {
+    font-size: 21px !important
+}
+
+.f-s-22 {
+    font-size: 22px !important
+}
+
+.f-s-23 {
+    font-size: 23px !important
+}
+
+.f-s-24 {
+    font-size: 24px !important
+}
+
+.f-s-25 {
+    font-size: 25px !important
+}
+
+.f-s-26 {
+    font-size: 26px !important
+}
+
+.f-s-27 {
+    font-size: 27px !important
+}
+
+.f-s-28 {
+    font-size: 28px !important
+}
+
+.f-s-29 {
+    font-size: 29px !important
+}
+
+.f-s-30 {
+    font-size: 30px !important
+}
+
+.f-s-31 {
+    font-size: 31px !important
+}
+
+.f-s-32 {
+    font-size: 32px !important
+}
+
+.f-s-33 {
+    font-size: 33px !important
+}
+
+.f-s-34 {
+    font-size: 34px !important
+}
+
+.f-s-35 {
+    font-size: 35px !important
+}
+
+.f-s-36 {
+    font-size: 36px !important
+}
+
+.f-s-37 {
+    font-size: 37px !important
+}
+
+.f-s-38 {
+    font-size: 38px !important
+}
+
+.f-s-39 {
+    font-size: 39px !important
+}
+
+.f-s-40 {
+    font-size: 40px !important
+}
+
+.f-s-41 {
+    font-size: 41px !important
+}
+
+.f-s-42 {
+    font-size: 42px !important
+}
+
+.f-s-43 {
+    font-size: 43px !important
+}
+
+.f-s-44 {
+    font-size: 44px !important
+}
+
+.f-s-45 {
+    font-size: 45px !important
+}
+
+.f-s-46 {
+    font-size: 46px !important
+}
+
+.f-s-47 {
+    font-size: 47px !important
+}
+
+.f-s-48 {
+    font-size: 48px !important
+}
+
+.f-s-49 {
+    font-size: 49px !important
+}
+
+.f-s-50 {
+    font-size: 50px !important
+}
+
+.f-s-51 {
+    font-size: 51px !important
+}
+
+.f-s-52 {
+    font-size: 52px !important
+}
+
+.f-s-53 {
+    font-size: 53px !important
+}
+
+.f-s-54 {
+    font-size: 54px !important
+}
+
+.f-s-55 {
+    font-size: 55px !important
+}
+
+.f-s-56 {
+    font-size: 56px !important
+}
+
+.f-s-57 {
+    font-size: 57px !important
+}
+
+.f-s-58 {
+    font-size: 58px !important
+}
+
+.f-s-59 {
+    font-size: 59px !important
+}
+
+.f-s-60 {
+    font-size: 60px !important
+}
+
+.f-s-61 {
+    font-size: 61px !important
+}
+
+.f-s-62 {
+    font-size: 62px !important
+}
+
+.f-s-63 {
+    font-size: 63px !important
+}
+
+.f-s-64 {
+    font-size: 64px !important
+}
+
+.f-s-65 {
+    font-size: 65px !important
+}
+
+.f-s-66 {
+    font-size: 66px !important
+}
+
+.f-s-67 {
+    font-size: 67px !important
+}
+
+.f-s-68 {
+    font-size: 68px !important
+}
+
+.f-s-69 {
+    font-size: 69px !important
+}
+
+.f-s-70 {
+    font-size: 70px !important
+}
+
+.f-s-71 {
+    font-size: 71px !important
+}
+
+.f-s-72 {
+    font-size: 72px !important
+}
+
+.f-s-73 {
+    font-size: 73px !important
+}
+
+.f-s-74 {
+    font-size: 74px !important
+}
+
+.f-s-75 {
+    font-size: 75px !important
+}
+
+.f-s-76 {
+    font-size: 76px !important
+}
+
+.f-s-77 {
+    font-size: 77px !important
+}
+
+.f-s-78 {
+    font-size: 78px !important
+}
+
+.f-s-79 {
+    font-size: 79px !important
+}
+
+.f-s-80 {
+    font-size: 80px !important
+}
+
+.f-w-100 {
+    font-weight: 100 !important
+}
+
+.f-w-200 {
+    font-weight: 200 !important
+}
+
+.f-w-300 {
+    font-weight: 300 !important
+}
+
+.f-w-400 {
+    font-weight: 400 !important
+}
+
+.f-w-500 {
+    font-weight: 500 !important
+}
+
+.f-w-600 {
+    font-weight: 600 !important
+}
+
+.f-w-700 {
+    font-weight: 700 !important
+}
+
+.f-w-800 {
+    font-weight: 800 !important
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.text-left {
+    text-align: left !important
+}
+
+.text-right {
+    text-align: right !important
+}
+
+.text-nowrap {
+    white-space: nowrap !important
+}
+
+.text-ellipsis {
+    white-space: nowrap !important;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.text-underline {
+    text-decoration: underline !important
+}
+
+.text-gradient {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important
+}
+
+.line-height-1 {
+    line-height: 1 !important
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through !important
+}
+
+.row.row-col-border>[class^=col-]+[class^=col-] {
+    border-left: 1px solid #c8c8c8
+}
+
+.pull-left {
+    float: left !important
+}
+
+.pull-right {
+    float: right !important
+}
+
+.pull-none {
+    float: none !important
+}
+
+.rounded-corner {
+    border-radius: 100px !important
+}
+
+.table-td-valign-middle td,
+.table-th-valign-middle th,
+.table-valign-middle td,
+.table-valign-middle th {
+    vertical-align: middle !important
+}
+
+.table-td-valign-top td,
+.table-th-valign-top th,
+.table-valign-top td,
+.table-valign-top th {
+    vertical-align: top !important
+}
+
+.table-td-valign-bottom td,
+.table-th-valign-bottom th,
+.table-valign-bottom td,
+.table-valign-bottom th {
+    vertical-align: bottom !important
+}
+
+.table-th-without-border th {
+    border-left: none !important;
+    border-right: none !important
+}
+
+.table-td-without-border td {
+    border: none !important
+}
+
+.table-td-bg-animate {
+    -webkit-transition: background .3s linear;
+    -moz-transition: background .3s linear;
+    -ms-transition: background .3s linear;
+    -o-transition: background .3s linear;
+    transition: background .3s linear
+}
+
+.valign-middle {
+    vertical-align: middle !important
+}
+
+.valign-top {
+    vertical-align: top !important
+}
+
+.valign-bottom {
+    vertical-align: bottom !important
+}
+
+.valign-middle-container {
+    display: table;
+    height: 100%;
+    width: 100%
+}
+
+.valign-middle-inner-container {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.width-full {
+    width: 100%
+}
+
+.width-0 {
+    width: 0 !important
+}
+
+.width-50 {
+    width: 50 !important
+}
+
+.width-100 {
+    width: 100 !important
+}
+
+.width-150 {
+    width: 150 !important
+}
+
+.width-200 {
+    width: 200 !important
+}
+
+.width-250 {
+    width: 250 !important
+}
+
+.width-300 {
+    width: 300 !important
+}
+
+.width-350 {
+    width: 350 !important
+}
+
+.width-400 {
+    width: 400 !important
+}
+
+.width-450 {
+    width: 450 !important
+}
+
+.width-500 {
+    width: 500 !important
+}
+
+.width-550 {
+    width: 550 !important
+}
+
+.width-600 {
+    width: 600 !important
+}
+
+.height-full {
+    height: 100%
+}
+
+.height-0 {
+    height: 0 !important
+}
+
+.height-50 {
+    height: 50 !important
+}
+
+.height-100 {
+    height: 100 !important
+}
+
+.height-150 {
+    height: 150 !important
+}
+
+.height-200 {
+    height: 200 !important
+}
+
+.height-250 {
+    height: 250 !important
+}
+
+.height-300 {
+    height: 300 !important
+}
+
+.height-350 {
+    height: 350 !important
+}
+
+.height-400 {
+    height: 400 !important
+}
+
+.height-450 {
+    height: 450 !important
+}
+
+.height-500 {
+    height: 500 !important
+}
+
+.height-550 {
+    height: 550 !important
+}
+
+.height-600 {
+    height: 600 !important
+}
+
+.loading {
+    cursor: progress
+}
+
+.bg-theme {
+    background-color: #007aff !important
+}
+
+.label-theme {
+    background-color: #007aff
+}
+
+.text-theme {
+    color: #007aff
+}
+
+.text-primary {
+    color: #007aff !important
+}
+
+.text-primary-lighter {
+    color: #409bff !important
+}
+
+.text-primary-darker {
+    color: #005cbf !important
+}
+
+.bg-primary {
+    background-color: #007aff !important
+}
+
+.bg-primary-lighter {
+    background-color: #409bff !important
+}
+
+.bg-primary-darker {
+    background-color: #005cbf !important
+}
+
+.bg-gradient-primary {
+    background: #007aff !important;
+    background: -moz-linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important;
+    background: linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important
+}
+
+.app-theme-primary .app-sidebar .nav>li.active>a {
+    background-color: #007aff !important
+}
+
+.bg-primary-transparent-1 {
+    background-color: rgba(0, 122, 255, .1) !important
+}
+
+.text-primary-transparent-1 {
+    color: rgba(0, 122, 255, .1) !important
+}
+
+.bg-primary-transparent-2 {
+    background-color: rgba(0, 122, 255, .2) !important
+}
+
+.text-primary-transparent-2 {
+    color: rgba(0, 122, 255, .2) !important
+}
+
+.bg-primary-transparent-3 {
+    background-color: rgba(0, 122, 255, .3) !important
+}
+
+.text-primary-transparent-3 {
+    color: rgba(0, 122, 255, .3) !important
+}
+
+.bg-primary-transparent-4 {
+    background-color: rgba(0, 122, 255, .4) !important
+}
+
+.text-primary-transparent-4 {
+    color: rgba(0, 122, 255, .4) !important
+}
+
+.bg-primary-transparent-5 {
+    background-color: rgba(0, 122, 255, .5) !important
+}
+
+.text-primary-transparent-5 {
+    color: rgba(0, 122, 255, .5) !important
+}
+
+.bg-primary-transparent-6 {
+    background-color: rgba(0, 122, 255, .6) !important
+}
+
+.text-primary-transparent-6 {
+    color: rgba(0, 122, 255, .6) !important
+}
+
+.bg-primary-transparent-7 {
+    background-color: rgba(0, 122, 255, .7) !important
+}
+
+.text-primary-transparent-7 {
+    color: rgba(0, 122, 255, .7) !important
+}
+
+.bg-primary-transparent-8 {
+    background-color: rgba(0, 122, 255, .8) !important
+}
+
+.text-primary-transparent-8 {
+    color: rgba(0, 122, 255, .8) !important
+}
+
+.bg-primary-transparent-9 {
+    background-color: rgba(0, 122, 255, .9) !important
+}
+
+.text-primary-transparent-9 {
+    color: rgba(0, 122, 255, .9) !important
+}
+
+.text-secondary {
+    color: #6c757d !important
+}
+
+.text-secondary-lighter {
+    color: #91989e !important
+}
+
+.text-secondary-darker {
+    color: #51585e !important
+}
+
+.bg-secondary {
+    background-color: #6c757d !important
+}
+
+.bg-secondary-lighter {
+    background-color: #91989e !important
+}
+
+.bg-secondary-darker {
+    background-color: #51585e !important
+}
+
+.bg-gradient-secondary {
+    background: #6c757d !important;
+    background: -moz-linear-gradient(to bottom, #868e96 0, #60686f 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #868e96 0, #60686f 100%) !important;
+    background: linear-gradient(to bottom, #868e96 0, #60686f 100%) !important
+}
+
+.app-theme-secondary .app-sidebar .nav>li.active>a {
+    background-color: #6c757d !important
+}
+
+.bg-secondary-transparent-1 {
+    background-color: rgba(108, 117, 125, .1) !important
+}
+
+.text-secondary-transparent-1 {
+    color: rgba(108, 117, 125, .1) !important
+}
+
+.bg-secondary-transparent-2 {
+    background-color: rgba(108, 117, 125, .2) !important
+}
+
+.text-secondary-transparent-2 {
+    color: rgba(108, 117, 125, .2) !important
+}
+
+.bg-secondary-transparent-3 {
+    background-color: rgba(108, 117, 125, .3) !important
+}
+
+.text-secondary-transparent-3 {
+    color: rgba(108, 117, 125, .3) !important
+}
+
+.bg-secondary-transparent-4 {
+    background-color: rgba(108, 117, 125, .4) !important
+}
+
+.text-secondary-transparent-4 {
+    color: rgba(108, 117, 125, .4) !important
+}
+
+.bg-secondary-transparent-5 {
+    background-color: rgba(108, 117, 125, .5) !important
+}
+
+.text-secondary-transparent-5 {
+    color: rgba(108, 117, 125, .5) !important
+}
+
+.bg-secondary-transparent-6 {
+    background-color: rgba(108, 117, 125, .6) !important
+}
+
+.text-secondary-transparent-6 {
+    color: rgba(108, 117, 125, .6) !important
+}
+
+.bg-secondary-transparent-7 {
+    background-color: rgba(108, 117, 125, .7) !important
+}
+
+.text-secondary-transparent-7 {
+    color: rgba(108, 117, 125, .7) !important
+}
+
+.bg-secondary-transparent-8 {
+    background-color: rgba(108, 117, 125, .8) !important
+}
+
+.text-secondary-transparent-8 {
+    color: rgba(108, 117, 125, .8) !important
+}
+
+.bg-secondary-transparent-9 {
+    background-color: rgba(108, 117, 125, .9) !important
+}
+
+.text-secondary-transparent-9 {
+    color: rgba(108, 117, 125, .9) !important
+}
+
+.text-success {
+    color: #4cd964 !important
+}
+
+.text-success-lighter {
+    color: #79e38b !important
+}
+
+.text-success-darker {
+    color: #39a34b !important
+}
+
+.bg-success {
+    background-color: #4cd964 !important
+}
+
+.bg-success-lighter {
+    background-color: #79e38b !important
+}
+
+.bg-success-darker {
+    background-color: #39a34b !important
+}
+
+.bg-gradient-success {
+    background: #4cd964 !important;
+    background: -moz-linear-gradient(to bottom, #76e288 0, #37d552 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #76e288 0, #37d552 100%) !important;
+    background: linear-gradient(to bottom, #76e288 0, #37d552 100%) !important
+}
+
+.app-theme-success .app-sidebar .nav>li.active>a {
+    background-color: #4cd964 !important
+}
+
+.bg-success-transparent-1 {
+    background-color: rgba(76, 217, 100, .1) !important
+}
+
+.text-success-transparent-1 {
+    color: rgba(76, 217, 100, .1) !important
+}
+
+.bg-success-transparent-2 {
+    background-color: rgba(76, 217, 100, .2) !important
+}
+
+.text-success-transparent-2 {
+    color: rgba(76, 217, 100, .2) !important
+}
+
+.bg-success-transparent-3 {
+    background-color: rgba(76, 217, 100, .3) !important
+}
+
+.text-success-transparent-3 {
+    color: rgba(76, 217, 100, .3) !important
+}
+
+.bg-success-transparent-4 {
+    background-color: rgba(76, 217, 100, .4) !important
+}
+
+.text-success-transparent-4 {
+    color: rgba(76, 217, 100, .4) !important
+}
+
+.bg-success-transparent-5 {
+    background-color: rgba(76, 217, 100, .5) !important
+}
+
+.text-success-transparent-5 {
+    color: rgba(76, 217, 100, .5) !important
+}
+
+.bg-success-transparent-6 {
+    background-color: rgba(76, 217, 100, .6) !important
+}
+
+.text-success-transparent-6 {
+    color: rgba(76, 217, 100, .6) !important
+}
+
+.bg-success-transparent-7 {
+    background-color: rgba(76, 217, 100, .7) !important
+}
+
+.text-success-transparent-7 {
+    color: rgba(76, 217, 100, .7) !important
+}
+
+.bg-success-transparent-8 {
+    background-color: rgba(76, 217, 100, .8) !important
+}
+
+.text-success-transparent-8 {
+    color: rgba(76, 217, 100, .8) !important
+}
+
+.bg-success-transparent-9 {
+    background-color: rgba(76, 217, 100, .9) !important
+}
+
+.text-success-transparent-9 {
+    color: rgba(76, 217, 100, .9) !important
+}
+
+.text-info {
+    color: #5ac8fa !important
+}
+
+.text-info-lighter {
+    color: #83d6fb !important
+}
+
+.text-info-darker {
+    color: #4496bc !important
+}
+
+.bg-info {
+    background-color: #5ac8fa !important
+}
+
+.bg-info-lighter {
+    background-color: #83d6fb !important
+}
+
+.bg-info-darker {
+    background-color: #4496bc !important
+}
+
+.bg-gradient-info {
+    background: #5ac8fa !important;
+    background: -moz-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important
+}
+
+.app-theme-info .app-sidebar .nav>li.active>a {
+    background-color: #5ac8fa !important
+}
+
+.bg-info-transparent-1 {
+    background-color: rgba(90, 200, 250, .1) !important
+}
+
+.text-info-transparent-1 {
+    color: rgba(90, 200, 250, .1) !important
+}
+
+.bg-info-transparent-2 {
+    background-color: rgba(90, 200, 250, .2) !important
+}
+
+.text-info-transparent-2 {
+    color: rgba(90, 200, 250, .2) !important
+}
+
+.bg-info-transparent-3 {
+    background-color: rgba(90, 200, 250, .3) !important
+}
+
+.text-info-transparent-3 {
+    color: rgba(90, 200, 250, .3) !important
+}
+
+.bg-info-transparent-4 {
+    background-color: rgba(90, 200, 250, .4) !important
+}
+
+.text-info-transparent-4 {
+    color: rgba(90, 200, 250, .4) !important
+}
+
+.bg-info-transparent-5 {
+    background-color: rgba(90, 200, 250, .5) !important
+}
+
+.text-info-transparent-5 {
+    color: rgba(90, 200, 250, .5) !important
+}
+
+.bg-info-transparent-6 {
+    background-color: rgba(90, 200, 250, .6) !important
+}
+
+.text-info-transparent-6 {
+    color: rgba(90, 200, 250, .6) !important
+}
+
+.bg-info-transparent-7 {
+    background-color: rgba(90, 200, 250, .7) !important
+}
+
+.text-info-transparent-7 {
+    color: rgba(90, 200, 250, .7) !important
+}
+
+.bg-info-transparent-8 {
+    background-color: rgba(90, 200, 250, .8) !important
+}
+
+.text-info-transparent-8 {
+    color: rgba(90, 200, 250, .8) !important
+}
+
+.bg-info-transparent-9 {
+    background-color: rgba(90, 200, 250, .9) !important
+}
+
+.text-info-transparent-9 {
+    color: rgba(90, 200, 250, .9) !important
+}
+
+.text-warning {
+    color: #ff9500 !important
+}
+
+.text-warning-lighter {
+    color: #ffb040 !important
+}
+
+.text-warning-darker {
+    color: #bf7000 !important
+}
+
+.bg-warning {
+    background-color: #ff9500 !important
+}
+
+.bg-warning-lighter {
+    background-color: #ffb040 !important
+}
+
+.bg-warning-darker {
+    background-color: #bf7000 !important
+}
+
+.bg-gradient-warning {
+    background: #ff9500 !important;
+    background: -moz-linear-gradient(to bottom, #fa3 0, #e68600 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fa3 0, #e68600 100%) !important;
+    background: linear-gradient(to bottom, #fa3 0, #e68600 100%) !important
+}
+
+.app-theme-warning .app-sidebar .nav>li.active>a {
+    background-color: #ff9500 !important
+}
+
+.bg-warning-transparent-1 {
+    background-color: rgba(255, 149, 0, .1) !important
+}
+
+.text-warning-transparent-1 {
+    color: rgba(255, 149, 0, .1) !important
+}
+
+.bg-warning-transparent-2 {
+    background-color: rgba(255, 149, 0, .2) !important
+}
+
+.text-warning-transparent-2 {
+    color: rgba(255, 149, 0, .2) !important
+}
+
+.bg-warning-transparent-3 {
+    background-color: rgba(255, 149, 0, .3) !important
+}
+
+.text-warning-transparent-3 {
+    color: rgba(255, 149, 0, .3) !important
+}
+
+.bg-warning-transparent-4 {
+    background-color: rgba(255, 149, 0, .4) !important
+}
+
+.text-warning-transparent-4 {
+    color: rgba(255, 149, 0, .4) !important
+}
+
+.bg-warning-transparent-5 {
+    background-color: rgba(255, 149, 0, .5) !important
+}
+
+.text-warning-transparent-5 {
+    color: rgba(255, 149, 0, .5) !important
+}
+
+.bg-warning-transparent-6 {
+    background-color: rgba(255, 149, 0, .6) !important
+}
+
+.text-warning-transparent-6 {
+    color: rgba(255, 149, 0, .6) !important
+}
+
+.bg-warning-transparent-7 {
+    background-color: rgba(255, 149, 0, .7) !important
+}
+
+.text-warning-transparent-7 {
+    color: rgba(255, 149, 0, .7) !important
+}
+
+.bg-warning-transparent-8 {
+    background-color: rgba(255, 149, 0, .8) !important
+}
+
+.text-warning-transparent-8 {
+    color: rgba(255, 149, 0, .8) !important
+}
+
+.bg-warning-transparent-9 {
+    background-color: rgba(255, 149, 0, .9) !important
+}
+
+.text-warning-transparent-9 {
+    color: rgba(255, 149, 0, .9) !important
+}
+
+.text-danger {
+    color: #ff3b30 !important
+}
+
+.text-danger-lighter {
+    color: #ff6c64 !important
+}
+
+.text-danger-darker {
+    color: #bf2c24 !important
+}
+
+.bg-danger {
+    background-color: #ff3b30 !important
+}
+
+.bg-danger-lighter {
+    background-color: #ff6c64 !important
+}
+
+.bg-danger-darker {
+    background-color: #bf2c24 !important
+}
+
+.bg-gradient-danger {
+    background: #ff3b30 !important;
+    background: -moz-linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important;
+    background: linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important
+}
+
+.app-theme-danger .app-sidebar .nav>li.active>a {
+    background-color: #ff3b30 !important
+}
+
+.bg-danger-transparent-1 {
+    background-color: rgba(255, 59, 48, .1) !important
+}
+
+.text-danger-transparent-1 {
+    color: rgba(255, 59, 48, .1) !important
+}
+
+.bg-danger-transparent-2 {
+    background-color: rgba(255, 59, 48, .2) !important
+}
+
+.text-danger-transparent-2 {
+    color: rgba(255, 59, 48, .2) !important
+}
+
+.bg-danger-transparent-3 {
+    background-color: rgba(255, 59, 48, .3) !important
+}
+
+.text-danger-transparent-3 {
+    color: rgba(255, 59, 48, .3) !important
+}
+
+.bg-danger-transparent-4 {
+    background-color: rgba(255, 59, 48, .4) !important
+}
+
+.text-danger-transparent-4 {
+    color: rgba(255, 59, 48, .4) !important
+}
+
+.bg-danger-transparent-5 {
+    background-color: rgba(255, 59, 48, .5) !important
+}
+
+.text-danger-transparent-5 {
+    color: rgba(255, 59, 48, .5) !important
+}
+
+.bg-danger-transparent-6 {
+    background-color: rgba(255, 59, 48, .6) !important
+}
+
+.text-danger-transparent-6 {
+    color: rgba(255, 59, 48, .6) !important
+}
+
+.bg-danger-transparent-7 {
+    background-color: rgba(255, 59, 48, .7) !important
+}
+
+.text-danger-transparent-7 {
+    color: rgba(255, 59, 48, .7) !important
+}
+
+.bg-danger-transparent-8 {
+    background-color: rgba(255, 59, 48, .8) !important
+}
+
+.text-danger-transparent-8 {
+    color: rgba(255, 59, 48, .8) !important
+}
+
+.bg-danger-transparent-9 {
+    background-color: rgba(255, 59, 48, .9) !important
+}
+
+.text-danger-transparent-9 {
+    color: rgba(255, 59, 48, .9) !important
+}
+
+.text-light {
+    color: #f9f9f9 !important
+}
+
+.text-light-lighter {
+    color: #fbfbfb !important
+}
+
+.text-light-darker {
+    color: #bbb !important
+}
+
+.bg-light {
+    background-color: #f9f9f9 !important
+}
+
+.bg-light-lighter {
+    background-color: #fbfbfb !important
+}
+
+.bg-light-darker {
+    background-color: #bbb !important
+}
+
+.bg-gradient-light {
+    background: #f9f9f9 !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #ececec 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #ececec 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #ececec 100%) !important
+}
+
+.app-theme-light .app-sidebar .nav>li.active>a {
+    background-color: #f9f9f9 !important
+}
+
+.bg-light-transparent-1 {
+    background-color: rgba(249, 249, 249, .1) !important
+}
+
+.text-light-transparent-1 {
+    color: rgba(249, 249, 249, .1) !important
+}
+
+.bg-light-transparent-2 {
+    background-color: rgba(249, 249, 249, .2) !important
+}
+
+.text-light-transparent-2 {
+    color: rgba(249, 249, 249, .2) !important
+}
+
+.bg-light-transparent-3 {
+    background-color: rgba(249, 249, 249, .3) !important
+}
+
+.text-light-transparent-3 {
+    color: rgba(249, 249, 249, .3) !important
+}
+
+.bg-light-transparent-4 {
+    background-color: rgba(249, 249, 249, .4) !important
+}
+
+.text-light-transparent-4 {
+    color: rgba(249, 249, 249, .4) !important
+}
+
+.bg-light-transparent-5 {
+    background-color: rgba(249, 249, 249, .5) !important
+}
+
+.text-light-transparent-5 {
+    color: rgba(249, 249, 249, .5) !important
+}
+
+.bg-light-transparent-6 {
+    background-color: rgba(249, 249, 249, .6) !important
+}
+
+.text-light-transparent-6 {
+    color: rgba(249, 249, 249, .6) !important
+}
+
+.bg-light-transparent-7 {
+    background-color: rgba(249, 249, 249, .7) !important
+}
+
+.text-light-transparent-7 {
+    color: rgba(249, 249, 249, .7) !important
+}
+
+.bg-light-transparent-8 {
+    background-color: rgba(249, 249, 249, .8) !important
+}
+
+.text-light-transparent-8 {
+    color: rgba(249, 249, 249, .8) !important
+}
+
+.bg-light-transparent-9 {
+    background-color: rgba(249, 249, 249, .9) !important
+}
+
+.text-light-transparent-9 {
+    color: rgba(249, 249, 249, .9) !important
+}
+
+.text-dark {
+    color: #222 !important
+}
+
+.text-dark-lighter {
+    color: #595959 !important
+}
+
+.text-dark-darker {
+    color: #1a1a1a !important
+}
+
+.bg-dark {
+    background-color: #222 !important
+}
+
+.bg-dark-lighter {
+    background-color: #595959 !important
+}
+
+.bg-dark-darker {
+    background-color: #1a1a1a !important
+}
+
+.bg-gradient-dark {
+    background: #222 !important;
+    background: -moz-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important
+}
+
+.app-theme-dark .app-sidebar .nav>li.active>a {
+    background-color: #222 !important
+}
+
+.bg-dark-transparent-1 {
+    background-color: rgba(34, 34, 34, .1) !important
+}
+
+.text-dark-transparent-1 {
+    color: rgba(34, 34, 34, .1) !important
+}
+
+.bg-dark-transparent-2 {
+    background-color: rgba(34, 34, 34, .2) !important
+}
+
+.text-dark-transparent-2 {
+    color: rgba(34, 34, 34, .2) !important
+}
+
+.bg-dark-transparent-3 {
+    background-color: rgba(34, 34, 34, .3) !important
+}
+
+.text-dark-transparent-3 {
+    color: rgba(34, 34, 34, .3) !important
+}
+
+.bg-dark-transparent-4 {
+    background-color: rgba(34, 34, 34, .4) !important
+}
+
+.text-dark-transparent-4 {
+    color: rgba(34, 34, 34, .4) !important
+}
+
+.bg-dark-transparent-5 {
+    background-color: rgba(34, 34, 34, .5) !important
+}
+
+.text-dark-transparent-5 {
+    color: rgba(34, 34, 34, .5) !important
+}
+
+.bg-dark-transparent-6 {
+    background-color: rgba(34, 34, 34, .6) !important
+}
+
+.text-dark-transparent-6 {
+    color: rgba(34, 34, 34, .6) !important
+}
+
+.bg-dark-transparent-7 {
+    background-color: rgba(34, 34, 34, .7) !important
+}
+
+.text-dark-transparent-7 {
+    color: rgba(34, 34, 34, .7) !important
+}
+
+.bg-dark-transparent-8 {
+    background-color: rgba(34, 34, 34, .8) !important
+}
+
+.text-dark-transparent-8 {
+    color: rgba(34, 34, 34, .8) !important
+}
+
+.bg-dark-transparent-9 {
+    background-color: rgba(34, 34, 34, .9) !important
+}
+
+.text-dark-transparent-9 {
+    color: rgba(34, 34, 34, .9) !important
+}
+
+.text-inverse {
+    color: #222 !important
+}
+
+.text-inverse-lighter {
+    color: #595959 !important
+}
+
+.text-inverse-darker {
+    color: #1a1a1a !important
+}
+
+.bg-inverse {
+    background-color: #222 !important
+}
+
+.bg-inverse-lighter {
+    background-color: #595959 !important
+}
+
+.bg-inverse-darker {
+    background-color: #1a1a1a !important
+}
+
+.bg-gradient-inverse {
+    background: #222 !important;
+    background: -moz-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important
+}
+
+.app-theme-inverse .app-sidebar .nav>li.active>a {
+    background-color: #222 !important
+}
+
+.bg-inverse-transparent-1 {
+    background-color: rgba(34, 34, 34, .1) !important
+}
+
+.text-inverse-transparent-1 {
+    color: rgba(34, 34, 34, .1) !important
+}
+
+.bg-inverse-transparent-2 {
+    background-color: rgba(34, 34, 34, .2) !important
+}
+
+.text-inverse-transparent-2 {
+    color: rgba(34, 34, 34, .2) !important
+}
+
+.bg-inverse-transparent-3 {
+    background-color: rgba(34, 34, 34, .3) !important
+}
+
+.text-inverse-transparent-3 {
+    color: rgba(34, 34, 34, .3) !important
+}
+
+.bg-inverse-transparent-4 {
+    background-color: rgba(34, 34, 34, .4) !important
+}
+
+.text-inverse-transparent-4 {
+    color: rgba(34, 34, 34, .4) !important
+}
+
+.bg-inverse-transparent-5 {
+    background-color: rgba(34, 34, 34, .5) !important
+}
+
+.text-inverse-transparent-5 {
+    color: rgba(34, 34, 34, .5) !important
+}
+
+.bg-inverse-transparent-6 {
+    background-color: rgba(34, 34, 34, .6) !important
+}
+
+.text-inverse-transparent-6 {
+    color: rgba(34, 34, 34, .6) !important
+}
+
+.bg-inverse-transparent-7 {
+    background-color: rgba(34, 34, 34, .7) !important
+}
+
+.text-inverse-transparent-7 {
+    color: rgba(34, 34, 34, .7) !important
+}
+
+.bg-inverse-transparent-8 {
+    background-color: rgba(34, 34, 34, .8) !important
+}
+
+.text-inverse-transparent-8 {
+    color: rgba(34, 34, 34, .8) !important
+}
+
+.bg-inverse-transparent-9 {
+    background-color: rgba(34, 34, 34, .9) !important
+}
+
+.text-inverse-transparent-9 {
+    color: rgba(34, 34, 34, .9) !important
+}
+
+.text-black {
+    color: #000 !important
+}
+
+.text-black-lighter {
+    color: #404040 !important
+}
+
+.text-black-darker {
+    color: #000 !important
+}
+
+.bg-black {
+    background-color: #000 !important
+}
+
+.bg-black-lighter {
+    background-color: #404040 !important
+}
+
+.bg-black-darker {
+    background-color: #000 !important
+}
+
+.bg-gradient-black {
+    background: #000 !important;
+    background: -moz-linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important;
+    background: linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important
+}
+
+.app-theme-black .app-sidebar .nav>li.active>a {
+    background-color: #000 !important
+}
+
+.bg-black-transparent-1 {
+    background-color: rgba(0, 0, 0, .1) !important
+}
+
+.text-black-transparent-1 {
+    color: rgba(0, 0, 0, .1) !important
+}
+
+.bg-black-transparent-2 {
+    background-color: rgba(0, 0, 0, .2) !important
+}
+
+.text-black-transparent-2 {
+    color: rgba(0, 0, 0, .2) !important
+}
+
+.bg-black-transparent-3 {
+    background-color: rgba(0, 0, 0, .3) !important
+}
+
+.text-black-transparent-3 {
+    color: rgba(0, 0, 0, .3) !important
+}
+
+.bg-black-transparent-4 {
+    background-color: rgba(0, 0, 0, .4) !important
+}
+
+.text-black-transparent-4 {
+    color: rgba(0, 0, 0, .4) !important
+}
+
+.bg-black-transparent-5 {
+    background-color: rgba(0, 0, 0, .5) !important
+}
+
+.text-black-transparent-5 {
+    color: rgba(0, 0, 0, .5) !important
+}
+
+.bg-black-transparent-6 {
+    background-color: rgba(0, 0, 0, .6) !important
+}
+
+.text-black-transparent-6 {
+    color: rgba(0, 0, 0, .6) !important
+}
+
+.bg-black-transparent-7 {
+    background-color: rgba(0, 0, 0, .7) !important
+}
+
+.text-black-transparent-7 {
+    color: rgba(0, 0, 0, .7) !important
+}
+
+.bg-black-transparent-8 {
+    background-color: rgba(0, 0, 0, .8) !important
+}
+
+.text-black-transparent-8 {
+    color: rgba(0, 0, 0, .8) !important
+}
+
+.bg-black-transparent-9 {
+    background-color: rgba(0, 0, 0, .9) !important
+}
+
+.text-black-transparent-9 {
+    color: rgba(0, 0, 0, .9) !important
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.text-white-lighter {
+    color: #fff !important
+}
+
+.text-white-darker {
+    color: #bfbfbf !important
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+.bg-white-lighter {
+    background-color: #fff !important
+}
+
+.bg-white-darker {
+    background-color: #bfbfbf !important
+}
+
+.bg-gradient-white {
+    background: #fff !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important
+}
+
+.app-theme-white .app-sidebar .nav>li.active>a {
+    background-color: #fff !important
+}
+
+.bg-white-transparent-1 {
+    background-color: rgba(255, 255, 255, .1) !important
+}
+
+.text-white-transparent-1 {
+    color: rgba(255, 255, 255, .1) !important
+}
+
+.bg-white-transparent-2 {
+    background-color: rgba(255, 255, 255, .2) !important
+}
+
+.text-white-transparent-2 {
+    color: rgba(255, 255, 255, .2) !important
+}
+
+.bg-white-transparent-3 {
+    background-color: rgba(255, 255, 255, .3) !important
+}
+
+.text-white-transparent-3 {
+    color: rgba(255, 255, 255, .3) !important
+}
+
+.bg-white-transparent-4 {
+    background-color: rgba(255, 255, 255, .4) !important
+}
+
+.text-white-transparent-4 {
+    color: rgba(255, 255, 255, .4) !important
+}
+
+.bg-white-transparent-5 {
+    background-color: rgba(255, 255, 255, .5) !important
+}
+
+.text-white-transparent-5 {
+    color: rgba(255, 255, 255, .5) !important
+}
+
+.bg-white-transparent-6 {
+    background-color: rgba(255, 255, 255, .6) !important
+}
+
+.text-white-transparent-6 {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.bg-white-transparent-7 {
+    background-color: rgba(255, 255, 255, .7) !important
+}
+
+.text-white-transparent-7 {
+    color: rgba(255, 255, 255, .7) !important
+}
+
+.bg-white-transparent-8 {
+    background-color: rgba(255, 255, 255, .8) !important
+}
+
+.text-white-transparent-8 {
+    color: rgba(255, 255, 255, .8) !important
+}
+
+.bg-white-transparent-9 {
+    background-color: rgba(255, 255, 255, .9) !important
+}
+
+.text-white-transparent-9 {
+    color: rgba(255, 255, 255, .9) !important
+}
+
+.text-grey {
+    color: #eee !important
+}
+
+.text-grey-lighter {
+    color: #f2f2f2 !important
+}
+
+.text-grey-darker {
+    color: #b3b3b3 !important
+}
+
+.bg-grey {
+    background-color: #eee !important
+}
+
+.bg-grey-lighter {
+    background-color: #f2f2f2 !important
+}
+
+.bg-grey-darker {
+    background-color: #b3b3b3 !important
+}
+
+.bg-gradient-grey {
+    background: #eee !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important
+}
+
+.app-theme-grey .app-sidebar .nav>li.active>a {
+    background-color: #eee !important
+}
+
+.bg-grey-transparent-1 {
+    background-color: rgba(238, 238, 238, .1) !important
+}
+
+.text-grey-transparent-1 {
+    color: rgba(238, 238, 238, .1) !important
+}
+
+.bg-grey-transparent-2 {
+    background-color: rgba(238, 238, 238, .2) !important
+}
+
+.text-grey-transparent-2 {
+    color: rgba(238, 238, 238, .2) !important
+}
+
+.bg-grey-transparent-3 {
+    background-color: rgba(238, 238, 238, .3) !important
+}
+
+.text-grey-transparent-3 {
+    color: rgba(238, 238, 238, .3) !important
+}
+
+.bg-grey-transparent-4 {
+    background-color: rgba(238, 238, 238, .4) !important
+}
+
+.text-grey-transparent-4 {
+    color: rgba(238, 238, 238, .4) !important
+}
+
+.bg-grey-transparent-5 {
+    background-color: rgba(238, 238, 238, .5) !important
+}
+
+.text-grey-transparent-5 {
+    color: rgba(238, 238, 238, .5) !important
+}
+
+.bg-grey-transparent-6 {
+    background-color: rgba(238, 238, 238, .6) !important
+}
+
+.text-grey-transparent-6 {
+    color: rgba(238, 238, 238, .6) !important
+}
+
+.bg-grey-transparent-7 {
+    background-color: rgba(238, 238, 238, .7) !important
+}
+
+.text-grey-transparent-7 {
+    color: rgba(238, 238, 238, .7) !important
+}
+
+.bg-grey-transparent-8 {
+    background-color: rgba(238, 238, 238, .8) !important
+}
+
+.text-grey-transparent-8 {
+    color: rgba(238, 238, 238, .8) !important
+}
+
+.bg-grey-transparent-9 {
+    background-color: rgba(238, 238, 238, .9) !important
+}
+
+.text-grey-transparent-9 {
+    color: rgba(238, 238, 238, .9) !important
+}
+
+.text-muted {
+    color: #eee !important
+}
+
+.text-muted-lighter {
+    color: #f2f2f2 !important
+}
+
+.text-muted-darker {
+    color: #b3b3b3 !important
+}
+
+.bg-muted {
+    background-color: #eee !important
+}
+
+.bg-muted-lighter {
+    background-color: #f2f2f2 !important
+}
+
+.bg-muted-darker {
+    background-color: #b3b3b3 !important
+}
+
+.bg-gradient-muted {
+    background: #eee !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important
+}
+
+.app-theme-muted .app-sidebar .nav>li.active>a {
+    background-color: #eee !important
+}
+
+.bg-muted-transparent-1 {
+    background-color: rgba(238, 238, 238, .1) !important
+}
+
+.text-muted-transparent-1 {
+    color: rgba(238, 238, 238, .1) !important
+}
+
+.bg-muted-transparent-2 {
+    background-color: rgba(238, 238, 238, .2) !important
+}
+
+.text-muted-transparent-2 {
+    color: rgba(238, 238, 238, .2) !important
+}
+
+.bg-muted-transparent-3 {
+    background-color: rgba(238, 238, 238, .3) !important
+}
+
+.text-muted-transparent-3 {
+    color: rgba(238, 238, 238, .3) !important
+}
+
+.bg-muted-transparent-4 {
+    background-color: rgba(238, 238, 238, .4) !important
+}
+
+.text-muted-transparent-4 {
+    color: rgba(238, 238, 238, .4) !important
+}
+
+.bg-muted-transparent-5 {
+    background-color: rgba(238, 238, 238, .5) !important
+}
+
+.text-muted-transparent-5 {
+    color: rgba(238, 238, 238, .5) !important
+}
+
+.bg-muted-transparent-6 {
+    background-color: rgba(238, 238, 238, .6) !important
+}
+
+.text-muted-transparent-6 {
+    color: rgba(238, 238, 238, .6) !important
+}
+
+.bg-muted-transparent-7 {
+    background-color: rgba(238, 238, 238, .7) !important
+}
+
+.text-muted-transparent-7 {
+    color: rgba(238, 238, 238, .7) !important
+}
+
+.bg-muted-transparent-8 {
+    background-color: rgba(238, 238, 238, .8) !important
+}
+
+.text-muted-transparent-8 {
+    color: rgba(238, 238, 238, .8) !important
+}
+
+.bg-muted-transparent-9 {
+    background-color: rgba(238, 238, 238, .9) !important
+}
+
+.text-muted-transparent-9 {
+    color: rgba(238, 238, 238, .9) !important
+}
+
+.text-silver {
+    color: #eee !important
+}
+
+.text-silver-lighter {
+    color: #f2f2f2 !important
+}
+
+.text-silver-darker {
+    color: #b3b3b3 !important
+}
+
+.bg-silver {
+    background-color: #eee !important
+}
+
+.bg-silver-lighter {
+    background-color: #f2f2f2 !important
+}
+
+.bg-silver-darker {
+    background-color: #b3b3b3 !important
+}
+
+.bg-gradient-silver {
+    background: #eee !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important
+}
+
+.app-theme-silver .app-sidebar .nav>li.active>a {
+    background-color: #eee !important
+}
+
+.bg-silver-transparent-1 {
+    background-color: rgba(238, 238, 238, .1) !important
+}
+
+.text-silver-transparent-1 {
+    color: rgba(238, 238, 238, .1) !important
+}
+
+.bg-silver-transparent-2 {
+    background-color: rgba(238, 238, 238, .2) !important
+}
+
+.text-silver-transparent-2 {
+    color: rgba(238, 238, 238, .2) !important
+}
+
+.bg-silver-transparent-3 {
+    background-color: rgba(238, 238, 238, .3) !important
+}
+
+.text-silver-transparent-3 {
+    color: rgba(238, 238, 238, .3) !important
+}
+
+.bg-silver-transparent-4 {
+    background-color: rgba(238, 238, 238, .4) !important
+}
+
+.text-silver-transparent-4 {
+    color: rgba(238, 238, 238, .4) !important
+}
+
+.bg-silver-transparent-5 {
+    background-color: rgba(238, 238, 238, .5) !important
+}
+
+.text-silver-transparent-5 {
+    color: rgba(238, 238, 238, .5) !important
+}
+
+.bg-silver-transparent-6 {
+    background-color: rgba(238, 238, 238, .6) !important
+}
+
+.text-silver-transparent-6 {
+    color: rgba(238, 238, 238, .6) !important
+}
+
+.bg-silver-transparent-7 {
+    background-color: rgba(238, 238, 238, .7) !important
+}
+
+.text-silver-transparent-7 {
+    color: rgba(238, 238, 238, .7) !important
+}
+
+.bg-silver-transparent-8 {
+    background-color: rgba(238, 238, 238, .8) !important
+}
+
+.text-silver-transparent-8 {
+    color: rgba(238, 238, 238, .8) !important
+}
+
+.bg-silver-transparent-9 {
+    background-color: rgba(238, 238, 238, .9) !important
+}
+
+.text-silver-transparent-9 {
+    color: rgba(238, 238, 238, .9) !important
+}
+
+.text-lime {
+    color: #bbe244 !important
+}
+
+.text-lime-lighter {
+    color: #cce973 !important
+}
+
+.text-lime-darker {
+    color: #8caa33 !important
+}
+
+.bg-lime {
+    background-color: #bbe244 !important
+}
+
+.bg-lime-lighter {
+    background-color: #cce973 !important
+}
+
+.bg-lime-darker {
+    background-color: #8caa33 !important
+}
+
+.bg-gradient-lime {
+    background: #bbe244 !important;
+    background: -moz-linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important;
+    background: linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important
+}
+
+.app-theme-lime .app-sidebar .nav>li.active>a {
+    background-color: #bbe244 !important
+}
+
+.bg-lime-transparent-1 {
+    background-color: rgba(187, 226, 68, .1) !important
+}
+
+.text-lime-transparent-1 {
+    color: rgba(187, 226, 68, .1) !important
+}
+
+.bg-lime-transparent-2 {
+    background-color: rgba(187, 226, 68, .2) !important
+}
+
+.text-lime-transparent-2 {
+    color: rgba(187, 226, 68, .2) !important
+}
+
+.bg-lime-transparent-3 {
+    background-color: rgba(187, 226, 68, .3) !important
+}
+
+.text-lime-transparent-3 {
+    color: rgba(187, 226, 68, .3) !important
+}
+
+.bg-lime-transparent-4 {
+    background-color: rgba(187, 226, 68, .4) !important
+}
+
+.text-lime-transparent-4 {
+    color: rgba(187, 226, 68, .4) !important
+}
+
+.bg-lime-transparent-5 {
+    background-color: rgba(187, 226, 68, .5) !important
+}
+
+.text-lime-transparent-5 {
+    color: rgba(187, 226, 68, .5) !important
+}
+
+.bg-lime-transparent-6 {
+    background-color: rgba(187, 226, 68, .6) !important
+}
+
+.text-lime-transparent-6 {
+    color: rgba(187, 226, 68, .6) !important
+}
+
+.bg-lime-transparent-7 {
+    background-color: rgba(187, 226, 68, .7) !important
+}
+
+.text-lime-transparent-7 {
+    color: rgba(187, 226, 68, .7) !important
+}
+
+.bg-lime-transparent-8 {
+    background-color: rgba(187, 226, 68, .8) !important
+}
+
+.text-lime-transparent-8 {
+    color: rgba(187, 226, 68, .8) !important
+}
+
+.bg-lime-transparent-9 {
+    background-color: rgba(187, 226, 68, .9) !important
+}
+
+.text-lime-transparent-9 {
+    color: rgba(187, 226, 68, .9) !important
+}
+
+.text-aqua {
+    color: #5ac8fa !important
+}
+
+.text-aqua-lighter {
+    color: #83d6fb !important
+}
+
+.text-aqua-darker {
+    color: #4496bc !important
+}
+
+.bg-aqua {
+    background-color: #5ac8fa !important
+}
+
+.bg-aqua-lighter {
+    background-color: #83d6fb !important
+}
+
+.bg-aqua-darker {
+    background-color: #4496bc !important
+}
+
+.bg-gradient-aqua {
+    background: #5ac8fa !important;
+    background: -moz-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important
+}
+
+.app-theme-aqua .app-sidebar .nav>li.active>a {
+    background-color: #5ac8fa !important
+}
+
+.bg-aqua-transparent-1 {
+    background-color: rgba(90, 200, 250, .1) !important
+}
+
+.text-aqua-transparent-1 {
+    color: rgba(90, 200, 250, .1) !important
+}
+
+.bg-aqua-transparent-2 {
+    background-color: rgba(90, 200, 250, .2) !important
+}
+
+.text-aqua-transparent-2 {
+    color: rgba(90, 200, 250, .2) !important
+}
+
+.bg-aqua-transparent-3 {
+    background-color: rgba(90, 200, 250, .3) !important
+}
+
+.text-aqua-transparent-3 {
+    color: rgba(90, 200, 250, .3) !important
+}
+
+.bg-aqua-transparent-4 {
+    background-color: rgba(90, 200, 250, .4) !important
+}
+
+.text-aqua-transparent-4 {
+    color: rgba(90, 200, 250, .4) !important
+}
+
+.bg-aqua-transparent-5 {
+    background-color: rgba(90, 200, 250, .5) !important
+}
+
+.text-aqua-transparent-5 {
+    color: rgba(90, 200, 250, .5) !important
+}
+
+.bg-aqua-transparent-6 {
+    background-color: rgba(90, 200, 250, .6) !important
+}
+
+.text-aqua-transparent-6 {
+    color: rgba(90, 200, 250, .6) !important
+}
+
+.bg-aqua-transparent-7 {
+    background-color: rgba(90, 200, 250, .7) !important
+}
+
+.text-aqua-transparent-7 {
+    color: rgba(90, 200, 250, .7) !important
+}
+
+.bg-aqua-transparent-8 {
+    background-color: rgba(90, 200, 250, .8) !important
+}
+
+.text-aqua-transparent-8 {
+    color: rgba(90, 200, 250, .8) !important
+}
+
+.bg-aqua-transparent-9 {
+    background-color: rgba(90, 200, 250, .9) !important
+}
+
+.text-aqua-transparent-9 {
+    color: rgba(90, 200, 250, .9) !important
+}
+
+.text-blue {
+    color: #007aff !important
+}
+
+.text-blue-lighter {
+    color: #409bff !important
+}
+
+.text-blue-darker {
+    color: #005cbf !important
+}
+
+.bg-blue {
+    background-color: #007aff !important
+}
+
+.bg-blue-lighter {
+    background-color: #409bff !important
+}
+
+.bg-blue-darker {
+    background-color: #005cbf !important
+}
+
+.bg-gradient-blue {
+    background: #007aff !important;
+    background: -moz-linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important;
+    background: linear-gradient(to bottom, #3395ff 0, #006ee6 100%) !important
+}
+
+.app-theme-blue .app-sidebar .nav>li.active>a {
+    background-color: #007aff !important
+}
+
+.bg-blue-transparent-1 {
+    background-color: rgba(0, 122, 255, .1) !important
+}
+
+.text-blue-transparent-1 {
+    color: rgba(0, 122, 255, .1) !important
+}
+
+.bg-blue-transparent-2 {
+    background-color: rgba(0, 122, 255, .2) !important
+}
+
+.text-blue-transparent-2 {
+    color: rgba(0, 122, 255, .2) !important
+}
+
+.bg-blue-transparent-3 {
+    background-color: rgba(0, 122, 255, .3) !important
+}
+
+.text-blue-transparent-3 {
+    color: rgba(0, 122, 255, .3) !important
+}
+
+.bg-blue-transparent-4 {
+    background-color: rgba(0, 122, 255, .4) !important
+}
+
+.text-blue-transparent-4 {
+    color: rgba(0, 122, 255, .4) !important
+}
+
+.bg-blue-transparent-5 {
+    background-color: rgba(0, 122, 255, .5) !important
+}
+
+.text-blue-transparent-5 {
+    color: rgba(0, 122, 255, .5) !important
+}
+
+.bg-blue-transparent-6 {
+    background-color: rgba(0, 122, 255, .6) !important
+}
+
+.text-blue-transparent-6 {
+    color: rgba(0, 122, 255, .6) !important
+}
+
+.bg-blue-transparent-7 {
+    background-color: rgba(0, 122, 255, .7) !important
+}
+
+.text-blue-transparent-7 {
+    color: rgba(0, 122, 255, .7) !important
+}
+
+.bg-blue-transparent-8 {
+    background-color: rgba(0, 122, 255, .8) !important
+}
+
+.text-blue-transparent-8 {
+    color: rgba(0, 122, 255, .8) !important
+}
+
+.bg-blue-transparent-9 {
+    background-color: rgba(0, 122, 255, .9) !important
+}
+
+.text-blue-transparent-9 {
+    color: rgba(0, 122, 255, .9) !important
+}
+
+.text-indigo {
+    color: #5856d6 !important
+}
+
+.text-indigo-lighter {
+    color: #8280e0 !important
+}
+
+.text-indigo-darker {
+    color: #4241a1 !important
+}
+
+.bg-indigo {
+    background-color: #5856d6 !important
+}
+
+.bg-indigo-lighter {
+    background-color: #8280e0 !important
+}
+
+.bg-indigo-darker {
+    background-color: #4241a1 !important
+}
+
+.bg-gradient-indigo {
+    background: #5856d6 !important;
+    background: -moz-linear-gradient(to bottom, #817fe0 0, #4441d1 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #817fe0 0, #4441d1 100%) !important;
+    background: linear-gradient(to bottom, #817fe0 0, #4441d1 100%) !important
+}
+
+.app-theme-indigo .app-sidebar .nav>li.active>a {
+    background-color: #5856d6 !important
+}
+
+.bg-indigo-transparent-1 {
+    background-color: rgba(88, 86, 214, .1) !important
+}
+
+.text-indigo-transparent-1 {
+    color: rgba(88, 86, 214, .1) !important
+}
+
+.bg-indigo-transparent-2 {
+    background-color: rgba(88, 86, 214, .2) !important
+}
+
+.text-indigo-transparent-2 {
+    color: rgba(88, 86, 214, .2) !important
+}
+
+.bg-indigo-transparent-3 {
+    background-color: rgba(88, 86, 214, .3) !important
+}
+
+.text-indigo-transparent-3 {
+    color: rgba(88, 86, 214, .3) !important
+}
+
+.bg-indigo-transparent-4 {
+    background-color: rgba(88, 86, 214, .4) !important
+}
+
+.text-indigo-transparent-4 {
+    color: rgba(88, 86, 214, .4) !important
+}
+
+.bg-indigo-transparent-5 {
+    background-color: rgba(88, 86, 214, .5) !important
+}
+
+.text-indigo-transparent-5 {
+    color: rgba(88, 86, 214, .5) !important
+}
+
+.bg-indigo-transparent-6 {
+    background-color: rgba(88, 86, 214, .6) !important
+}
+
+.text-indigo-transparent-6 {
+    color: rgba(88, 86, 214, .6) !important
+}
+
+.bg-indigo-transparent-7 {
+    background-color: rgba(88, 86, 214, .7) !important
+}
+
+.text-indigo-transparent-7 {
+    color: rgba(88, 86, 214, .7) !important
+}
+
+.bg-indigo-transparent-8 {
+    background-color: rgba(88, 86, 214, .8) !important
+}
+
+.text-indigo-transparent-8 {
+    color: rgba(88, 86, 214, .8) !important
+}
+
+.bg-indigo-transparent-9 {
+    background-color: rgba(88, 86, 214, .9) !important
+}
+
+.text-indigo-transparent-9 {
+    color: rgba(88, 86, 214, .9) !important
+}
+
+.text-purple {
+    color: #b503ff !important
+}
+
+.text-purple-lighter {
+    color: #c842ff !important
+}
+
+.text-purple-darker {
+    color: #8802bf !important
+}
+
+.bg-purple {
+    background-color: #b503ff !important
+}
+
+.bg-purple-lighter {
+    background-color: #c842ff !important
+}
+
+.bg-purple-darker {
+    background-color: #8802bf !important
+}
+
+.bg-gradient-purple {
+    background: #b503ff !important;
+    background: -moz-linear-gradient(to bottom, #c436ff 0, #a400e9 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #c436ff 0, #a400e9 100%) !important;
+    background: linear-gradient(to bottom, #c436ff 0, #a400e9 100%) !important
+}
+
+.app-theme-purple .app-sidebar .nav>li.active>a {
+    background-color: #b503ff !important
+}
+
+.bg-purple-transparent-1 {
+    background-color: rgba(181, 3, 255, .1) !important
+}
+
+.text-purple-transparent-1 {
+    color: rgba(181, 3, 255, .1) !important
+}
+
+.bg-purple-transparent-2 {
+    background-color: rgba(181, 3, 255, .2) !important
+}
+
+.text-purple-transparent-2 {
+    color: rgba(181, 3, 255, .2) !important
+}
+
+.bg-purple-transparent-3 {
+    background-color: rgba(181, 3, 255, .3) !important
+}
+
+.text-purple-transparent-3 {
+    color: rgba(181, 3, 255, .3) !important
+}
+
+.bg-purple-transparent-4 {
+    background-color: rgba(181, 3, 255, .4) !important
+}
+
+.text-purple-transparent-4 {
+    color: rgba(181, 3, 255, .4) !important
+}
+
+.bg-purple-transparent-5 {
+    background-color: rgba(181, 3, 255, .5) !important
+}
+
+.text-purple-transparent-5 {
+    color: rgba(181, 3, 255, .5) !important
+}
+
+.bg-purple-transparent-6 {
+    background-color: rgba(181, 3, 255, .6) !important
+}
+
+.text-purple-transparent-6 {
+    color: rgba(181, 3, 255, .6) !important
+}
+
+.bg-purple-transparent-7 {
+    background-color: rgba(181, 3, 255, .7) !important
+}
+
+.text-purple-transparent-7 {
+    color: rgba(181, 3, 255, .7) !important
+}
+
+.bg-purple-transparent-8 {
+    background-color: rgba(181, 3, 255, .8) !important
+}
+
+.text-purple-transparent-8 {
+    color: rgba(181, 3, 255, .8) !important
+}
+
+.bg-purple-transparent-9 {
+    background-color: rgba(181, 3, 255, .9) !important
+}
+
+.text-purple-transparent-9 {
+    color: rgba(181, 3, 255, .9) !important
+}
+
+.text-pink {
+    color: #ff2d55 !important
+}
+
+.text-pink-lighter {
+    color: #ff6280 !important
+}
+
+.text-pink-darker {
+    color: #bf2240 !important
+}
+
+.bg-pink {
+    background-color: #ff2d55 !important
+}
+
+.bg-pink-lighter {
+    background-color: #ff6280 !important
+}
+
+.bg-pink-darker {
+    background-color: #bf2240 !important
+}
+
+.bg-gradient-pink {
+    background: #ff2d55 !important;
+    background: -moz-linear-gradient(to bottom, #ff607e 0, #ff1440 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #ff607e 0, #ff1440 100%) !important;
+    background: linear-gradient(to bottom, #ff607e 0, #ff1440 100%) !important
+}
+
+.app-theme-pink .app-sidebar .nav>li.active>a {
+    background-color: #ff2d55 !important
+}
+
+.bg-pink-transparent-1 {
+    background-color: rgba(255, 45, 85, .1) !important
+}
+
+.text-pink-transparent-1 {
+    color: rgba(255, 45, 85, .1) !important
+}
+
+.bg-pink-transparent-2 {
+    background-color: rgba(255, 45, 85, .2) !important
+}
+
+.text-pink-transparent-2 {
+    color: rgba(255, 45, 85, .2) !important
+}
+
+.bg-pink-transparent-3 {
+    background-color: rgba(255, 45, 85, .3) !important
+}
+
+.text-pink-transparent-3 {
+    color: rgba(255, 45, 85, .3) !important
+}
+
+.bg-pink-transparent-4 {
+    background-color: rgba(255, 45, 85, .4) !important
+}
+
+.text-pink-transparent-4 {
+    color: rgba(255, 45, 85, .4) !important
+}
+
+.bg-pink-transparent-5 {
+    background-color: rgba(255, 45, 85, .5) !important
+}
+
+.text-pink-transparent-5 {
+    color: rgba(255, 45, 85, .5) !important
+}
+
+.bg-pink-transparent-6 {
+    background-color: rgba(255, 45, 85, .6) !important
+}
+
+.text-pink-transparent-6 {
+    color: rgba(255, 45, 85, .6) !important
+}
+
+.bg-pink-transparent-7 {
+    background-color: rgba(255, 45, 85, .7) !important
+}
+
+.text-pink-transparent-7 {
+    color: rgba(255, 45, 85, .7) !important
+}
+
+.bg-pink-transparent-8 {
+    background-color: rgba(255, 45, 85, .8) !important
+}
+
+.text-pink-transparent-8 {
+    color: rgba(255, 45, 85, .8) !important
+}
+
+.bg-pink-transparent-9 {
+    background-color: rgba(255, 45, 85, .9) !important
+}
+
+.text-pink-transparent-9 {
+    color: rgba(255, 45, 85, .9) !important
+}
+
+.text-red {
+    color: #ff3b30 !important
+}
+
+.text-red-lighter {
+    color: #ff6c64 !important
+}
+
+.text-red-darker {
+    color: #bf2c24 !important
+}
+
+.bg-red {
+    background-color: #f56954 !important
+    /*background-color: #ff3b30 !important*/
+}
+
+.bg-red-lighter {
+    background-color: #ff6c64 !important
+}
+
+.bg-red-darker {
+    background-color: #bf2c24 !important
+}
+
+.bg-gradient-red {
+    background: #ff3b30 !important;
+    background: -moz-linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important;
+    background: linear-gradient(to bottom, #ff6b63 0, #ff2317 100%) !important
+}
+
+.app-theme-red .app-sidebar .nav>li.active>a {
+    background-color: #ff3b30 !important
+}
+
+.bg-red-transparent-1 {
+    background-color: rgba(255, 59, 48, .1) !important
+}
+
+.text-red-transparent-1 {
+    color: rgba(255, 59, 48, .1) !important
+}
+
+.bg-red-transparent-2 {
+    background-color: rgba(255, 59, 48, .2) !important
+}
+
+.text-red-transparent-2 {
+    color: rgba(255, 59, 48, .2) !important
+}
+
+.bg-red-transparent-3 {
+    background-color: rgba(255, 59, 48, .3) !important
+}
+
+.text-red-transparent-3 {
+    color: rgba(255, 59, 48, .3) !important
+}
+
+.bg-red-transparent-4 {
+    background-color: rgba(255, 59, 48, .4) !important
+}
+
+.text-red-transparent-4 {
+    color: rgba(255, 59, 48, .4) !important
+}
+
+.bg-red-transparent-5 {
+    background-color: rgba(255, 59, 48, .5) !important
+}
+
+.text-red-transparent-5 {
+    color: rgba(255, 59, 48, .5) !important
+}
+
+.bg-red-transparent-6 {
+    background-color: rgba(255, 59, 48, .6) !important
+}
+
+.text-red-transparent-6 {
+    color: rgba(255, 59, 48, .6) !important
+}
+
+.bg-red-transparent-7 {
+    background-color: rgba(255, 59, 48, .7) !important
+}
+
+.text-red-transparent-7 {
+    color: rgba(255, 59, 48, .7) !important
+}
+
+.bg-red-transparent-8 {
+    background-color: rgba(255, 59, 48, .8) !important
+}
+
+.text-red-transparent-8 {
+    color: rgba(255, 59, 48, .8) !important
+}
+
+.bg-red-transparent-9 {
+    background-color: rgba(255, 59, 48, .9) !important
+}
+
+.text-red-transparent-9 {
+    color: rgba(255, 59, 48, .9) !important
+}
+
+.text-orange {
+    color: #ff9500 !important
+}
+
+.text-orange-lighter {
+    color: #ffb040 !important
+}
+
+.text-orange-darker {
+    color: #bf7000 !important
+}
+
+.bg-orange {
+    background-color: #ff9500 !important
+}
+
+.bg-orange-lighter {
+    background-color: #ffb040 !important
+}
+
+.bg-orange-darker {
+    background-color: #bf7000 !important
+}
+
+.bg-gradient-orange {
+    background: #ff9500 !important;
+    background: -moz-linear-gradient(to bottom, #fa3 0, #e68600 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fa3 0, #e68600 100%) !important;
+    background: linear-gradient(to bottom, #fa3 0, #e68600 100%) !important
+}
+
+.app-theme-orange .app-sidebar .nav>li.active>a {
+    background-color: #ff9500 !important
+}
+
+.bg-orange-transparent-1 {
+    background-color: rgba(255, 149, 0, .1) !important
+}
+
+.text-orange-transparent-1 {
+    color: rgba(255, 149, 0, .1) !important
+}
+
+.bg-orange-transparent-2 {
+    background-color: rgba(255, 149, 0, .2) !important
+}
+
+.text-orange-transparent-2 {
+    color: rgba(255, 149, 0, .2) !important
+}
+
+.bg-orange-transparent-3 {
+    background-color: rgba(255, 149, 0, .3) !important
+}
+
+.text-orange-transparent-3 {
+    color: rgba(255, 149, 0, .3) !important
+}
+
+.bg-orange-transparent-4 {
+    background-color: rgba(255, 149, 0, .4) !important
+}
+
+.text-orange-transparent-4 {
+    color: rgba(255, 149, 0, .4) !important
+}
+
+.bg-orange-transparent-5 {
+    background-color: rgba(255, 149, 0, .5) !important
+}
+
+.text-orange-transparent-5 {
+    color: rgba(255, 149, 0, .5) !important
+}
+
+.bg-orange-transparent-6 {
+    background-color: rgba(255, 149, 0, .6) !important
+}
+
+.text-orange-transparent-6 {
+    color: rgba(255, 149, 0, .6) !important
+}
+
+.bg-orange-transparent-7 {
+    background-color: rgba(255, 149, 0, .7) !important
+}
+
+.text-orange-transparent-7 {
+    color: rgba(255, 149, 0, .7) !important
+}
+
+.bg-orange-transparent-8 {
+    background-color: rgba(255, 149, 0, .8) !important
+}
+
+.text-orange-transparent-8 {
+    color: rgba(255, 149, 0, .8) !important
+}
+
+.bg-orange-transparent-9 {
+    background-color: rgba(255, 149, 0, .9) !important
+}
+
+.text-orange-transparent-9 {
+    color: rgba(255, 149, 0, .9) !important
+}
+
+.text-yellow {
+    color: #fc0 !important
+}
+
+.text-yellow-lighter {
+    color: #ffd940 !important
+}
+
+.text-yellow-darker {
+    color: #bf9900 !important
+}
+
+.bg-yellow {
+    background-color: #fc0 !important
+}
+
+.bg-yellow-lighter {
+    background-color: #ffd940 !important
+}
+
+.bg-yellow-darker {
+    background-color: #bf9900 !important
+}
+
+.bg-gradient-yellow {
+    background: #fc0 !important;
+    background: -moz-linear-gradient(to bottom, #ffd633 0, #e6b800 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #ffd633 0, #e6b800 100%) !important;
+    background: linear-gradient(to bottom, #ffd633 0, #e6b800 100%) !important
+}
+
+.app-theme-yellow .app-sidebar .nav>li.active>a {
+    background-color: #fc0 !important
+}
+
+.bg-yellow-transparent-1 {
+    background-color: rgba(255, 204, 0, .1) !important
+}
+
+.text-yellow-transparent-1 {
+    color: rgba(255, 204, 0, .1) !important
+}
+
+.bg-yellow-transparent-2 {
+    background-color: rgba(255, 204, 0, .2) !important
+}
+
+.text-yellow-transparent-2 {
+    color: rgba(255, 204, 0, .2) !important
+}
+
+.bg-yellow-transparent-3 {
+    background-color: rgba(255, 204, 0, .3) !important
+}
+
+.text-yellow-transparent-3 {
+    color: rgba(255, 204, 0, .3) !important
+}
+
+.bg-yellow-transparent-4 {
+    background-color: rgba(255, 204, 0, .4) !important
+}
+
+.text-yellow-transparent-4 {
+    color: rgba(255, 204, 0, .4) !important
+}
+
+.bg-yellow-transparent-5 {
+    background-color: rgba(255, 204, 0, .5) !important
+}
+
+.text-yellow-transparent-5 {
+    color: rgba(255, 204, 0, .5) !important
+}
+
+.bg-yellow-transparent-6 {
+    background-color: rgba(255, 204, 0, .6) !important
+}
+
+.text-yellow-transparent-6 {
+    color: rgba(255, 204, 0, .6) !important
+}
+
+.bg-yellow-transparent-7 {
+    background-color: rgba(255, 204, 0, .7) !important
+}
+
+.text-yellow-transparent-7 {
+    color: rgba(255, 204, 0, .7) !important
+}
+
+.bg-yellow-transparent-8 {
+    background-color: rgba(255, 204, 0, .8) !important
+}
+
+.text-yellow-transparent-8 {
+    color: rgba(255, 204, 0, .8) !important
+}
+
+.bg-yellow-transparent-9 {
+    background-color: rgba(255, 204, 0, .9) !important
+}
+
+.text-yellow-transparent-9 {
+    color: rgba(255, 204, 0, .9) !important
+}
+
+.text-green {
+    color: #4cd964 !important
+}
+
+.text-green-lighter {
+    color: #79e38b !important
+}
+
+.text-green-darker {
+    color: #39a34b !important
+}
+
+.bg-green {
+    background-color: #4cd964 !important
+}
+
+.bg-green-lighter {
+    background-color: #79e38b !important
+}
+
+.bg-green-darker {
+    background-color: #39a34b !important
+}
+
+.bg-gradient-green {
+    background: #4cd964 !important;
+    background: -moz-linear-gradient(to bottom, #76e288 0, #37d552 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #76e288 0, #37d552 100%) !important;
+    background: linear-gradient(to bottom, #76e288 0, #37d552 100%) !important
+}
+
+.app-theme-green .app-sidebar .nav>li.active>a {
+    background-color: #4cd964 !important
+}
+
+.bg-green-transparent-1 {
+    background-color: rgba(76, 217, 100, .1) !important
+}
+
+.text-green-transparent-1 {
+    color: rgba(76, 217, 100, .1) !important
+}
+
+.bg-green-transparent-2 {
+    background-color: rgba(76, 217, 100, .2) !important
+}
+
+.text-green-transparent-2 {
+    color: rgba(76, 217, 100, .2) !important
+}
+
+.bg-green-transparent-3 {
+    background-color: rgba(76, 217, 100, .3) !important
+}
+
+.text-green-transparent-3 {
+    color: rgba(76, 217, 100, .3) !important
+}
+
+.bg-green-transparent-4 {
+    background-color: rgba(76, 217, 100, .4) !important
+}
+
+.text-green-transparent-4 {
+    color: rgba(76, 217, 100, .4) !important
+}
+
+.bg-green-transparent-5 {
+    background-color: rgba(76, 217, 100, .5) !important
+}
+
+.text-green-transparent-5 {
+    color: rgba(76, 217, 100, .5) !important
+}
+
+.bg-green-transparent-6 {
+    background-color: rgba(76, 217, 100, .6) !important
+}
+
+.text-green-transparent-6 {
+    color: rgba(76, 217, 100, .6) !important
+}
+
+.bg-green-transparent-7 {
+    background-color: rgba(76, 217, 100, .7) !important
+}
+
+.text-green-transparent-7 {
+    color: rgba(76, 217, 100, .7) !important
+}
+
+.bg-green-transparent-8 {
+    background-color: rgba(76, 217, 100, .8) !important
+}
+
+.text-green-transparent-8 {
+    color: rgba(76, 217, 100, .8) !important
+}
+
+.bg-green-transparent-9 {
+    background-color: rgba(76, 217, 100, .9) !important
+}
+
+.text-green-transparent-9 {
+    color: rgba(76, 217, 100, .9) !important
+}
+
+.text-teal {
+    color: #58eaa1 !important
+}
+
+.text-teal-lighter {
+    color: #82efb9 !important
+}
+
+.text-teal-darker {
+    color: #42b079 !important
+}
+
+.bg-teal {
+    background-color: #58eaa1 !important
+}
+
+.bg-teal-lighter {
+    background-color: #82efb9 !important
+}
+
+.bg-teal-darker {
+    background-color: #42b079 !important
+}
+
+.bg-gradient-teal {
+    background: #58eaa1 !important;
+    background: -moz-linear-gradient(to bottom, #85f0bb 0, #41e794 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #85f0bb 0, #41e794 100%) !important;
+    background: linear-gradient(to bottom, #85f0bb 0, #41e794 100%) !important
+}
+
+.app-theme-teal .app-sidebar .nav>li.active>a {
+    background-color: #58eaa1 !important
+}
+
+.bg-teal-transparent-1 {
+    background-color: rgba(88, 234, 161, .1) !important
+}
+
+.text-teal-transparent-1 {
+    color: rgba(88, 234, 161, .1) !important
+}
+
+.bg-teal-transparent-2 {
+    background-color: rgba(88, 234, 161, .2) !important
+}
+
+.text-teal-transparent-2 {
+    color: rgba(88, 234, 161, .2) !important
+}
+
+.bg-teal-transparent-3 {
+    background-color: rgba(88, 234, 161, .3) !important
+}
+
+.text-teal-transparent-3 {
+    color: rgba(88, 234, 161, .3) !important
+}
+
+.bg-teal-transparent-4 {
+    background-color: rgba(88, 234, 161, .4) !important
+}
+
+.text-teal-transparent-4 {
+    color: rgba(88, 234, 161, .4) !important
+}
+
+.bg-teal-transparent-5 {
+    background-color: rgba(88, 234, 161, .5) !important
+}
+
+.text-teal-transparent-5 {
+    color: rgba(88, 234, 161, .5) !important
+}
+
+.bg-teal-transparent-6 {
+    background-color: rgba(88, 234, 161, .6) !important
+}
+
+.text-teal-transparent-6 {
+    color: rgba(88, 234, 161, .6) !important
+}
+
+.bg-teal-transparent-7 {
+    background-color: rgba(88, 234, 161, .7) !important
+}
+
+.text-teal-transparent-7 {
+    color: rgba(88, 234, 161, .7) !important
+}
+
+.bg-teal-transparent-8 {
+    background-color: rgba(88, 234, 161, .8) !important
+}
+
+.text-teal-transparent-8 {
+    color: rgba(88, 234, 161, .8) !important
+}
+
+.bg-teal-transparent-9 {
+    background-color: rgba(88, 234, 161, .9) !important
+}
+
+.text-teal-transparent-9 {
+    color: rgba(88, 234, 161, .9) !important
+}
+
+.text-cyan {
+    color: #5ac8fa !important
+}
+
+.text-cyan-lighter {
+    color: #83d6fb !important
+}
+
+.text-cyan-darker {
+    color: #4496bc !important
+}
+
+.bg-cyan {
+    background-color: #5ac8fa !important
+}
+
+.bg-cyan-lighter {
+    background-color: #83d6fb !important
+}
+
+.bg-cyan-darker {
+    background-color: #4496bc !important
+}
+
+.bg-gradient-cyan {
+    background: #5ac8fa !important;
+    background: -moz-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important
+}
+
+.app-theme-cyan .app-sidebar .nav>li.active>a {
+    background-color: #5ac8fa !important
+}
+
+.bg-cyan-transparent-1 {
+    background-color: rgba(90, 200, 250, .1) !important
+}
+
+.text-cyan-transparent-1 {
+    color: rgba(90, 200, 250, .1) !important
+}
+
+.bg-cyan-transparent-2 {
+    background-color: rgba(90, 200, 250, .2) !important
+}
+
+.text-cyan-transparent-2 {
+    color: rgba(90, 200, 250, .2) !important
+}
+
+.bg-cyan-transparent-3 {
+    background-color: rgba(90, 200, 250, .3) !important
+}
+
+.text-cyan-transparent-3 {
+    color: rgba(90, 200, 250, .3) !important
+}
+
+.bg-cyan-transparent-4 {
+    background-color: rgba(90, 200, 250, .4) !important
+}
+
+.text-cyan-transparent-4 {
+    color: rgba(90, 200, 250, .4) !important
+}
+
+.bg-cyan-transparent-5 {
+    background-color: rgba(90, 200, 250, .5) !important
+}
+
+.text-cyan-transparent-5 {
+    color: rgba(90, 200, 250, .5) !important
+}
+
+.bg-cyan-transparent-6 {
+    background-color: rgba(90, 200, 250, .6) !important
+}
+
+.text-cyan-transparent-6 {
+    color: rgba(90, 200, 250, .6) !important
+}
+
+.bg-cyan-transparent-7 {
+    background-color: rgba(90, 200, 250, .7) !important
+}
+
+.text-cyan-transparent-7 {
+    color: rgba(90, 200, 250, .7) !important
+}
+
+.bg-cyan-transparent-8 {
+    background-color: rgba(90, 200, 250, .8) !important
+}
+
+.text-cyan-transparent-8 {
+    color: rgba(90, 200, 250, .8) !important
+}
+
+.bg-cyan-transparent-9 {
+    background-color: rgba(90, 200, 250, .9) !important
+}
+
+.text-cyan-transparent-9 {
+    color: rgba(90, 200, 250, .9) !important
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.text-white-lighter {
+    color: #fff !important
+}
+
+.text-white-darker {
+    color: #bfbfbf !important
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+.bg-white-lighter {
+    background-color: #fff !important
+}
+
+.bg-white-darker {
+    background-color: #bfbfbf !important
+}
+
+.bg-gradient-white {
+    background: #fff !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #f2f2f2 100%) !important
+}
+
+.app-theme-white .app-sidebar .nav>li.active>a {
+    background-color: #fff !important
+}
+
+.bg-white-transparent-1 {
+    background-color: rgba(255, 255, 255, .1) !important
+}
+
+.text-white-transparent-1 {
+    color: rgba(255, 255, 255, .1) !important
+}
+
+.bg-white-transparent-2 {
+    background-color: rgba(255, 255, 255, .2) !important
+}
+
+.text-white-transparent-2 {
+    color: rgba(255, 255, 255, .2) !important
+}
+
+.bg-white-transparent-3 {
+    background-color: rgba(255, 255, 255, .3) !important
+}
+
+.text-white-transparent-3 {
+    color: rgba(255, 255, 255, .3) !important
+}
+
+.bg-white-transparent-4 {
+    background-color: rgba(255, 255, 255, .4) !important
+}
+
+.text-white-transparent-4 {
+    color: rgba(255, 255, 255, .4) !important
+}
+
+.bg-white-transparent-5 {
+    background-color: rgba(255, 255, 255, .5) !important
+}
+
+.text-white-transparent-5 {
+    color: rgba(255, 255, 255, .5) !important
+}
+
+.bg-white-transparent-6 {
+    background-color: rgba(255, 255, 255, .6) !important
+}
+
+.text-white-transparent-6 {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.bg-white-transparent-7 {
+    background-color: rgba(255, 255, 255, .7) !important
+}
+
+.text-white-transparent-7 {
+    color: rgba(255, 255, 255, .7) !important
+}
+
+.bg-white-transparent-8 {
+    background-color: rgba(255, 255, 255, .8) !important
+}
+
+.text-white-transparent-8 {
+    color: rgba(255, 255, 255, .8) !important
+}
+
+.bg-white-transparent-9 {
+    background-color: rgba(255, 255, 255, .9) !important
+}
+
+.text-white-transparent-9 {
+    color: rgba(255, 255, 255, .9) !important
+}
+
+.text-gray {
+    color: #6c757d !important
+}
+
+.text-gray-lighter {
+    color: #91989e !important
+}
+
+.text-gray-darker {
+    color: #51585e !important
+}
+
+.bg-gray {
+    background-color: #6c757d !important
+}
+
+.bg-gray-lighter {
+    background-color: #91989e !important
+}
+
+.bg-gray-darker {
+    background-color: #51585e !important
+}
+
+.bg-gradient-gray {
+    background: #6c757d !important;
+    background: -moz-linear-gradient(to bottom, #868e96 0, #60686f 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #868e96 0, #60686f 100%) !important;
+    background: linear-gradient(to bottom, #868e96 0, #60686f 100%) !important
+}
+
+.app-theme-gray .app-sidebar .nav>li.active>a {
+    background-color: #6c757d !important
+}
+
+.bg-gray-transparent-1 {
+    background-color: rgba(108, 117, 125, .1) !important
+}
+
+.text-gray-transparent-1 {
+    color: rgba(108, 117, 125, .1) !important
+}
+
+.bg-gray-transparent-2 {
+    background-color: rgba(108, 117, 125, .2) !important
+}
+
+.text-gray-transparent-2 {
+    color: rgba(108, 117, 125, .2) !important
+}
+
+.bg-gray-transparent-3 {
+    background-color: rgba(108, 117, 125, .3) !important
+}
+
+.text-gray-transparent-3 {
+    color: rgba(108, 117, 125, .3) !important
+}
+
+.bg-gray-transparent-4 {
+    background-color: rgba(108, 117, 125, .4) !important
+}
+
+.text-gray-transparent-4 {
+    color: rgba(108, 117, 125, .4) !important
+}
+
+.bg-gray-transparent-5 {
+    background-color: rgba(108, 117, 125, .5) !important
+}
+
+.text-gray-transparent-5 {
+    color: rgba(108, 117, 125, .5) !important
+}
+
+.bg-gray-transparent-6 {
+    background-color: rgba(108, 117, 125, .6) !important
+}
+
+.text-gray-transparent-6 {
+    color: rgba(108, 117, 125, .6) !important
+}
+
+.bg-gray-transparent-7 {
+    background-color: rgba(108, 117, 125, .7) !important
+}
+
+.text-gray-transparent-7 {
+    color: rgba(108, 117, 125, .7) !important
+}
+
+.bg-gray-transparent-8 {
+    background-color: rgba(108, 117, 125, .8) !important
+}
+
+.text-gray-transparent-8 {
+    color: rgba(108, 117, 125, .8) !important
+}
+
+.bg-gray-transparent-9 {
+    background-color: rgba(108, 117, 125, .9) !important
+}
+
+.text-gray-transparent-9 {
+    color: rgba(108, 117, 125, .9) !important
+}
+
+.text-gray-dark {
+    color: #343a40 !important
+}
+
+.text-gray-dark-lighter {
+    color: #676b70 !important
+}
+
+.text-gray-dark-darker {
+    color: #272c30 !important
+}
+
+.bg-gray-dark {
+    background-color: #343a40 !important
+}
+
+.bg-gray-dark-lighter {
+    background-color: #676b70 !important
+}
+
+.bg-gray-dark-darker {
+    background-color: #272c30 !important
+}
+
+.bg-gradient-gray-dark {
+    background: #343a40 !important;
+    background: -moz-linear-gradient(to bottom, #4b545c 0, #292d32 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #4b545c 0, #292d32 100%) !important;
+    background: linear-gradient(to bottom, #4b545c 0, #292d32 100%) !important
+}
+
+.app-theme-gray-dark .app-sidebar .nav>li.active>a {
+    background-color: #343a40 !important
+}
+
+.bg-gray-dark-transparent-1 {
+    background-color: rgba(52, 58, 64, .1) !important
+}
+
+.text-gray-dark-transparent-1 {
+    color: rgba(52, 58, 64, .1) !important
+}
+
+.bg-gray-dark-transparent-2 {
+    background-color: rgba(52, 58, 64, .2) !important
+}
+
+.text-gray-dark-transparent-2 {
+    color: rgba(52, 58, 64, .2) !important
+}
+
+.bg-gray-dark-transparent-3 {
+    background-color: rgba(52, 58, 64, .3) !important
+}
+
+.text-gray-dark-transparent-3 {
+    color: rgba(52, 58, 64, .3) !important
+}
+
+.bg-gray-dark-transparent-4 {
+    background-color: rgba(52, 58, 64, .4) !important
+}
+
+.text-gray-dark-transparent-4 {
+    color: rgba(52, 58, 64, .4) !important
+}
+
+.bg-gray-dark-transparent-5 {
+    background-color: rgba(52, 58, 64, .5) !important
+}
+
+.text-gray-dark-transparent-5 {
+    color: rgba(52, 58, 64, .5) !important
+}
+
+.bg-gray-dark-transparent-6 {
+    background-color: rgba(52, 58, 64, .6) !important
+}
+
+.text-gray-dark-transparent-6 {
+    color: rgba(52, 58, 64, .6) !important
+}
+
+.bg-gray-dark-transparent-7 {
+    background-color: rgba(52, 58, 64, .7) !important
+}
+
+.text-gray-dark-transparent-7 {
+    color: rgba(52, 58, 64, .7) !important
+}
+
+.bg-gray-dark-transparent-8 {
+    background-color: rgba(52, 58, 64, .8) !important
+}
+
+.text-gray-dark-transparent-8 {
+    color: rgba(52, 58, 64, .8) !important
+}
+
+.bg-gray-dark-transparent-9 {
+    background-color: rgba(52, 58, 64, .9) !important
+}
+
+.text-gray-dark-transparent-9 {
+    color: rgba(52, 58, 64, .9) !important
+}
+
+.text-black {
+    color: #000 !important
+}
+
+.text-black-lighter {
+    color: #404040 !important
+}
+
+.text-black-darker {
+    color: #000 !important
+}
+
+.bg-black {
+    background-color: #000 !important
+}
+
+.bg-black-lighter {
+    background-color: #404040 !important
+}
+
+.bg-black-darker {
+    background-color: #000 !important
+}
+
+.bg-gradient-black {
+    background: #000 !important;
+    background: -moz-linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important;
+    background: linear-gradient(to bottom, #1a1a1a 0, #000 100%) !important
+}
+
+.app-theme-black .app-sidebar .nav>li.active>a {
+    background-color: #000 !important
+}
+
+.bg-black-transparent-1 {
+    background-color: rgba(0, 0, 0, .1) !important
+}
+
+.text-black-transparent-1 {
+    color: rgba(0, 0, 0, .1) !important
+}
+
+.bg-black-transparent-2 {
+    background-color: rgba(0, 0, 0, .2) !important
+}
+
+.text-black-transparent-2 {
+    color: rgba(0, 0, 0, .2) !important
+}
+
+.bg-black-transparent-3 {
+    background-color: rgba(0, 0, 0, .3) !important
+}
+
+.text-black-transparent-3 {
+    color: rgba(0, 0, 0, .3) !important
+}
+
+.bg-black-transparent-4 {
+    background-color: rgba(0, 0, 0, .4) !important
+}
+
+.text-black-transparent-4 {
+    color: rgba(0, 0, 0, .4) !important
+}
+
+.bg-black-transparent-5 {
+    background-color: rgba(0, 0, 0, .5) !important
+}
+
+.text-black-transparent-5 {
+    color: rgba(0, 0, 0, .5) !important
+}
+
+.bg-black-transparent-6 {
+    background-color: rgba(0, 0, 0, .6) !important
+}
+
+.text-black-transparent-6 {
+    color: rgba(0, 0, 0, .6) !important
+}
+
+.bg-black-transparent-7 {
+    background-color: rgba(0, 0, 0, .7) !important
+}
+
+.text-black-transparent-7 {
+    color: rgba(0, 0, 0, .7) !important
+}
+
+.bg-black-transparent-8 {
+    background-color: rgba(0, 0, 0, .8) !important
+}
+
+.text-black-transparent-8 {
+    color: rgba(0, 0, 0, .8) !important
+}
+
+.bg-black-transparent-9 {
+    background-color: rgba(0, 0, 0, .9) !important
+}
+
+.text-black-transparent-9 {
+    color: rgba(0, 0, 0, .9) !important
+}
+
+.text-dark {
+    color: #222 !important
+}
+
+.text-dark-lighter {
+    color: #595959 !important
+}
+
+.text-dark-darker {
+    color: #1a1a1a !important
+}
+
+.bg-dark {
+    background-color: #222 !important
+}
+
+.bg-dark-lighter {
+    background-color: #595959 !important
+}
+
+.bg-dark-darker {
+    background-color: #1a1a1a !important
+}
+
+.bg-gradient-dark {
+    background: #222 !important;
+    background: -moz-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important;
+    background: linear-gradient(to bottom, #3c3c3c 0, #151515 100%) !important
+}
+
+.app-theme-dark .app-sidebar .nav>li.active>a {
+    background-color: #222 !important
+}
+
+.bg-dark-transparent-1 {
+    background-color: rgba(34, 34, 34, .1) !important
+}
+
+.text-dark-transparent-1 {
+    color: rgba(34, 34, 34, .1) !important
+}
+
+.bg-dark-transparent-2 {
+    background-color: rgba(34, 34, 34, .2) !important
+}
+
+.text-dark-transparent-2 {
+    color: rgba(34, 34, 34, .2) !important
+}
+
+.bg-dark-transparent-3 {
+    background-color: rgba(34, 34, 34, .3) !important
+}
+
+.text-dark-transparent-3 {
+    color: rgba(34, 34, 34, .3) !important
+}
+
+.bg-dark-transparent-4 {
+    background-color: rgba(34, 34, 34, .4) !important
+}
+
+.text-dark-transparent-4 {
+    color: rgba(34, 34, 34, .4) !important
+}
+
+.bg-dark-transparent-5 {
+    background-color: rgba(34, 34, 34, .5) !important
+}
+
+.text-dark-transparent-5 {
+    color: rgba(34, 34, 34, .5) !important
+}
+
+.bg-dark-transparent-6 {
+    background-color: rgba(34, 34, 34, .6) !important
+}
+
+.text-dark-transparent-6 {
+    color: rgba(34, 34, 34, .6) !important
+}
+
+.bg-dark-transparent-7 {
+    background-color: rgba(34, 34, 34, .7) !important
+}
+
+.text-dark-transparent-7 {
+    color: rgba(34, 34, 34, .7) !important
+}
+
+.bg-dark-transparent-8 {
+    background-color: rgba(34, 34, 34, .8) !important
+}
+
+.text-dark-transparent-8 {
+    color: rgba(34, 34, 34, .8) !important
+}
+
+.bg-dark-transparent-9 {
+    background-color: rgba(34, 34, 34, .9) !important
+}
+
+.text-dark-transparent-9 {
+    color: rgba(34, 34, 34, .9) !important
+}
+
+.text-dark-darker {
+    color: #111 !important
+}
+
+.text-dark-darker-lighter {
+    color: #4d4d4d !important
+}
+
+.text-dark-darker-darker {
+    color: #0d0d0d !important
+}
+
+.bg-dark-darker {
+    background-color: #111 !important
+}
+
+.bg-dark-darker-lighter {
+    background-color: #4d4d4d !important
+}
+
+.bg-dark-darker-darker {
+    background-color: #0d0d0d !important
+}
+
+.bg-gradient-dark-darker {
+    background: #111 !important;
+    background: -moz-linear-gradient(to bottom, #2b2b2b 0, #040404 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #2b2b2b 0, #040404 100%) !important;
+    background: linear-gradient(to bottom, #2b2b2b 0, #040404 100%) !important
+}
+
+.app-theme-dark-darker .app-sidebar .nav>li.active>a {
+    background-color: #111 !important
+}
+
+.bg-dark-darker-transparent-1 {
+    background-color: rgba(17, 17, 17, .1) !important
+}
+
+.text-dark-darker-transparent-1 {
+    color: rgba(17, 17, 17, .1) !important
+}
+
+.bg-dark-darker-transparent-2 {
+    background-color: rgba(17, 17, 17, .2) !important
+}
+
+.text-dark-darker-transparent-2 {
+    color: rgba(17, 17, 17, .2) !important
+}
+
+.bg-dark-darker-transparent-3 {
+    background-color: rgba(17, 17, 17, .3) !important
+}
+
+.text-dark-darker-transparent-3 {
+    color: rgba(17, 17, 17, .3) !important
+}
+
+.bg-dark-darker-transparent-4 {
+    background-color: rgba(17, 17, 17, .4) !important
+}
+
+.text-dark-darker-transparent-4 {
+    color: rgba(17, 17, 17, .4) !important
+}
+
+.bg-dark-darker-transparent-5 {
+    background-color: rgba(17, 17, 17, .5) !important
+}
+
+.text-dark-darker-transparent-5 {
+    color: rgba(17, 17, 17, .5) !important
+}
+
+.bg-dark-darker-transparent-6 {
+    background-color: rgba(17, 17, 17, .6) !important
+}
+
+.text-dark-darker-transparent-6 {
+    color: rgba(17, 17, 17, .6) !important
+}
+
+.bg-dark-darker-transparent-7 {
+    background-color: rgba(17, 17, 17, .7) !important
+}
+
+.text-dark-darker-transparent-7 {
+    color: rgba(17, 17, 17, .7) !important
+}
+
+.bg-dark-darker-transparent-8 {
+    background-color: rgba(17, 17, 17, .8) !important
+}
+
+.text-dark-darker-transparent-8 {
+    color: rgba(17, 17, 17, .8) !important
+}
+
+.bg-dark-darker-transparent-9 {
+    background-color: rgba(17, 17, 17, .9) !important
+}
+
+.text-dark-darker-transparent-9 {
+    color: rgba(17, 17, 17, .9) !important
+}
+
+.text-lime {
+    color: #bbe244 !important
+}
+
+.text-lime-lighter {
+    color: #cce973 !important
+}
+
+.text-lime-darker {
+    color: #8caa33 !important
+}
+
+.bg-lime {
+    background-color: #bbe244 !important
+}
+
+.bg-lime-lighter {
+    background-color: #cce973 !important
+}
+
+.bg-lime-darker {
+    background-color: #8caa33 !important
+}
+
+.bg-gradient-lime {
+    background: #bbe244 !important;
+    background: -moz-linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important;
+    background: linear-gradient(to bottom, #cbe970 0, #b3df2e 100%) !important
+}
+
+.app-theme-lime .app-sidebar .nav>li.active>a {
+    background-color: #bbe244 !important
+}
+
+.bg-lime-transparent-1 {
+    background-color: rgba(187, 226, 68, .1) !important
+}
+
+.text-lime-transparent-1 {
+    color: rgba(187, 226, 68, .1) !important
+}
+
+.bg-lime-transparent-2 {
+    background-color: rgba(187, 226, 68, .2) !important
+}
+
+.text-lime-transparent-2 {
+    color: rgba(187, 226, 68, .2) !important
+}
+
+.bg-lime-transparent-3 {
+    background-color: rgba(187, 226, 68, .3) !important
+}
+
+.text-lime-transparent-3 {
+    color: rgba(187, 226, 68, .3) !important
+}
+
+.bg-lime-transparent-4 {
+    background-color: rgba(187, 226, 68, .4) !important
+}
+
+.text-lime-transparent-4 {
+    color: rgba(187, 226, 68, .4) !important
+}
+
+.bg-lime-transparent-5 {
+    background-color: rgba(187, 226, 68, .5) !important
+}
+
+.text-lime-transparent-5 {
+    color: rgba(187, 226, 68, .5) !important
+}
+
+.bg-lime-transparent-6 {
+    background-color: rgba(187, 226, 68, .6) !important
+}
+
+.text-lime-transparent-6 {
+    color: rgba(187, 226, 68, .6) !important
+}
+
+.bg-lime-transparent-7 {
+    background-color: rgba(187, 226, 68, .7) !important
+}
+
+.text-lime-transparent-7 {
+    color: rgba(187, 226, 68, .7) !important
+}
+
+.bg-lime-transparent-8 {
+    background-color: rgba(187, 226, 68, .8) !important
+}
+
+.text-lime-transparent-8 {
+    color: rgba(187, 226, 68, .8) !important
+}
+
+.bg-lime-transparent-9 {
+    background-color: rgba(187, 226, 68, .9) !important
+}
+
+.text-lime-transparent-9 {
+    color: rgba(187, 226, 68, .9) !important
+}
+
+.text-light {
+    color: #f9f9f9 !important
+}
+
+.text-light-lighter {
+    color: #fbfbfb !important
+}
+
+.text-light-darker {
+    color: #bbb !important
+}
+
+.bg-light {
+    background-color: #f9f9f9 !important
+}
+
+.bg-light-lighter {
+    background-color: #fbfbfb !important
+}
+
+.bg-light-darker {
+    background-color: #bbb !important
+}
+
+.bg-gradient-light {
+    background: #f9f9f9 !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #ececec 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #ececec 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #ececec 100%) !important
+}
+
+.app-theme-light .app-sidebar .nav>li.active>a {
+    background-color: #f9f9f9 !important
+}
+
+.bg-light-transparent-1 {
+    background-color: rgba(249, 249, 249, .1) !important
+}
+
+.text-light-transparent-1 {
+    color: rgba(249, 249, 249, .1) !important
+}
+
+.bg-light-transparent-2 {
+    background-color: rgba(249, 249, 249, .2) !important
+}
+
+.text-light-transparent-2 {
+    color: rgba(249, 249, 249, .2) !important
+}
+
+.bg-light-transparent-3 {
+    background-color: rgba(249, 249, 249, .3) !important
+}
+
+.text-light-transparent-3 {
+    color: rgba(249, 249, 249, .3) !important
+}
+
+.bg-light-transparent-4 {
+    background-color: rgba(249, 249, 249, .4) !important
+}
+
+.text-light-transparent-4 {
+    color: rgba(249, 249, 249, .4) !important
+}
+
+.bg-light-transparent-5 {
+    background-color: rgba(249, 249, 249, .5) !important
+}
+
+.text-light-transparent-5 {
+    color: rgba(249, 249, 249, .5) !important
+}
+
+.bg-light-transparent-6 {
+    background-color: rgba(249, 249, 249, .6) !important
+}
+
+.text-light-transparent-6 {
+    color: rgba(249, 249, 249, .6) !important
+}
+
+.bg-light-transparent-7 {
+    background-color: rgba(249, 249, 249, .7) !important
+}
+
+.text-light-transparent-7 {
+    color: rgba(249, 249, 249, .7) !important
+}
+
+.bg-light-transparent-8 {
+    background-color: rgba(249, 249, 249, .8) !important
+}
+
+.text-light-transparent-8 {
+    color: rgba(249, 249, 249, .8) !important
+}
+
+.bg-light-transparent-9 {
+    background-color: rgba(249, 249, 249, .9) !important
+}
+
+.text-light-transparent-9 {
+    color: rgba(249, 249, 249, .9) !important
+}
+
+.text-silver {
+    color: #eee !important
+}
+
+.text-silver-lighter {
+    color: #f2f2f2 !important
+}
+
+.text-silver-darker {
+    color: #b3b3b3 !important
+}
+
+.bg-silver {
+    background-color: #eee !important
+}
+
+.bg-silver-lighter {
+    background-color: #f2f2f2 !important
+}
+
+.bg-silver-darker {
+    background-color: #b3b3b3 !important
+}
+
+.bg-gradient-silver {
+    background: #eee !important;
+    background: -moz-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important;
+    background: linear-gradient(to bottom, #fff 0, #e1e1e1 100%) !important
+}
+
+.app-theme-silver .app-sidebar .nav>li.active>a {
+    background-color: #eee !important
+}
+
+.bg-silver-transparent-1 {
+    background-color: rgba(238, 238, 238, .1) !important
+}
+
+.text-silver-transparent-1 {
+    color: rgba(238, 238, 238, .1) !important
+}
+
+.bg-silver-transparent-2 {
+    background-color: rgba(238, 238, 238, .2) !important
+}
+
+.text-silver-transparent-2 {
+    color: rgba(238, 238, 238, .2) !important
+}
+
+.bg-silver-transparent-3 {
+    background-color: rgba(238, 238, 238, .3) !important
+}
+
+.text-silver-transparent-3 {
+    color: rgba(238, 238, 238, .3) !important
+}
+
+.bg-silver-transparent-4 {
+    background-color: rgba(238, 238, 238, .4) !important
+}
+
+.text-silver-transparent-4 {
+    color: rgba(238, 238, 238, .4) !important
+}
+
+.bg-silver-transparent-5 {
+    background-color: rgba(238, 238, 238, .5) !important
+}
+
+.text-silver-transparent-5 {
+    color: rgba(238, 238, 238, .5) !important
+}
+
+.bg-silver-transparent-6 {
+    background-color: rgba(238, 238, 238, .6) !important
+}
+
+.text-silver-transparent-6 {
+    color: rgba(238, 238, 238, .6) !important
+}
+
+.bg-silver-transparent-7 {
+    background-color: rgba(238, 238, 238, .7) !important
+}
+
+.text-silver-transparent-7 {
+    color: rgba(238, 238, 238, .7) !important
+}
+
+.bg-silver-transparent-8 {
+    background-color: rgba(238, 238, 238, .8) !important
+}
+
+.text-silver-transparent-8 {
+    color: rgba(238, 238, 238, .8) !important
+}
+
+.bg-silver-transparent-9 {
+    background-color: rgba(238, 238, 238, .9) !important
+}
+
+.text-silver-transparent-9 {
+    color: rgba(238, 238, 238, .9) !important
+}
+
+.text-muted {
+    color: #a2a2a2 !important
+}
+
+.text-muted-lighter {
+    color: #b9b9b9 !important
+}
+
+.text-muted-darker {
+    color: #797979 !important
+}
+
+.bg-muted {
+    background-color: #a2a2a2 !important
+}
+
+.bg-muted-lighter {
+    background-color: #b9b9b9 !important
+}
+
+.bg-muted-darker {
+    background-color: #797979 !important
+}
+
+.bg-gradient-muted {
+    background: #a2a2a2 !important;
+    background: -moz-linear-gradient(to bottom, #bbb 0, #959595 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #bbb 0, #959595 100%) !important;
+    background: linear-gradient(to bottom, #bbb 0, #959595 100%) !important
+}
+
+.app-theme-muted .app-sidebar .nav>li.active>a {
+    background-color: #a2a2a2 !important
+}
+
+.bg-muted-transparent-1 {
+    background-color: rgba(162, 162, 162, .1) !important
+}
+
+.text-muted-transparent-1 {
+    color: rgba(162, 162, 162, .1) !important
+}
+
+.bg-muted-transparent-2 {
+    background-color: rgba(162, 162, 162, .2) !important
+}
+
+.text-muted-transparent-2 {
+    color: rgba(162, 162, 162, .2) !important
+}
+
+.bg-muted-transparent-3 {
+    background-color: rgba(162, 162, 162, .3) !important
+}
+
+.text-muted-transparent-3 {
+    color: rgba(162, 162, 162, .3) !important
+}
+
+.bg-muted-transparent-4 {
+    background-color: rgba(162, 162, 162, .4) !important
+}
+
+.text-muted-transparent-4 {
+    color: rgba(162, 162, 162, .4) !important
+}
+
+.bg-muted-transparent-5 {
+    background-color: rgba(162, 162, 162, .5) !important
+}
+
+.text-muted-transparent-5 {
+    color: rgba(162, 162, 162, .5) !important
+}
+
+.bg-muted-transparent-6 {
+    background-color: rgba(162, 162, 162, .6) !important
+}
+
+.text-muted-transparent-6 {
+    color: rgba(162, 162, 162, .6) !important
+}
+
+.bg-muted-transparent-7 {
+    background-color: rgba(162, 162, 162, .7) !important
+}
+
+.text-muted-transparent-7 {
+    color: rgba(162, 162, 162, .7) !important
+}
+
+.bg-muted-transparent-8 {
+    background-color: rgba(162, 162, 162, .8) !important
+}
+
+.text-muted-transparent-8 {
+    color: rgba(162, 162, 162, .8) !important
+}
+
+.bg-muted-transparent-9 {
+    background-color: rgba(162, 162, 162, .9) !important
+}
+
+.text-muted-transparent-9 {
+    color: rgba(162, 162, 162, .9) !important
+}
+
+.text-aqua {
+    color: #5ac8fa !important
+}
+
+.text-aqua-lighter {
+    color: #83d6fb !important
+}
+
+.text-aqua-darker {
+    color: #4496bc !important
+}
+
+.bg-aqua {
+    background-color: #5ac8fa !important
+}
+
+.bg-aqua-lighter {
+    background-color: #83d6fb !important
+}
+
+.bg-aqua-darker {
+    background-color: #4496bc !important
+}
+
+.bg-gradient-aqua {
+    background: #5ac8fa !important;
+    background: -moz-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: -webkit-linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important;
+    background: linear-gradient(to bottom, #8cd9fc 0, #41c0f9 100%) !important
+}
+
+.app-theme-aqua .app-sidebar .nav>li.active>a {
+    background-color: #5ac8fa !important
+}
+
+.bg-aqua-transparent-1 {
+    background-color: rgba(90, 200, 250, .1) !important
+}
+
+.text-aqua-transparent-1 {
+    color: rgba(90, 200, 250, .1) !important
+}
+
+.bg-aqua-transparent-2 {
+    background-color: rgba(90, 200, 250, .2) !important
+}
+
+.text-aqua-transparent-2 {
+    color: rgba(90, 200, 250, .2) !important
+}
+
+.bg-aqua-transparent-3 {
+    background-color: rgba(90, 200, 250, .3) !important
+}
+
+.text-aqua-transparent-3 {
+    color: rgba(90, 200, 250, .3) !important
+}
+
+.bg-aqua-transparent-4 {
+    background-color: rgba(90, 200, 250, .4) !important
+}
+
+.text-aqua-transparent-4 {
+    color: rgba(90, 200, 250, .4) !important
+}
+
+.bg-aqua-transparent-5 {
+    background-color: rgba(90, 200, 250, .5) !important
+}
+
+.text-aqua-transparent-5 {
+    color: rgba(90, 200, 250, .5) !important
+}
+
+.bg-aqua-transparent-6 {
+    background-color: rgba(90, 200, 250, .6) !important
+}
+
+.text-aqua-transparent-6 {
+    color: rgba(90, 200, 250, .6) !important
+}
+
+.bg-aqua-transparent-7 {
+    background-color: rgba(90, 200, 250, .7) !important
+}
+
+.text-aqua-transparent-7 {
+    color: rgba(90, 200, 250, .7) !important
+}
+
+.bg-aqua-transparent-8 {
+    background-color: rgba(90, 200, 250, .8) !important
+}
+
+.text-aqua-transparent-8 {
+    color: rgba(90, 200, 250, .8) !important
+}
+
+.bg-aqua-transparent-9 {
+    background-color: rgba(90, 200, 250, .9) !important
+}
+
+.text-aqua-transparent-9 {
+    color: rgba(90, 200, 250, .9) !important
+}
+
+.no-bg {
+    background: 0 0 !important
+}
+
+.bg-gradient-red-pink,
+.bg-gradient-red-pink-diagonal-down,
+.bg-gradient-red-pink-diagonal-up,
+.bg-gradient-red-pink-to-right {
+    background: #ff3b30
+}
+
+.bg-gradient-red-pink {
+    background: -moz-linear-gradient(to bottom, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(to bottom, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(to bottom, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-red-pink-to-right {
+    background: -moz-linear-gradient(to right, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(to right, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(to right, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-red-pink-to-top {
+    background: -moz-linear-gradient(to top, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(to top, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(to top, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-red-pink-to-left {
+    background: -moz-linear-gradient(to left, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(to left, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(to left, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-red-pink-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(-45deg, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(-45deg, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-red-pink-diagonal-up {
+    background: -moz-linear-gradient(45deg, #ff3b30 0, #ff2d55 100%);
+    background: -webkit-linear-gradient(45deg, #ff3b30 0, #ff2d55 100%);
+    background: linear-gradient(45deg, #ff3b30 0, #ff2d55 100%)
+}
+
+.bg-gradient-orange-red,
+.bg-gradient-orange-red-diagonal-down,
+.bg-gradient-orange-red-diagonal-up,
+.bg-gradient-orange-red-to-right {
+    background: #ff9500
+}
+
+.bg-gradient-orange-red {
+    background: -moz-linear-gradient(to bottom, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to bottom, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(to bottom, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-orange-red-to-right {
+    background: -moz-linear-gradient(to right, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to right, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(to right, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-orange-red-to-top {
+    background: -moz-linear-gradient(to top, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to top, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(to top, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-orange-red-to-left {
+    background: -moz-linear-gradient(to left, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to left, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(to left, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-orange-red-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(-45deg, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(-45deg, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-orange-red-diagonal-up {
+    background: -moz-linear-gradient(45deg, #ff9500 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(45deg, #ff9500 0, #ff3b30 100%);
+    background: linear-gradient(45deg, #ff9500 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-orange,
+.bg-gradient-yellow-orange-diagonal-down,
+.bg-gradient-yellow-orange-diagonal-up,
+.bg-gradient-yellow-orange-to-right {
+    background: #fc0
+}
+
+.bg-gradient-yellow-orange {
+    background: -moz-linear-gradient(to bottom, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(to bottom, #fc0 0, #ff9500 100%);
+    background: linear-gradient(to bottom, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-orange-to-right {
+    background: -moz-linear-gradient(to right, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(to right, #fc0 0, #ff9500 100%);
+    background: linear-gradient(to right, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-orange-to-top {
+    background: -moz-linear-gradient(to top, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(to top, #fc0 0, #ff9500 100%);
+    background: linear-gradient(to top, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-orange-to-left {
+    background: -moz-linear-gradient(to left, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(to left, #fc0 0, #ff9500 100%);
+    background: linear-gradient(to left, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-orange-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(-45deg, #fc0 0, #ff9500 100%);
+    background: linear-gradient(-45deg, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-orange-diagonal-up {
+    background: -moz-linear-gradient(45deg, #fc0 0, #ff9500 100%);
+    background: -webkit-linear-gradient(45deg, #fc0 0, #ff9500 100%);
+    background: linear-gradient(45deg, #fc0 0, #ff9500 100%)
+}
+
+.bg-gradient-yellow-red,
+.bg-gradient-yellow-red-diagonal-down,
+.bg-gradient-yellow-red-diagonal-up,
+.bg-gradient-yellow-red-to-right {
+    background: #fc0
+}
+
+.bg-gradient-yellow-red {
+    background: -moz-linear-gradient(to bottom, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to bottom, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(to bottom, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-red-to-right {
+    background: -moz-linear-gradient(to right, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to right, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(to right, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-red-to-top {
+    background: -moz-linear-gradient(to top, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to top, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(to top, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-red-to-left {
+    background: -moz-linear-gradient(to left, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(to left, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(to left, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-red-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(-45deg, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(-45deg, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-yellow-red-diagonal-up {
+    background: -moz-linear-gradient(45deg, #fc0 0, #ff3b30 100%);
+    background: -webkit-linear-gradient(45deg, #fc0 0, #ff3b30 100%);
+    background: linear-gradient(45deg, #fc0 0, #ff3b30 100%)
+}
+
+.bg-gradient-teal-green,
+.bg-gradient-teal-green-diagonal-down,
+.bg-gradient-teal-green-diagonal-up,
+.bg-gradient-teal-green-to-right {
+    background: #58eaa1
+}
+
+.bg-gradient-teal-green {
+    background: -moz-linear-gradient(to bottom, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to bottom, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(to bottom, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-teal-green-to-right {
+    background: -moz-linear-gradient(to right, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to right, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(to right, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-teal-green-to-top {
+    background: -moz-linear-gradient(to top, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to top, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(to top, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-teal-green-to-left {
+    background: -moz-linear-gradient(to left, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to left, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(to left, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-teal-green-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(-45deg, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(-45deg, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-teal-green-diagonal-up {
+    background: -moz-linear-gradient(45deg, #58eaa1 0, #4cd964 100%);
+    background: -webkit-linear-gradient(45deg, #58eaa1 0, #4cd964 100%);
+    background: linear-gradient(45deg, #58eaa1 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green,
+.bg-gradient-yellow-green-diagonal-down,
+.bg-gradient-yellow-green-diagonal-up,
+.bg-gradient-yellow-green-to-right {
+    background: #fc0
+}
+
+.bg-gradient-yellow-green {
+    background: -moz-linear-gradient(to bottom, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to bottom, #fc0 0, #4cd964 100%);
+    background: linear-gradient(to bottom, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green-to-right {
+    background: -moz-linear-gradient(to right, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to right, #fc0 0, #4cd964 100%);
+    background: linear-gradient(to right, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green-to-top {
+    background: -moz-linear-gradient(to top, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to top, #fc0 0, #4cd964 100%);
+    background: linear-gradient(to top, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green-to-left {
+    background: -moz-linear-gradient(to left, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(to left, #fc0 0, #4cd964 100%);
+    background: linear-gradient(to left, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(-45deg, #fc0 0, #4cd964 100%);
+    background: linear-gradient(-45deg, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-yellow-green-diagonal-up {
+    background: -moz-linear-gradient(45deg, #fc0 0, #4cd964 100%);
+    background: -webkit-linear-gradient(45deg, #fc0 0, #4cd964 100%);
+    background: linear-gradient(45deg, #fc0 0, #4cd964 100%)
+}
+
+.bg-gradient-blue-purple,
+.bg-gradient-blue-purple-diagonal-down,
+.bg-gradient-blue-purple-diagonal-up,
+.bg-gradient-blue-purple-to-right {
+    background: #007aff
+}
+
+.bg-gradient-blue-purple {
+    background: -moz-linear-gradient(to bottom, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to bottom, #007aff 0, #b503ff 100%);
+    background: linear-gradient(to bottom, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-blue-purple-to-right {
+    background: -moz-linear-gradient(to right, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to right, #007aff 0, #b503ff 100%);
+    background: linear-gradient(to right, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-blue-purple-to-top {
+    background: -moz-linear-gradient(to top, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to top, #007aff 0, #b503ff 100%);
+    background: linear-gradient(to top, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-blue-purple-to-left {
+    background: -moz-linear-gradient(to left, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to left, #007aff 0, #b503ff 100%);
+    background: linear-gradient(to left, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-blue-purple-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(-45deg, #007aff 0, #b503ff 100%);
+    background: linear-gradient(-45deg, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-blue-purple-diagonal-up {
+    background: -moz-linear-gradient(45deg, #007aff 0, #b503ff 100%);
+    background: -webkit-linear-gradient(45deg, #007aff 0, #b503ff 100%);
+    background: linear-gradient(45deg, #007aff 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-blue,
+.bg-gradient-cyan-blue-diagonal-down,
+.bg-gradient-cyan-blue-diagonal-up,
+.bg-gradient-cyan-blue-to-right {
+    background: #5ac8fa
+}
+
+.bg-gradient-cyan-blue {
+    background: -moz-linear-gradient(to bottom, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(to bottom, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(to bottom, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-blue-to-right {
+    background: -moz-linear-gradient(to right, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(to right, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(to right, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-blue-to-top {
+    background: -moz-linear-gradient(to top, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(to top, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(to top, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-blue-to-left {
+    background: -moz-linear-gradient(to left, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(to left, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(to left, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-blue-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(-45deg, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(-45deg, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-blue-diagonal-up {
+    background: -moz-linear-gradient(45deg, #5ac8fa 0, #007aff 100%);
+    background: -webkit-linear-gradient(45deg, #5ac8fa 0, #007aff 100%);
+    background: linear-gradient(45deg, #5ac8fa 0, #007aff 100%)
+}
+
+.bg-gradient-cyan-purple,
+.bg-gradient-cyan-purple-diagonal-down,
+.bg-gradient-cyan-purple-diagonal-up,
+.bg-gradient-cyan-purple-to-right {
+    background: #5ac8fa
+}
+
+.bg-gradient-cyan-purple {
+    background: -moz-linear-gradient(to bottom, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to bottom, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(to bottom, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-purple-to-right {
+    background: -moz-linear-gradient(to right, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to right, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(to right, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-purple-to-top {
+    background: -moz-linear-gradient(to top, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to top, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(to top, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-purple-to-left {
+    background: -moz-linear-gradient(to left, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(to left, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(to left, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-purple-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(-45deg, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(-45deg, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-purple-diagonal-up {
+    background: -moz-linear-gradient(45deg, #5ac8fa 0, #b503ff 100%);
+    background: -webkit-linear-gradient(45deg, #5ac8fa 0, #b503ff 100%);
+    background: linear-gradient(45deg, #5ac8fa 0, #b503ff 100%)
+}
+
+.bg-gradient-cyan-indigo,
+.bg-gradient-cyan-indigo-diagonal-down,
+.bg-gradient-cyan-indigo-diagonal-up,
+.bg-gradient-cyan-indigo-to-right {
+    background: #5ac8fa
+}
+
+.bg-gradient-cyan-indigo {
+    background: -moz-linear-gradient(to bottom, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to bottom, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(to bottom, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-cyan-indigo-to-right {
+    background: -moz-linear-gradient(to right, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to right, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(to right, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-cyan-indigo-to-top {
+    background: -moz-linear-gradient(to top, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to top, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(to top, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-cyan-indigo-to-left {
+    background: -moz-linear-gradient(to left, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to left, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(to left, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-cyan-indigo-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(-45deg, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(-45deg, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-cyan-indigo-diagonal-up {
+    background: -moz-linear-gradient(45deg, #5ac8fa 0, #5856d6 100%);
+    background: -webkit-linear-gradient(45deg, #5ac8fa 0, #5856d6 100%);
+    background: linear-gradient(45deg, #5ac8fa 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo,
+.bg-gradient-blue-indigo-diagonal-down,
+.bg-gradient-blue-indigo-diagonal-up,
+.bg-gradient-blue-indigo-to-right {
+    background: #007aff
+}
+
+.bg-gradient-blue-indigo {
+    background: -moz-linear-gradient(to bottom, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to bottom, #007aff 0, #5856d6 100%);
+    background: linear-gradient(to bottom, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo-to-right {
+    background: -moz-linear-gradient(to right, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to right, #007aff 0, #5856d6 100%);
+    background: linear-gradient(to right, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo-to-top {
+    background: -moz-linear-gradient(to top, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to top, #007aff 0, #5856d6 100%);
+    background: linear-gradient(to top, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo-to-left {
+    background: -moz-linear-gradient(to left, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to left, #007aff 0, #5856d6 100%);
+    background: linear-gradient(to left, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(-45deg, #007aff 0, #5856d6 100%);
+    background: linear-gradient(-45deg, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-blue-indigo-diagonal-up {
+    background: -moz-linear-gradient(45deg, #007aff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(45deg, #007aff 0, #5856d6 100%);
+    background: linear-gradient(45deg, #007aff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo,
+.bg-gradient-purple-indigo-diagonal-down,
+.bg-gradient-purple-indigo-diagonal-up,
+.bg-gradient-purple-indigo-to-right {
+    background: #b503ff
+}
+
+.bg-gradient-purple-indigo {
+    background: -moz-linear-gradient(to bottom, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to bottom, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(to bottom, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo-to-right {
+    background: -moz-linear-gradient(to right, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to right, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(to right, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo-to-top {
+    background: -moz-linear-gradient(to top, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to top, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(to top, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo-to-left {
+    background: -moz-linear-gradient(to left, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(to left, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(to left, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(-45deg, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(-45deg, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-purple-indigo-diagonal-up {
+    background: -moz-linear-gradient(45deg, #b503ff 0, #5856d6 100%);
+    background: -webkit-linear-gradient(45deg, #b503ff 0, #5856d6 100%);
+    background: linear-gradient(45deg, #b503ff 0, #5856d6 100%)
+}
+
+.bg-gradient-silver-black,
+.bg-gradient-silver-black-diagonal-down,
+.bg-gradient-silver-black-diagonal-up,
+.bg-gradient-silver-black-to-right {
+    background: #eee
+}
+
+.bg-gradient-silver-black {
+    background: -moz-linear-gradient(to bottom, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(to bottom, #eee 0, #000 100%);
+    background: linear-gradient(to bottom, #eee 0, #000 100%)
+}
+
+.bg-gradient-silver-black-to-right {
+    background: -moz-linear-gradient(to right, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(to right, #eee 0, #000 100%);
+    background: linear-gradient(to right, #eee 0, #000 100%)
+}
+
+.bg-gradient-silver-black-to-top {
+    background: -moz-linear-gradient(to top, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(to top, #eee 0, #000 100%);
+    background: linear-gradient(to top, #eee 0, #000 100%)
+}
+
+.bg-gradient-silver-black-to-left {
+    background: -moz-linear-gradient(to left, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(to left, #eee 0, #000 100%);
+    background: linear-gradient(to left, #eee 0, #000 100%)
+}
+
+.bg-gradient-silver-black-diagonal-down {
+    background: -moz-linear-gradient(-45deg, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(-45deg, #eee 0, #000 100%);
+    background: linear-gradient(-45deg, #eee 0, #000 100%)
+}
+
+.bg-gradient-silver-black-diagonal-up {
+    background: -moz-linear-gradient(45deg, #eee 0, #000 100%);
+    background: -webkit-linear-gradient(45deg, #eee 0, #000 100%);
+    background: linear-gradient(45deg, #eee 0, #000 100%)
+}
+
+.opacity-0 {
+    opacity: 0 !important
+}
+
+.opacity-1 {
+    opacity: .1 !important
+}
+
+.opacity-2 {
+    opacity: .2 !important
+}
+
+.opacity-3 {
+    opacity: .3 !important
+}
+
+.opacity-4 {
+    opacity: .4 !important
+}
+
+.opacity-5 {
+    opacity: .5 !important
+}
+
+.opacity-6 {
+    opacity: .6 !important
+}
+
+.opacity-7 {
+    opacity: .7 !important
+}
+
+.opacity-8 {
+    opacity: .8 !important
+}
+
+.opacity-9 {
+    opacity: .9 !important
+}
+
+.opacity-10 {
+    opacity: 1 !important
+}
+
+.with-shadow {
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, .1) !important
+}
+
+.hide {
+    display: none !important
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.img-rounded {
+    border-radius: .375rem
+}
+
+.img-circle {
+    border-radius: 50%
+}
+
+.valign-top {
+    vertical-align: top !important
+}
+
+.valign-bottom {
+    vertical-align: bottom !important
+}
+
+.valign-middle {
+    vertical-align: middle !important
+}
+
+.table-no-border-left tbody tr td,
+.table-no-border-left tbody tr th,
+.table-no-border-left thead tr td,
+.table-no-border-left thead tr th {
+    border-left: none
+}
+
+.table-no-border-right tbody tr td,
+.table-no-border-right tbody tr th,
+.table-no-border-right thead tr td,
+.table-no-border-right thead tr th {
+    border-right: none
+}
+
+.text-gradient {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.row>[class^=col-] {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.row.row-space-0 {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.row.row-space-2 {
+    margin-left: -1px;
+    margin-right: -1px
+}
+
+.row.row-space-4 {
+    margin-left: -2px;
+    margin-right: -2px
+}
+
+.row.row-space-6 {
+    margin-left: -3px;
+    margin-right: -3px
+}
+
+.row.row-space-8 {
+    margin-left: -4px;
+    margin-right: -4px
+}
+
+.row.row-space-10 {
+    margin-left: -5px;
+    margin-right: -5px
+}
+
+.row.row-space-12 {
+    margin-left: -6px;
+    margin-right: -6px
+}
+
+.row.row-space-14 {
+    margin-left: -7px;
+    margin-right: -7px
+}
+
+.row.row-space-16 {
+    margin-left: -8px;
+    margin-right: -8px
+}
+
+.row.row-space-18 {
+    margin-left: -9px;
+    margin-right: -9px
+}
+
+.row.row-space-20 {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.row.row-space-22 {
+    margin-left: -11px;
+    margin-right: -11px
+}
+
+.row.row-space-24 {
+    margin-left: -12px;
+    margin-right: -12px
+}
+
+.row.row-space-26 {
+    margin-left: -13px;
+    margin-right: -13px
+}
+
+.row.row-space-28 {
+    margin-left: -14px;
+    margin-right: -14px
+}
+
+.row.row-space-30 {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.row.row-space-0>[class^=col-] {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.row.row-space-2>[class^=col-] {
+    padding-left: 1px;
+    padding-right: 1px
+}
+
+.row.row-space-4>[class^=col-] {
+    padding-left: 2px;
+    padding-right: 2px
+}
+
+.row.row-space-6>[class^=col-] {
+    padding-left: 3px;
+    padding-right: 3px
+}
+
+.row.row-space-8>[class^=col-] {
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+.row.row-space-10>[class^=col-] {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.row.row-space-12>[class^=col-] {
+    padding-left: 6px;
+    padding-right: 6px
+}
+
+.row.row-space-14>[class^=col-] {
+    padding-left: 7px;
+    padding-right: 7px
+}
+
+.row.row-space-16>[class^=col-] {
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.row.row-space-18>[class^=col-] {
+    padding-left: 9px;
+    padding-right: 9px
+}
+
+.row.row-space-20>[class^=col-] {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.row.row-space-22>[class^=col-] {
+    padding-left: 11px;
+    padding-right: 11px
+}
+
+.row.row-space-24>[class^=col-] {
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.row.row-space-26>[class^=col-] {
+    padding-left: 13px;
+    padding-right: 13px
+}
+
+.row.row-space-28>[class^=col-] {
+    padding-left: 14px;
+    padding-right: 14px
+}
+
+.row.row-space-30>[class^=col-] {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.height-xs {
+    height: 150px !important
+}
+
+.height-sm {
+    height: 300px !important
+}
+
+.height-md {
+    height: 450px !important
+}
+
+.height-lg {
+    height: 600px !important
+}
+
+.height-full {
+    height: 100% !important
+}
+
+.height-0 {
+    height: 0 !important
+}
+
+.height-10 {
+    height: 10px !important
+}
+
+.height-20 {
+    height: 20px !important
+}
+
+.height-30 {
+    height: 30px !important
+}
+
+.height-40 {
+    height: 40px !important
+}
+
+.height-50 {
+    height: 50px !important
+}
+
+.height-60 {
+    height: 60px !important
+}
+
+.height-70 {
+    height: 70px !important
+}
+
+.height-80 {
+    height: 80px !important
+}
+
+.height-90 {
+    height: 90px !important
+}
+
+.height-100 {
+    height: 100px !important
+}
+
+.height-150 {
+    height: 150px !important
+}
+
+.height-200 {
+    height: 200px !important
+}
+
+.height-250 {
+    height: 250px !important
+}
+
+.height-300 {
+    height: 300px !important
+}
+
+.height-350 {
+    height: 350px !important
+}
+
+.height-400 {
+    height: 400px !important
+}
+
+.height-450 {
+    height: 450px !important
+}
+
+.height-500 {
+    height: 500px !important
+}
+
+.height-550 {
+    height: 550px !important
+}
+
+.height-600 {
+    height: 600px !important
+}
+
+.wrapper {
+    padding: 15px
+}
+
+.width-xs {
+    width: 150px !important
+}
+
+.width-sm {
+    width: 300px !important
+}
+
+.width-md {
+    width: 450px !important
+}
+
+.width-lg {
+    width: 600px !important
+}
+
+.width-full {
+    width: 100% !important
+}
+
+.width-0 {
+    width: 0 !important
+}
+
+.width-10 {
+    width: 10px !important
+}
+
+.width-20 {
+    width: 20px !important
+}
+
+.width-30 {
+    width: 30px !important
+}
+
+.width-40 {
+    width: 40px !important
+}
+
+.width-50 {
+    width: 50px !important
+}
+
+.width-60 {
+    width: 60px !important
+}
+
+.width-70 {
+    width: 70px !important
+}
+
+.width-80 {
+    width: 80px !important
+}
+
+.width-90 {
+    width: 90px !important
+}
+
+.width-100 {
+    width: 100px !important
+}
+
+.width-150 {
+    width: 150px !important
+}
+
+.width-200 {
+    width: 200px !important
+}
+
+.width-250 {
+    width: 250px !important
+}
+
+.width-300 {
+    width: 300px !important
+}
+
+.width-350 {
+    width: 350px !important
+}
+
+.width-400 {
+    width: 400px !important
+}
+
+.width-450 {
+    width: 450px !important
+}
+
+.width-500 {
+    width: 500px !important
+}
+
+.width-550 {
+    width: 550px !important
+}
+
+.width-600 {
+    width: 600px !important
+}
+
+
+
+.countdown {
+    padding: 45px 0;
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.countdown:after,
+.countdown:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.countdown .countdown-col {
+    float: left
+}
+
+.countdown.col-5 .countdown-col {
+    width: 20%
+}
+
+.countdown.col-4 .countdown-col {
+    width: 25%
+}
+
+.countdown.col-3 .countdown-col {
+    width: 33.33%
+}
+
+.countdown.col-2 .countdown-col {
+    width: 50%
+}
+
+.countdown-number {
+    position: relative;
+    margin: 0 auto 15px;
+    width: 50px;
+    height: 80px;
+    border-radius: 10px;
+    background: #30373e;
+    cursor: pointer;
+    line-height: 1;
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg)
+}
+
+.countdown-number .number {
+    line-height: 82px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    z-index: 1020;
+    color: #fff;
+    font-size: 28px
+}
+
+.countdown-number:after,
+.countdown-number:before {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+    left: 0
+}
+
+.countdown-number:before {
+    transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg)
+}
+
+.countdown-number:after {
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg)
+}
+
+
+.force_line {line-height: 40px;}
+
+
+.l-h-auto {
+    line-height: auto;
+}
+
+.l-h-0 {
+    line-height: 0;
+}
+
+.l-h-1 {
+    line-height: 1px;
+}
+
+.l-h-2 {
+    line-height: 2px;
+}
+
+.l-h-3 {
+    line-height: 3px;
+}
+
+.l-h-4 {
+    line-height: 4px;
+}
+
+.l-h-5 {
+    line-height: 5px;
+}
+
+.l-h-10 {
+    line-height: 10px;
+}
+
+.l-h-15 {
+    line-height: 15px;
+}
+
+.l-h-20 {
+    line-height: 20px;
+}
+
+.l-h-25 {
+    line-height: 25px;
+}
+
+.l-h-30 {
+    line-height: 30px;
+}
+
+.l-h-35 {
+    line-height: 35px;
+}
+
+.l-h-40 {
+    line-height: 40px;
+}
