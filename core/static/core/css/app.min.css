@@ -41,12 +41,13 @@
 
 
 @media (max-width: 767px) {
-  .hidden-xs,
-  tr.hidden-xs,
-  th.hidden-xs,
-  td.hidden-xs {
-    display: none !important;
-  }
+
+    .hidden-xs,
+    tr.hidden-xs,
+    th.hidden-xs,
+    td.hidden-xs {
+        display: none !important;
+    }
 }
 
 @keyframes bounce {
@@ -9494,8 +9495,6 @@
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url(../webfonts/fa-brands-400.eot);
-    src: url(../webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-brands-400.woff2) format("woff2"), url(../webfonts/fa-brands-400.woff) format("woff"), url(../webfonts/fa-brands-400.ttf) format("truetype"), url(../webfonts/fa-brands-400.svg#fontawesome) format("svg")
 }
 
 .fab {
@@ -9507,8 +9506,6 @@
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url(../webfonts/fa-regular-400.eot);
-    src: url(../webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-regular-400.woff2) format("woff2"), url(../webfonts/fa-regular-400.woff) format("woff"), url(../webfonts/fa-regular-400.ttf) format("truetype"), url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
 }
 
 .far {
@@ -9520,8 +9517,6 @@
     font-style: normal;
     font-weight: 900;
     font-display: auto;
-    src: url(../webfonts/fa-solid-900.eot);
-    src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
 }
 
 .fa,
@@ -9538,7 +9533,7 @@
 /*! jQuery UI - v1.12.1 - 2016-09-14
 * http://jqueryui.com
 * Includes: core.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, draggable.css, resizable.css, progressbar.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?bgShadowXPos=&bgOverlayXPos=&bgErrorXPos=&bgHighlightXPos=&bgContentXPos=&bgHeaderXPos=&bgActiveXPos=&bgHoverXPos=&bgDefaultXPos=&bgShadowYPos=&bgOverlayYPos=&bgErrorYPos=&bgHighlightYPos=&bgContentYPos=&bgHeaderYPos=&bgActiveYPos=&bgHoverYPos=&bgDefaultYPos=&bgShadowRepeat=&bgOverlayRepeat=&bgErrorRepeat=&bgHighlightRepeat=&bgContentRepeat=&bgHeaderRepeat=&bgActiveRepeat=&bgHoverRepeat=&bgDefaultRepeat=&iconsHover=url(%22images%2Fui-icons_555555_256x240.png%22)&iconsHighlight=url(%22images%2Fui-icons_777620_256x240.png%22)&iconsHeader=url(%22images%2Fui-icons_444444_256x240.png%22)&iconsError=url(%22images%2Fui-icons_cc0000_256x240.png%22)&iconsDefault=url(%22images%2Fui-icons_777777_256x240.png%22)&iconsContent=url(%22images%2Fui-icons_444444_256x240.png%22)&iconsActive=url(%22images%2Fui-icons_ffffff_256x240.png%22)&bgImgUrlShadow=&bgImgUrlOverlay=&bgImgUrlHover=&bgImgUrlHighlight=&bgImgUrlHeader=&bgImgUrlError=&bgImgUrlDefault=&bgImgUrlContent=&bgImgUrlActive=&opacityFilterShadow=Alpha(Opacity%3D30)&opacityFilterOverlay=Alpha(Opacity%3D30)&opacityShadowPerc=30&opacityOverlayPerc=30&iconColorHover=%23555555&iconColorHighlight=%23777620&iconColorHeader=%23444444&iconColorError=%23cc0000&iconColorDefault=%23777777&iconColorContent=%23444444&iconColorActive=%23ffffff&bgImgOpacityShadow=0&bgImgOpacityOverlay=0&bgImgOpacityError=95&bgImgOpacityHighlight=55&bgImgOpacityContent=75&bgImgOpacityHeader=75&bgImgOpacityActive=65&bgImgOpacityHover=75&bgImgOpacityDefault=75&bgTextureShadow=flat&bgTextureOverlay=flat&bgTextureError=flat&bgTextureHighlight=flat&bgTextureContent=flat&bgTextureHeader=flat&bgTextureActive=flat&bgTextureHover=flat&bgTextureDefault=flat&cornerRadius=3px&fwDefault=normal&ffDefault=Arial%2CHelvetica%2Csans-serif&fsDefault=1em&cornerRadiusShadow=8px&thicknessShadow=5px&offsetLeftShadow=0px&offsetTopShadow=0px&opacityShadow=.3&bgColorShadow=%23666666&opacityOverlay=.3&bgColorOverlay=%23aaaaaa&fcError=%235f3f3f&borderColorError=%23f1a899&bgColorError=%23fddfdf&fcHighlight=%23777620&borderColorHighlight=%23dad55e&bgColorHighlight=%23fffa90&fcContent=%23333333&borderColorContent=%23dddddd&bgColorContent=%23ffffff&fcHeader=%23333333&borderColorHeader=%23dddddd&bgColorHeader=%23e9e9e9&fcActive=%23ffffff&borderColorActive=%23003eff&bgColorActive=%23007fff&fcHover=%232b2b2b&borderColorHover=%23cccccc&bgColorHover=%23ededed&fcDefault=%23454545&borderColorDefault=%23c5c5c5&bgColorDefault=%23f6f6f6
+* To view and modify this theme
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
 .ui-helper-hidden {
     display: none
@@ -10715,37 +10710,37 @@ a.ui-button:active {
 
 .ui-icon,
 .ui-widget-content .ui-icon {
-    background-image: url(images/ui-icons_444444_256x240.png)
+    background-image: url('')
 }
 
 .ui-widget-header .ui-icon {
-    background-image: url(images/ui-icons_444444_256x240.png)
+    background-image: url('')
 }
 
 .ui-button:focus .ui-icon,
 .ui-button:hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-state-hover .ui-icon {
-    background-image: url(images/ui-icons_555555_256x240.png)
+    background-image: url('')
 }
 
 .ui-button:active .ui-icon,
 .ui-state-active .ui-icon {
-    background-image: url(images/ui-icons_ffffff_256x240.png)
+    background-image: url('')
 }
 
 .ui-button .ui-state-highlight.ui-icon,
 .ui-state-highlight .ui-icon {
-    background-image: url(images/ui-icons_777620_256x240.png)
+    background-image: url('')
 }
 
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-    background-image: url(images/ui-icons_cc0000_256x240.png)
+    background-image: url('')
 }
 
 .ui-button .ui-icon {
-    background-image: url(images/ui-icons_777777_256x240.png)
+    background-image: url('')
 }
 
 .ui-icon-blank {
@@ -14140,7 +14135,7 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #ddd!important
+    border: 1px solid #ddd !important
 }
 
 .table-bordered td,
@@ -26575,7 +26570,7 @@ a.text-aqua:hover {
     }
 
     abbr[title]::after {
-        content: " ("attr(title) ")"
+        content: " (" attr(title) ")"
     }
 
     pre {
@@ -27224,29 +27219,37 @@ a:focus {
     background: #fff;
 
 }
-        @media (max-width: 767px) {
-            .sidebar .navbar-brand {
-                display: none;
-            }
 
-        }
-        @media (min-width: 767px) {
-           .header.navbar-default {
-            background: #fff;
-            left: 220px;
-        }  #navbar-brand {
-                display: none;
-            }
-        
-           .page-sidebar-minified .header.navbar-default {
-                background: #fff;
-                left: 60px;
-            } .page-sidebar-minified #navbar-brand2 {
-                display: none;
-            } .page-sidebar-minified #navbar-brand {
-                display: block;
-            }
-        }
+@media (max-width: 767px) {
+    .sidebar .navbar-brand {
+        display: none;
+    }
+
+}
+
+@media (min-width: 767px) {
+    .header.navbar-default {
+        background: #fff;
+        left: 220px;
+    }
+
+    #navbar-brand {
+        display: none;
+    }
+
+    .page-sidebar-minified .header.navbar-default {
+        background: #fff;
+        left: 60px;
+    }
+
+    .page-sidebar-minified #navbar-brand2 {
+        display: none;
+    }
+
+    .page-sidebar-minified #navbar-brand {
+        display: block;
+    }
+}
 
 .header.navbar-default .navbar-brand {
     color: #222
@@ -27351,7 +27354,7 @@ a:focus {
     .sidebar {
         padding-top: 0;
         left: -220px;
-        z-index: 1021; 
+        z-index: 1021;
         top: 100px;
     }
 }
@@ -27619,7 +27622,7 @@ a:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(images/cover-sidebar-user.jpg);
+    background: url('');
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -27851,7 +27854,7 @@ a:focus {
 }
 
 .sidebar.sidebar-transparent+.sidebar-bg {
-    background: url(images/cover-sidebar.jpg);
+    background: url('');
     background-size: cover
 }
 
@@ -28659,7 +28662,7 @@ a:focus {
 
 .boxed-layout {
     height: 100%;
-    background-image: url(images/cover-pattern.png)
+    background-image: url('')
 }
 
 .boxed-layout .top-menu {
@@ -32854,7 +32857,7 @@ code.inverse-mode {
 }
 
 .coming-soon .coming-soon-header {
-    background: url(images/coming-soon.jpg);
+    background: url('');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 50px 50px;
@@ -33095,7 +33098,7 @@ code.inverse-mode {
     bottom: 0;
     padding: 30px;
     background: #222;
-    background-image: url(images/error-page-pattern.png)
+    background-image: url('')
 }
 
 .error .error-message {
@@ -35054,7 +35057,7 @@ hr {
 }
 
 .tab-overflow .nav.nav-tabs.nav-tabs-yellow>li>a.active {
-     color: #212529;
+    color: #212529;
     background-color: #fc0;
 }
 
@@ -35064,14 +35067,17 @@ hr {
     background: #FF9500;
     color: #fff
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-blue>li>a.active {
     background: #007AFF;
     color: #fff
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-red>li>a.active {
     background: #FF3B30;
     color: #fff
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-default>li>a.active {
     background: #eeeeee;
     color: #111
@@ -35081,6 +35087,7 @@ hr {
     background: #222;
     color: #fff
 }
+
 /*.tab-overflow .nav.nav-tabs.nav-tabs-inside .next-button,
 .tab-overflow .nav.nav-tabs.nav-tabs-inside .prev-button {
     -webkit-box-shadow: 0 0 15px #000;
@@ -35107,19 +35114,24 @@ hr {
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0
 }
+
 .nav.nav-tabs.nav-tabs-info .nav-item .nav-link {
     color: #bbb
 }
+
 .nav.nav-tabs.nav-tabs-info .nav-item .nav-link.active {
     color: #222
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-info>li>a {
     background: 0 0
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-info>li>a.active {
     background: #fff;
     color: #222
 }
+
 .tab-overflow .nav.nav-tabs.nav-tabs-info .next-button,
 .tab-overflow .nav.nav-tabs.nav-tabs-info .prev-button {
     -webkit-box-shadow: 0 0 15px #000;
@@ -35997,7 +36009,7 @@ hr {
 }
 
 .profile-header .profile-header-cover {
-    background-image: url(images/profile-cover.jpg);
+    background-image: url('');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37650,7 +37662,7 @@ hr {
 
 @media (max-width:991.98px) {
     .timeline_n .timeline_n-body {
-       /* margin-left: 20%;*/
+        /* margin-left: 20%;*/
         margin-right: 0
     }
 }
@@ -49481,7 +49493,7 @@ body ul.wysihtml5-toolbar .glyphicon.glyphicon-picture:before {
 
 .bg-red {
     background-color: #f56954 !important
-    /*background-color: #ff3b30 !important*/
+        /*background-color: #ff3b30 !important*/
 }
 
 .bg-red-lighter {
