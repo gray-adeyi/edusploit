@@ -21,7 +21,7 @@ class SignInView(TemplateView):
             login(request, user)
             return redirect("dashboard")
         else:
-            return redirect("login")
+            return redirect("sign-in")
 
 
 class BaseView(LoginRequiredMixin, TemplateView):
