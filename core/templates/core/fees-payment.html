@@ -1009,7 +1009,8 @@
                 <li class="dropdown navbar-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="{% static 'core/img/45727-1_1_1_1_img_20180719_113004_024.jpg' %}" alt="">
-                        <span class="d-none d-md-inline">Adeyi Gbenga Michael </span> <b class="caret"></b>
+                        <span class="d-none d-md-inline">{{ request.user.last_name }} {{ request.user.first_name }}
+                            {{request.user.middle_name }} </span> <b class="caret"></b>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="javascript:;" class="dropdown-item">Edit Profile</a>
@@ -1078,7 +1079,9 @@
                                 <div class="info">
                                     <small>Welcome, Student</small>
                                     <b class="caret pull-right"></b>
-                                    Adeyi Gbenga Michael
+                                    {{ request.user.last_name}}
+                                    {{ request.user.first_name}}
+                                    {{ request.user.middle_name}}
                                 </div>
                             </a>
                         </li>
@@ -1098,7 +1101,7 @@
                     <ul class="nav active">
                         <li class="nav-header">Navigation</li>
 
-                        <li class=""><a href="#dashboard/dashboard-v1" data-toggle="ajax"><i
+                        <li class=""><a href="{% url 'dashboard' %}" data-toggle="ajax"><i
                                     class="fa fa-home bg-yellow text-black"></i> <span>Dashboard <span
                                         class="label label-theme m-l-3">Home</span></span></a></li>
 
@@ -1201,7 +1204,8 @@
                                 <span>Fees Payment</span>
                             </a>
                             <ul class="sub-menu active" style="display: block;">
-                                <li class="active"><a href="#fees/fees_payment" data-toggle="ajax">Fees Payment</a></li>
+                                <li class="active"><a href="{% url 'fees-payment' %}" data-toggle="ajax">Fees
+                                        Payment</a></li>
                                 <!-- <li><a href="#fees/fees_transaction" data-toggle="ajax">Card Transaction</a></li> -->
                                 <li><a href="#fees/fees_breakdown" data-toggle="ajax">Fees Breakdown</a></li>
                             </ul>
@@ -1430,9 +1434,10 @@
                 <div class="col-xl-3">
                     <div class="about-author">
                         <div class="quote bg-white">
-                            <a href="javascript:;" onclick="login_user('1905003026')"
+                            <a href="javascript:;" onclick="login_user('{{ request.user.identifier }}')"
                                 class="btn btn-info btn-danger pull-right  m-r-2 tooltip_"><span
-                                    class="tooltiptext">Login as 1905003026</span> <i class="fa fa-power-off"></i></a>
+                                    class="tooltiptext">Login as {{ request.user.identifier}}</span> <i
+                                    class="fa fa-power-off"></i></a>
                             <a href="javascript:;" class="btn btn-info btn-info pull-right  m-r-2"><i
                                     class="fa fa-lock"></i></a>
                             <a href="#profile/edit_biodata"
@@ -1447,8 +1452,11 @@
                                     alt="Sean Ngu" style="height: 90px; width: 90px">
                             </div>
                             <div class="info">
-                                <small>1905003026</small>
-                                ADEYI GBENGA MICHAEL <small> adeyi.g.1905003026@eksu.edu.ng</small>
+                                <small>{{ request.user.identifier}}</small>
+                                {{ request.user.last_name | upper}}
+                                {{ request.user.first_name | upper}}
+                                {{ request.user.middle_name | upper}} <small>
+                                    {{ request.user.additional_info.school_email }}</small>
                             </div>
 
                             <!-- <p>
@@ -1464,11 +1472,11 @@
 
                                 <tr>
                                     <td colspan="1"><b>MATRIC NO.</b> </td>
-                                    <td colspan="3"> 1905003026 </td>
+                                    <td colspan="3"> {{ request.user.identifier | upper }} </td>
                                 </tr>
                                 <tr>
                                     <td colspan="1"><b>REG. NO.</b> </td>
-                                    <td colspan="3"> 96558550AJ </td>
+                                    <td colspan="3"> {{ request.user.additional_info.reg_no | upper}} </td>
                                 </tr>
                                 <tr>
                                     <td colspan="1"><b>FACULTY</b> </td>
@@ -1514,7 +1522,8 @@
                     <div class="tile-stats tile-blue">
                         <div class="icon"><i class="entypo-download"></i></div>
                         <div class="num f-s-20" id="total_search">N<span data-animation="number"
-                                data-value="144000">144,000</span></div>
+                                data-value="{{ request.user.additional_info.total_bill}}">
+                                {{request.user.additional_info.total_bill}}</span></div>
                         <p><b>Total Bill</b></p>
                         <p>Active Session</p>
 
@@ -1523,7 +1532,8 @@
 
                     <div class="tile-stats tile-green">
                         <div class="icon"><i class="entypo-download"></i></div>
-                        <div class="num f-s-20" id="total_search">N<span data-animation="number" data-value="0">0</span>
+                        <div class="num f-s-20" id="total_search">N<span data-animation="number"
+                                data-value="{{request.user.additional_info.total_payment}}">{{request.user.additional_info.total_payment}}</span>
                         </div>
                         <p><b>Total Payment</b></p>
                         <p>Active Session</p>
@@ -1534,7 +1544,8 @@
                     <div class="tile-stats tile-red">
                         <div class="icon"><i class="entypo-download"></i></div>
                         <div class="num f-s-20" id="total_search">N<span data-animation="number"
-                                data-value="144000">144,000</span></div>
+                                data-value="{{request.user.additional_info.total_outstanding}}">{{request.user.additional_info.total_outstanding}}</span>
+                        </div>
                         <p><b>Outstanding</b></p>
                         <p>Active Session</p>
                     </div>
@@ -1763,43 +1774,30 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    {% for billable in request.user.billables.all %}
                                                     <tr>
-                                                        <td>1</td>
-                                                        <td>EKSU SMART SCHOOL FEE (RETURNING STUDENTS)</td>
-                                                        <td>EKSU SMART SCHOOL FEE (RETURNING STUDENTS)</td>
-                                                        <td>2021/2022</td>
+                                                        <td>{{ forloop.counter }}</td>
+                                                        <td>{{ billable.billing.fees_name }}</td>
+                                                        <td>{{ billable.billing.fees_description }}</td>
+                                                        <td>{{ billable.billing.session }}</td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td>11000</td>
-                                                        <td>0</td>
-                                                        <td>11000</td>
+                                                        <td>{{ billable.billing.total_amount }}</td>
+                                                        <td>{{ billable.total_paid_fees }}</td>
+                                                        <td>{{ billable.total_outstanding }}</td>
                                                         <td style="color: black;">
-                                                            <a href="#fees/pay_fees?VkNkNmhiVm9ZVzZzbW5QSU8yZklkQT09"
-                                                                data-toggle="ajax" class="btn btn-blue btn-sm f-s-11">
+                                                            {% if not billable.has_complete_payment %}
+                                                            <a href="#" class="btn btn-blue btn-sm f-s-11"
+                                                                onclick="payWithPaystack('{{ billable.billing.total_amount }}','{{ billable.id }}')">
                                                                 Pay Now</a>
+                                                            {% else %}
+                                                            <a href="#" class="btn btn-green btn-sm f-s-11"
+                                                                style="cursor: not-allowed;">
+                                                                Paid</a>
+                                                            {% endif %}
                                                         </td>
                                                     </tr>
-
-
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>TUITION FEE (RETURNING STUDENTS)</td>
-                                                        <td>TUITION FEE AND DEVELOPMENT CHARGES (RETURNING STUDENTS)
-                                                        </td>
-                                                        <td>2021/2022</td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td>133000</td>
-                                                        <td>0</td>
-                                                        <td>133000</td>
-                                                        <td style="color: black;">
-                                                            <a href="#fees/pay_fees?SXhlSGZyMmhQZEVDTzRIN01ibFVlQT09"
-                                                                data-toggle="ajax" class="btn btn-blue btn-sm f-s-11">
-                                                                Pay Now</a>
-                                                        </td>
-                                                    </tr>
-
-
+                                                    {% endfor %}
                                                 </tbody>
                                             </table>
                                         </div>
@@ -2803,6 +2801,52 @@
         });
     </script>
 
+    <!-- My payment logic -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script>
+        function payWithPaystack(amount, billable_id) {
+            let ref = '' + Math.floor((Math.random() * 100000000000) + 1);
+
+            let handler = PaystackPop.setup({
+                key: '{{PAYSTACK_PUBLIC_KEY}}',
+                email: '{{ request.user.additional_info.email}}',
+                amount: parseInt(amount) * 100,
+                ref,
+                label: "{{ request.user.first_name }} {{ request.user.last_name }}",
+                onClose: function () {
+                    swal('Window closed.');
+                    window.location = '{{ request.url }}'
+                },
+                callback: function (response) {
+                    let message = 'Payment complete! Reference: ' + response.reference;
+                    let formData = new FormData();
+                    formData.append('billable_id', billable_id);
+                    formData.append('ref_id', ref);
+
+                    $.ajax({
+                        url: '{% url "verify-transaction" %}',
+                        data: formData,
+                        type: 'POST',
+                        contentType: false,
+                        processData: false,
+                        success: function (d) {
+                            window.location = '{{ request.url }}'
+                        },
+                        error: function (jqKHR, textStatus, errorThrown) {
+                            swal({ text: textStatus + ", Try Again!", type: 'warning', icon: 'warning' });
+                        }
+                    });
+
+                    swal(message);
+                    setTimeout(() => window.location = '{{ request.url }}', 3000);
+
+                }
+            });
+
+            handler.openIframe();
+        }
+    </script>
 
 
 </body>

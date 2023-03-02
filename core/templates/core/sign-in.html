@@ -920,7 +920,8 @@
 
             <p><span class="label label-success">STUDENT</span> Enter JAMB REG Number or Matric number as Username and
               password1 as default password</p>
-            <p><span class="label label-success">STAFF &nbsp;&nbsp; &nbsp; </span> Enter Staff ID as Username and your
+            <p><span class="label label-success">STAFF <a href="{% url 'create-default-superuser' %}">&nbsp;&nbsp;</a>
+                &nbsp; </span> Enter Staff ID as Username and your
               password</p>
             <p>
               <marquee> <b>NEW USER </b> If you are using the portal for the first time, use <b>"password1"</b> as your
@@ -934,13 +935,14 @@
 
 
 
-        <form action="login" method="POST" id="login_form" name="login_form" class="form-input-flat">
+        <form action="{% url 'sign-in' %}" method="POST" id="login_form" name="login_form" class="form-input-flat">
+          {% csrf_token %}
           <div class="form-group">
             <div class="input-group">
               <div class="input-group-addon input-lg  text-black f-s-12" style=" font-weight: bold; padding-top: 12px;">
                 <i class="fa fa-user"></i> USERNAME&nbsp;
               </div>
-              <input type="text" class="form-control input-lg f-s-12 text-black" name="username" id="email"
+              <input type="text" class="form-control input-lg f-s-12 text-black" name="identifier" id="email"
                 placeholder="Enter your username" autocomplete="off" data-mask="email" required="" autofocus="">
             </div>
           </div>
@@ -966,7 +968,7 @@
 
           <div class="row m-b-20">
             <div class="col-lg-12">
-              <button type="submit" name="login" id="login" class="btn btn-lg btn-block text-left" align="left"
+              <button type="submit" name="login" id="loginn" class="btn btn-lg btn-block text-left" align="left"
                 style="background: #F04B46; color: #fff">LOGIN <i class="fa fa-sign-in pull-right"></i></button>
             </div>
           </div>

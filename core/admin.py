@@ -1,3 +1,6 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+admin.site.register(models.Billing)
+admin.site.register(models.Billable)
+admin.site.register(models.Transaction)

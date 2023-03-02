@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,8 +46,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Project App
+    # Project Apps
     "core",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -101,7 +106,10 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": (
+            "django.contrib.auth.password_validation"
+            ".UserAttributeSimilarityValidator"
+        ),
     },
     {
         "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
@@ -143,3 +151,17 @@ if not DEBUG:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "users.User"
+LOGIN_URL = "sign-in"
+
+
+if DEBUG:
+    PAYSTACK_PUBLIC_KEY = os.environ.get("PAYSTACK_TEST_PUBLIC_KEY")
+    PAYSTACK_SECRET_KEY = os.environ.get("PAYSTACK_TEST_SECRET_KEY")
+else:
+    PAYSTACK_PUBLIC_KEY = os.environ.get("PAYSTACK_LIVE_PUBLIC_KEY")
+    PAYSTACK_PRIVATE_KEY = os.environ.get("PAYSTACK_LIVE_SECRET_KEY")
+
+DEFAULT_ADMIN_IDENTIFIER = os.environ.get("DEFAULT_ADMIN_IDENTIFIER")
+DEFAULT_ADMIN_PASSWORD = os.environ.get("DEFAULT_ADMIN_PASSWORD")

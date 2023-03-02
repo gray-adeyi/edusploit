@@ -4,8 +4,9 @@ $("[name='login']").click(function (e) {
         if ($(this).is(':invalid') || !$(this).val()) { valid = false; }
     })
     if (valid) {
-        // e.preventDefault();
+        e.preventDefault();
         $("#login").attr('disabled', true).html('loading <i class="fa fa-spinner fa-spin"></i>');
+
     }
 });
 
